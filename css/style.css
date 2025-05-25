@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px;
+    padding: 10px;
+    align-items: center;
+}
+
+.link-top-header{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0059ad;
+    transition: 0.1s;
+}
+
+.link-top-header:hover{
+    color: #0059ad;
+}
+
+#top-log{
+   display: flex;
+   align-items: center;
+}
+
+#logo{
+    width: 30px;
+    margin-right: 8px;
+}
+
+#name{
+    font-size: 25px;
+    font-weight: 750;
+    color: #3c3c54;
+}
+
+#first-name{
+    color: #8e8ec36d;
+}
+
+#dark-light{
+    font-size: 15px;
+    font-weight: 400;
+    color: #3c3c54;
+    padding: 10px;
+    width: 125px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1.5px solid #0059ad;
+    cursor: pointer;
+}
+
+main{
+    margin: 30px 30px 30px 100px;
+}
+
+#content{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#img-darklight{
+    width: 370px;     /* defina um tamanho fixo */
+    height: 370px;     /* mantém a proporção original */
+    margin-left: 110px;
+}
+
+#photo{
+    margin-right: 120px;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+#about-me{
+    margin-right: 70px;
+}
+
+#paragraph-me{
+    text-align: justify;
+    max-width: 900px;
+}
+
+#element{
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 7px;
+    color: #0059ad;
+}
+
+#subtitle{
+    margin-bottom: 15px;
+    color: #3c3c54;
+    font-size: 25px;
+}
+
+#paragraph{
+    color: #3c3c54;
+    margin-top: 30px;
+    max-width: 510px;
+}
+
+#social-midia{
+    margin-top: 20px;
+    display: flex;
+}
+
+.box{
+    display: flex;
+    background: #0059ad;
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.icon-social-midia{
+    width: 22px;
+    filter: invert(18%) sepia(12%) saturate(1112%) hue-rotate(197deg) brightness(91%) contrast(92%);
+    cursor: pointer;
+}
+
+.experience-box{
+    background-color: #dddbdb;
+    width: 1020px;
+    padding: 35px;
+    border-radius: 12px;
+    margin: 50px 70px 5px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+
+}
+
+.box-flex{
+    display: flex;
+    align-items: center;
+}
+
+.job-description{
+    margin-left: 40px;
+}
+
+.function-name{
+    font-size: 20px;
+}
+
+.company-name{
+    font-size: 13px;
+}
+
+.arrow{
+    margin-left: 480px;
+    margin-right: 80px;
+}
+
+.extra-info{
+    padding: 40px 50px 10px 50px;
+}
+
+body,
+#name,
+.link-top-header,
+p,
+#subtitle,
+#title,
+.box {
+  transition: color 0.3s ease, background-color 0.2s ease;
+}
+
