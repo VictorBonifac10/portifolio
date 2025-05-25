@@ -1,39 +1,40 @@
-@media screen  and (max-width: 800px){
-
-    main{
+@media screen and (max-width: 800px) {
+    main {
         display: block;
     }
 
-    #img-darklight{
+    #img-darklight {
         display: block;
         margin: 0px auto;
 
         margin-top: 40px;
     }
 
-    #paragraph{
+    #paragraph {
         display: block;
         margin: 0px auto;
     }
 
-    #title, #subtitle, #paragraph{
+    #title,
+    #subtitle,
+    #paragraph {
         text-align: center;
     }
 
-    #social-midia{
+    #social-midia {
         display: flex;
         justify-content: center;
     }
 
-    .link-top-header{
+    .link-top-header {
         display: none;
-    }    
+    }
 }
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 430px) {
 
-    #img-darklight{
-        width: 280px; 
+    #img-darklight {
+        width: 280px;
         height: 280px;
     }
 }
