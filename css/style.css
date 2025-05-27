@@ -76,8 +76,11 @@ main{
     margin-left: 110px;
 }
 
-#photo{
-    margin-right: 120px;
+#photo-img{
+    margin-top: 25px;
+    margin-right: 50px;
+    border-radius: 50%;
+    border: 20px solid #0059ad;
 }
 
 #about{
@@ -146,7 +149,6 @@ main{
     border-radius: 12px;
     margin: 50px 70px 5px 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-
 }
 
 .box-flex{
@@ -173,6 +175,10 @@ main{
 
 .extra-info{
     padding: 40px 50px 10px 50px;
+}
+
+#projects-title{
+    margin-top: 20px;
 }
 
 body,
