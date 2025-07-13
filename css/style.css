@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     margin: 10px 25px;
@@ -15,7 +15,7 @@ header{
     align-items: center;
 }
 
-.link-top-header{
+.link-top-header {
     margin-right: 20px;
     text-decoration: none;
     font-size: 20px;
@@ -24,31 +24,31 @@ header{
     transition: 0.1s;
 }
 
-.link-top-header:hover{
+.link-top-header:hover {
     color: #0059ad;
 }
 
-#top-log{
-   display: flex;
-   align-items: center;
+#top-log {
+    display: flex;
+    align-items: center;
 }
 
-#logo{
+#logo {
     width: 30px;
     margin-right: 8px;
 }
 
-#name{
+#name {
     font-size: 25px;
     font-weight: 750;
     color: #3c3c54;
 }
 
-#first-name{
+#first-name {
     color: #8e8ec36d;
 }
 
-#dark-light{
+#dark-light {
     font-size: 15px;
     font-weight: 400;
     color: #3c3c54;
@@ -60,70 +60,71 @@ header{
     cursor: pointer;
 }
 
-main{
-    margin: 30px 30px 30px 100px;
-}
-
-#content{
+#content {
     display: flex;
     align-items: center;
     padding: 10px;
+    margin: 60px 80px 30px 80px;
 }
 
-#img-darklight{
-    width: 370px;     /* defina um tamanho fixo */
-    height: 370px;     /* mantém a proporção original */
+#img-darklight {
+    width: 370px;
+    /* defina um tamanho fixo */
+    height: 370px;
+    /* mantém a proporção original */
     margin-left: 110px;
 }
 
-#photo-img{
+#photo-img {
     margin-top: 25px;
     margin-right: 50px;
     border-radius: 50%;
     border: 20px solid #0059ad;
 }
 
-#about{
+#about {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 60px;
+    margin: 45px 0px 60px 0px;
+    background-color: rgba(11, 10, 10, 0.5);
+    padding: 30px 40px 40px 40px;
 }
 
-#about-me{
+#about-me {
     margin-right: 70px;
 }
 
-#paragraph-me{
+#paragraph-me {
     text-align: justify;
     max-width: 900px;
 }
 
-#element{
+#element {
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 7px;
     color: #0059ad;
 }
 
-#subtitle{
+#subtitle {
     margin-bottom: 15px;
     color: #3c3c54;
     font-size: 25px;
 }
 
-#paragraph{
+#paragraph {
     color: #3c3c54;
     margin-top: 30px;
     max-width: 510px;
 }
 
-#social-midia{
+#social-midia {
     margin-top: 20px;
     display: flex;
 }
 
-.box{
+.box {
     display: flex;
     background: #0059ad;
     padding: 5px;
@@ -136,48 +137,13 @@ main{
     transition: 0.5s;
 }
 
-.icon-social-midia{
+.icon-social-midia {
     width: 22px;
     filter: invert(18%) sepia(12%) saturate(1112%) hue-rotate(197deg) brightness(91%) contrast(92%);
     cursor: pointer;
 }
 
-.experience-box{
-    background-color: #dddbdb;
-    width: 1020px;
-    padding: 35px;
-    border-radius: 12px;
-    margin: 50px 70px 5px 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
-}
-
-.box-flex{
-    display: flex;
-    align-items: center;
-}
-
-.job-description{
-    margin-left: 40px;
-}
-
-.function-name{
-    font-size: 20px;
-}
-
-.company-name{
-    font-size: 13px;
-}
-
-.arrow{
-    margin-left: 480px;
-    margin-right: 80px;
-}
-
-.extra-info{
-    padding: 40px 50px 10px 50px;
-}
-
-#projects-title{
+#projects-title {
     margin-top: 20px;
 }
 
@@ -188,6 +154,118 @@ p,
 #subtitle,
 #title,
 .box {
-  transition: color 0.3s ease, background-color 0.2s ease;
+    transition: color 0.3s ease, background-color 0.2s ease;
 }
 
+#experiences {
+    margin: 10px;
+}
+
+#display {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stripe {
+    width: 1px;
+    height: 500px;
+    background-color: #0059ad;
+    margin-right: 40px;
+}
+
+.ponto {
+    position: relative;
+    left: 14%;
+    transform: translateX(-46%);
+    width: 17px;
+    height: 17px;
+    background-color: #0059ad;
+    border-radius: 50%;
+    border: 5px solid rgba(230, 244, 255, 0.9);
+}
+
+.ponto .um {
+    top: 90%;
+}
+
+
+#professional-exp {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-professional-exp {
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0.5px solid rgba(245, 245, 245, 0.8);
+    border-radius: 15px;
+    padding: 25px 25px 18px 25px;
+    box-shadow: 4px 4px 4px rgba(190, 190, 190, 0.4);
+    transition: 0.2s;
+}
+
+.box-professional-exp:hover {
+    background-color: rgba(250, 250, 250, 0.8);
+    box-shadow: 8px 8px 8px rgba(190, 190, 190, 0.4);
+}
+
+.title-job {
+    font-size: 15px;
+}
+
+.company {
+    font-size: 13px;
+}
+
+.job-details {
+    display: flex;
+    align-items: center;
+}
+
+.year {
+    color: #0059ad;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 20px;
+    padding: 5px 13px 5px 13px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px rgba(190, 190, 190, 0.4);
+}
+
+.functions {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    text-align: justify;
+    max-width: 650px;
+    margin: 10px 0px 0px 0px;
+    gap: 10px;
+}
+
+.functions i {
+    color: #0059ad;
+    font-size: 30px;
+}
+
+.technologies {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.technologies i {
+    color: #0059ad;
+    background-color: #fff;
+    padding: 10px 11px 10px 11px;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 1px 1px 3px rgba(190, 190, 190, 0.2);
+}
