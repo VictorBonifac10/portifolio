@@ -52,8 +52,7 @@ header {
     font-size: 15px;
     font-weight: 400;
     color: #3c3c54;
-    padding: 10px;
-    width: 125px;
+    padding: 10px 14px;
     border-radius: 50px;
     background-color: transparent;
     border: 1.5px solid #0059ad;
@@ -73,6 +72,18 @@ header {
     height: 370px;
     /* mantém a proporção original */
     margin-left: 110px;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
 }
 
 #photo-img {
@@ -111,6 +122,7 @@ header {
     margin-bottom: 15px;
     color: #3c3c54;
     font-size: 25px;
+    font-weight: bold;
 }
 
 #paragraph {
@@ -138,8 +150,11 @@ header {
 }
 
 .icon-social-midia {
-    width: 22px;
-    filter: invert(18%) sepia(12%) saturate(1112%) hue-rotate(197deg) brightness(91%) contrast(92%);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    font-size: 22px;
     cursor: pointer;
 }
 
@@ -218,18 +233,23 @@ p,
 
 .title-job {
     font-size: 15px;
+    font-weight: bold;
 }
 
 .company {
     font-size: 13px;
+    margin-bottom: -12px;
+    font-weight: 500;
 }
 
 .job-details {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .year {
+    background-color: #fff;
     color: #0059ad;
     font-size: 12px;
     font-weight: bolder;
@@ -262,10 +282,33 @@ p,
 }
 
 .technologies i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #0059ad;
-    background-color: #fff;
-    padding: 10px 11px 10px 11px;
+    background-color: #ffffff;
+    padding: 8px 14px;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 22px;
     box-shadow: 1px 1px 3px rgba(190, 190, 190, 0.2);
 }
+
+.technologies i:after{
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 4px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      font-size: 12px;
+}
+
+
+
