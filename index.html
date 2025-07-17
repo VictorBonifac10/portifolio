@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,7 +74,7 @@
             <img src="./assets/img/my-photo.jpg" alt="photo" width="400px" id="photo-img">
 
             <div id="about-me">
-                <h3 id="subtitle">Sobre mim</h3>
+                <h3 class="subtitle-main">Sobre mim</h3>
                 <p id="paragraph-me">
                     Meu nome é Victor Alves Bonifácio e sou apaixonado por tecnologia, inovação e soluções que
                     realmente
@@ -98,7 +99,7 @@
         <br><br><br>
 
         <div id="experiences">
-            <h3 id="subtitle">Experiências</h3>
+            <h3 class="subtitle-main">Experiências</h3>
             <div id="display">
 
                 <div id="stripe">
@@ -121,13 +122,13 @@
                             consistentes e alinhados às necessidades do negócio.
                         </p>
                         <div class="technologies">
-                            <i class="ri-html5-fill"></i>
-                            <i class="ri-css3-fill"></i>
-                            <i class="ri-bootstrap-fill"></i>
-                            <i class="ri-javascript-fill"></i>
-                            <i class="ri-github-fill"></i>
-                            <i class="ri-reactjs-fill"></i>
-                            <i class="ri-database-2-fill"></i>
+                            <i class="ri-html5-fill" data-tooltip="HTML5"></i>
+                            <i class="ri-css3-fill" data-tooltip="CSS3"></i>
+                            <i class="ri-bootstrap-fill" data-tooltip="Bootstrap"></i>
+                            <i class="ri-javascript-fill" data-tooltip="Javascript"></i>
+                            <i class="ri-github-fill" data-tooltip="Github"></i>
+                            <i class="ri-reactjs-fill" data-tooltip="React"></i>
+                            <i class="ri-database-2-fill" data-tooltip="Banco de Dados"></i>
                         </div>
                     </div>
                     <div class="box-professional-exp">
@@ -145,11 +146,12 @@
                             consistentes e alinhados às necessidades do negócio.
                         </p>
                         <div class="technologies">
-                            <i class="ri-file-ppt-2-fill" ata-tooltip="Informação sobre o ícone"></i>
-                            <i class="ri-meta-fill" ata-tooltip="Informação sobre o ícone"></i>
-                            <i class="bi bi-trello" ata-tooltip="Informação sobre o ícone"></i>
-                            <i class="bi bi-bar-chart-fill" ata-tooltip="Informação sobre o ícone"></i>
-                            <i class="ri-file-excel-2-fill" ata-tooltip="Informação sobre o ícone"></i>
+                            <i class="ri-file-ppt-2-fill" data-tooltip="PowerPoint"></i>
+                            <i class="photoshop-icon" data-tooltip="Photoshop"><span>PS</span></i>
+                            <i class="ri-meta-fill" data-tooltip="Meta Business Suite"></i>
+                            <i class="bi bi-trello" data-tooltip="Trello"></i>
+                            <i class="bi bi-bar-chart-fill" data-tooltip="Analytics"></i>
+                            <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
                         </div>
                     </div>
                     <div class="box-professional-exp">
@@ -167,17 +169,137 @@
                             consistentes e alinhados às necessidades do negócio.
                         </p>
                         <div class="technologies">
-                            <i class="bi bi-receipt"></i>
-                            <i class="ri-file-excel-2-fill"></i>
+                            <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
+                            <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="tech-icons">
+            <h3 class="subtitle-main">Tecnologias</h3>
+            <div class="carousel-wrapper">
+                <button class="arrow" onclick="scrollIcons(-1)">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+
+                <div class="carousel-tech-icons" id="iconCarousel">
+                    <div class="box-i">
+                        <i class="ri-html5-fill" data-tooltip="HTML5"></i>
+                        <div>
+                            <p>Lorem ipsum dolo3333333333333333333333333</p>
+                        </div>
+                    </div>
+                    <div class="box-i">
+                        <i class="ri-css3-fill" data-tooltip="CSS3"></i>
+                        <p>Lorem ipsum dolo3333333333333333333333333</p>
+                    </div>
+                    <div class="box-i">
+                        <i class="ri-bootstrap-fill" data-tooltip="Bootstrap"></i>
+                        <p>Lorem ipsum dolo3333333333333333333333333</p>
+                    </div>
+                    <div class="box-i">
+                        <i class="ri-javascript-fill" data-tooltip="Javascript"></i>
+                        <p>Lorem ipsum dolo3333333333333333333333333</p>
+                    </div>
+                    <div class="box-i">
+                        <i class="ri-github-fill" data-tooltip="Github"></i>
+                        <p>Lorem ipsum dolo3333333333333333333333333</p>
+                    </div>
+                    <div class="box-i">
+                        <i class="ri-reactjs-fill" data-tooltip="React"></i>
+                        <p>Lorem ipsum dolo3333333333333333333333333</p>
+                    </div>
+                    <div class="box-i">
+                        <i class="ri-database-2-fill" data-tooltip="Banco de Dados"></i>
+                        <p>Lorem ipsum dolo3333333333333333333333333</p>
+                    </div>
+                </div>
+
+                <button class="arrow" onclick="scrollIcons(1)">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
 
         <div class="projects">
-            <h3 id="subtitle">Projetos</h3>
-
+            <h3 class="subtitle-main">Projetos</h3>
+            <div class="card-container">
+                <div class="card-box">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto">
+                    <div class="content-project">
+                        <h5 class="title-project">Eu sou um titulo</h5>
+                        <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <p class="technologies-project">
+                            <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
+                            <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto">
+                    <div class="content-project">
+                        <h5 class="title-project">Eu sou um titulo</h5>
+                        <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <p class="technologies-project">
+                            <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
+                            <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto">
+                    <div class="content-project">
+                        <h5 class="title-project">Eu sou um titulo</h5>
+                        <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <p class="technologies-project">
+                            <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
+                            <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-box">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto">
+                    <div class="content-project">
+                        <h5 class="title-project">Eu sou um titulo</h5>
+                        <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <p class="technologies-project">
+                            <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
+                            <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto">
+                    <div class="content-project">
+                        <h5 class="title-project">Eu sou um titulo</h5>
+                        <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <p class="technologies-project">
+                            <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
+                            <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto">
+                    <div class="content-project">
+                        <h5 class="title-project">Eu sou um titulo</h5>
+                        <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <p class="technologies-project">
+                            <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
+                            <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     </div>

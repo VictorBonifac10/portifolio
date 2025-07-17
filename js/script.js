@@ -38,7 +38,7 @@ function darkMode() {
         element.style.color = "#ffdf56"
 
         iconSocial.forEach(iconSocial => { //icones
-            iconSocial.style.background = "#ffdf56"     
+            iconSocial.style.background = "#ffdf56"
         });
 
         aboutMe.style.color = "#fff"
@@ -48,11 +48,11 @@ function darkMode() {
         arrowIcon.src = "./assets/img/yellow-arrow.svg" //logo
 
         workMe.forEach(work => {
-        work.src = "./assets/img/yellow-job.svg" //logo          
+            work.src = "./assets/img/yellow-job.svg" //logo          
         });
 
         arrowIcon.forEach(arrow => {
-        arrow.src = "./assets/img/yellow-arrow.svg" //logo
+            arrow.src = "./assets/img/yellow-arrow.svg" //logo
         });
 
         dark = true; // agora estamos no modo claro
@@ -77,18 +77,18 @@ function darkMode() {
         titlePrincipal.style.color = "#0059ad";
 
         iconSocial.forEach(icon => {
-        icon.style.backgroundColor = "#0059ad";
+            icon.style.backgroundColor = "#0059ad";
         });
-        
+
         aboutMe.style.color = "#000"
         myPhoto.style.border = "20px solid #0059ad"
 
-         workMe.forEach(work => {
-          work.src = "./assets/img/blue-job.svg" //logo          
+        workMe.forEach(work => {
+            work.src = "./assets/img/blue-job.svg" //logo          
         });
 
         arrowIcon.forEach(arrow => {
-        arrow.src = "./assets/img/blue-arrow.svg" //logo
+            arrow.src = "./assets/img/blue-arrow.svg" //logo
         });
 
         dark = false; // agora estamos no modo escuro
@@ -96,5 +96,13 @@ function darkMode() {
 
 }
 
+  function scrollIcons(direction) {
+    const container = document.getElementById('iconCarousel');
+    const scrollAmount = 200; // ajuste conforme necessidade
+    container.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
 
- 
+

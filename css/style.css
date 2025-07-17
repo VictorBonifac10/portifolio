@@ -77,7 +77,8 @@ header {
 
 @keyframes float {
 
-    0%,100% {
+    0%,
+    100% {
         transform: translateY(0);
     }
 
@@ -97,7 +98,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 45px 0px 60px 0px;
+    margin: 45px 0px 30px 0px;
     background-color: rgba(11, 10, 10, 0.5);
     padding: 30px 40px 40px 40px;
 }
@@ -118,11 +119,25 @@ header {
     color: #0059ad;
 }
 
-#subtitle {
+#subtitle,
+.subtitle-main {
     margin-bottom: 15px;
-    color: #3c3c54;
     font-size: 25px;
     font-weight: bold;
+}
+
+#subtitle {
+    color: #3c3c54;
+}
+
+.subtitle-main {
+    display: flex;
+    justify-content: center;
+    color: #0059ad;
+}
+
+#about-me .subtitle-main {
+    display: block;
 }
 
 #paragraph {
@@ -173,7 +188,7 @@ p,
 }
 
 #experiences {
-    margin: 10px;
+    margin: 10px 10px 80px 10px;
 }
 
 #display {
@@ -253,11 +268,12 @@ p,
     color: #0059ad;
     font-size: 12px;
     font-weight: bolder;
-    margin-left: 20px;
-    padding: 5px 13px 5px 13px;
     border: 1px solid transparent;
     border-radius: 50px;
     box-shadow: 2px 2px 2px rgba(190, 190, 190, 0.4);
+    padding: 5px 13px 5px 13px;
+    margin-left: 20px;
+    font-size: 12px;
 }
 
 .functions {
@@ -275,40 +291,188 @@ p,
     font-size: 30px;
 }
 
-.technologies {
+.photoshop-icon span {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.technologies,
+.technologies-project {
     display: flex;
-    gap: 10px;
     margin-top: 5px;
 }
 
-.technologies i {
+.technologies {
+    margin-top: 5px;
+    gap: 10px;
+}
+
+.technologies-project {
+    margin-top: -13px;
+    gap: 5px;
+}
+
+.technologies i,
+.technologies-project i {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #0059ad;
     background-color: #ffffff;
-    padding: 8px 14px;
-    border-radius: 50px;
-    font-size: 22px;
     box-shadow: 1px 1px 3px rgba(190, 190, 190, 0.2);
+    border-radius: 50px;
+    padding: 8px 14px;
 }
 
-.technologies i:after{
-      content: attr(data-tooltip);
-      position: absolute;
-      bottom: 125%;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: #333;
-      color: #fff;
-      padding: 5px 8px;
-      border-radius: 4px;
-      white-space: nowrap;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.3s;
-      font-size: 12px;
+.technologies i {
+    padding: 8px 14px;
+    font-size: 22px;
+    position: relative;
 }
 
+.technologies-project i {
+    padding: 5px 11px;
+    font-size: 17px;
+}
 
+.technologies i::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -20%;
+    /* Fica acima do ícone */
+    left: 90%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    color: #777777;
+    padding: 4px 8px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-style: italic;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    z-index: 10;
+}
 
+.technologies i:hover::after {
+    opacity: 1;
+}
+
+.tech-icons {
+    margin: 90px 0px 90px 0px;
+    padding: 40px;
+}
+
+.carousel-tech-icons {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 24px;
+    padding: 20px 18px;
+    max-width: 850px;
+}
+
+.carousel-tech-icons::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-tech-icons {
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.box-i {
+    display: flex;
+    border-radius: 7px;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    margin: 8px;
+    transition: transform 0.2s;
+    box-shadow: 5px 5px 4px rgba(190, 190, 190, 0.4);
+}
+
+.box-i:hover {
+    transform: scale(1.2);
+    border-radius: 3px;
+}
+
+.box-i p {
+    font-size: 12px;
+}
+
+.carousel-tech-icons i {
+    font-size: 32px;
+    color: #333;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    color: #555;
+    transition: color 0.3s;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.arrow:hover {
+    color: #007bff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 5px;
+    padding: 10px 70px 10px 70px;
+    gap: 30px;
+}
+
+.card-box {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(190, 190, 190, 0.4);
+    transition: 0.2s;
+}
+
+.card-box:hover {
+    transform: scale(1.1);
+}
+
+.card-box img {
+    width: auto;
+    margin: 0;
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
+}
+
+.title-project {
+    margin: 10px 0px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #0059ad;
+}
+
+.description-project {
+    font-size: 12px;
+    max-width: auto;
+}
