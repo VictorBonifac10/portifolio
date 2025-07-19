@@ -30,6 +30,7 @@ function darkMode() {
 
         botao.style.color = "#fff"
         botao.style.border = "1.5px solid #ffdf56"
+        botao.innerHTML = '<i class="ri-sun-fill"></i>'
 
         img.src = "./assets/img/yellow-rocket.svg" //img
 
@@ -69,6 +70,7 @@ function darkMode() {
 
         botao.style.color = "#3c3c54"
         botao.style.border = "1.5px solid #0059ad"
+        botao.innerHTML = '<i class="ri-moon-fill"></i>'
 
         img.src = "./assets/img/blue-rocket.svg";
 
@@ -96,13 +98,23 @@ function darkMode() {
 
 }
 
-  function scrollIcons(direction) {
-    const container = document.getElementById('iconCarousel');
-    const scrollAmount = 200; // ajuste conforme necessidade
+const container = document.getElementById('iconCarousel');
+let scrollSpeed = 1; // pixels por passo
+let intervalTime = 5; // milissegundos por passo
+
+function autoScroll() {
     container.scrollBy({
-      left: direction * scrollAmount,
-      behavior: 'smooth'
+        left: scrollSpeed,
+        behavior: 'smooth'
     });
-  }
+
+    // Verifica se chegou ao final e volta ao início (loop)
+    if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
+        container.scrollTo({ left: 0, behavior: 'smooth' });
+    }
+}
+
+// Começa o scroll automático
+setInterval(autoScroll, intervalTime);
 
 

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@tailwind;
 
 * {
     margin: 0;
@@ -18,13 +19,8 @@ header {
 .link-top-header {
     margin-right: 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
-    color: #0059ad;
-    transition: 0.1s;
-}
-
-.link-top-header:hover {
     color: #0059ad;
 }
 
