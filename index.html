@@ -12,6 +12,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Css Files -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -52,7 +54,7 @@
                     impacto
                     real. Verifique abaixo ▼ </p>
 
-                <div id="social-midia">
+                <div class="social-midia">
                     <div class="box">
                         <i class="ri-linkedin-fill icon-social-midia"></i>
                     </div>
@@ -181,46 +183,45 @@
         <div class="tech-icons">
             <h3 class="subtitle-main">Tecnologias</h3>
             <div class="carousel-wrapper">
-                <button class="arrow" onclick="scrollIcons(-1)">
-                    <i class="bi bi-chevron-left"></i>
-                </button>
 
                 <div class="carousel-tech-icons" id="iconCarousel">
-                    <div class="box-i">
-                        <i class="ri-html5-fill" data-tooltip="HTML5"></i>
+                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <i class="ri-html5-fill group-hover:text-orange-500 transition-colors"></i>
                         <div>
                             <p>Lorem ipsum dolo3333333333333333333333333</p>
                         </div>
                     </div>
-                    <div class="box-i">
-                        <i class="ri-css3-fill" data-tooltip="CSS3"></i>
+
+                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <i class="ri-css3-fill group-hover:text-blue-500 transition-colors"></i>
                         <p>Lorem ipsum dolo3333333333333333333333333</p>
                     </div>
-                    <div class="box-i">
-                        <i class="ri-bootstrap-fill" data-tooltip="Bootstrap"></i>
+
+                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <i class="ri-bootstrap-fill group-hover:text-purple-500 transition-colors"></i>
                         <p>Lorem ipsum dolo3333333333333333333333333</p>
                     </div>
-                    <div class="box-i">
-                        <i class="ri-javascript-fill" data-tooltip="Javascript"></i>
+
+                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <i class="ri-javascript-fill group-hover:text-yellow-500 transition-colors"></i>
                         <p>Lorem ipsum dolo3333333333333333333333333</p>
                     </div>
-                    <div class="box-i">
-                        <i class="ri-github-fill" data-tooltip="Github"></i>
+
+                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <i class="ri-github-fill group-hover:text-red-500 transition-colors"></i>
                         <p>Lorem ipsum dolo3333333333333333333333333</p>
                     </div>
-                    <div class="box-i">
-                        <i class="ri-reactjs-fill" data-tooltip="React"></i>
+
+                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <i class="ri-reactjs-fill group-hover:text-blue-800 transition-colors"></i>
                         <p>Lorem ipsum dolo3333333333333333333333333</p>
                     </div>
-                    <div class="box-i">
-                        <i class="ri-database-2-fill" data-tooltip="Banco de Dados"></i>
+
+                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <i class="ri-database-2-fill group-hover:text-lime-500 transition-colors"></i>
                         <p>Lorem ipsum dolo3333333333333333333333333</p>
                     </div>
                 </div>
-
-                <button class="arrow" onclick="scrollIcons(1)">
-                    <i class="bi bi-chevron-right"></i>
-                </button>
             </div>
         </div>
 
@@ -303,8 +304,50 @@
                 </div>
             </div>
         </div>
+
+        <div class="contact px-4 py-8">
+            <div class="contact-flex flex flex-col md:flex-row gap-8">
+                <div class="contact-information md:w-1/2">
+                    <h3 class="title-contact">Contato</h3>
+                    <p class="text-information text-gray-700">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat tenetur iste,
+                        expedita, excepturi et alias quam ipsa voluptates delectus.
+                    </p>
+                    <hr>
+                    <h3 class="title-contact">Redes Sociais</h3>
+                    <div class="social-midia">
+                        <div class="box">
+                            <i class="ri-linkedin-fill icon-social-midia"></i>
+                        </div>
+                        <div class="box">
+                            <i class="ri-github-fill icon-social-midia"></i>
+                        </div>
+                        <div class="box">
+                            <i class="ri-article-fill icon-social-midia"></i>
+                        </div>
+                        <div class="box">
+                            <i class="ri-whatsapp-fill icon-social-midia"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-form forms md:w-1/2 md:pl-8 md:border-l md:border-gray-300">
+                    <h3 class="title-contact">Envie-me uma mensagem!</h3>
+                    <form action="" class="flex flex-col gap-4">
+                        <input type="text" placeholder="Seu nome" class="border p-2 rounded" />
+                        <input type="text" placeholder="Seu e-mail" class="border p-2 rounded" />
+                        <textarea placeholder="Digite sua mensagem..."
+                            class="w-full h-32 p-2 border border-gray-300"></textarea>
+                        <button
+                            class="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-colors">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
-    </div>
+    <footer>
+        <h3 class="rights-reserved">© 2025 Victor Bonifácio Portfolio. Todos os direitos reservados.</h3>
+    </footer>
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="./js/typewriterEffect.js"></script>
