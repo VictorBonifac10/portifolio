@@ -14,6 +14,7 @@ const aboutMe = document.querySelector("#paragraph-me")
 const workMe = document.querySelectorAll(".work")
 const arrowIcon = document.querySelectorAll(".arrow")
 
+AOS.init();
 
 function darkMode() {
     if (dark === false) {

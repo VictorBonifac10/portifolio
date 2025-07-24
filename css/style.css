@@ -386,11 +386,11 @@ p,
 
 .box-i {
     display: flex;
+    flex-direction: column;
     border-radius: 7px;
-    gap: 20px;
     align-items: center;
     background-color: rgb(249, 249, 249);
-    width: 300px;
+    width: 600px;
     height: 100px;
     padding: 20px;
     margin: 8px;
@@ -400,7 +400,7 @@ p,
 
 
 .box-i p {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .carousel-tech-icons i {
