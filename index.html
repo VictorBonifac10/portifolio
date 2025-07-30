@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/particles.css">
-    <title>Darklight LandingPage</title>
+    <title>Victor Bonifácio | Portifolio</title>
 </head>
 
 <body>
@@ -37,12 +37,12 @@
         </div>
 
         <div id="top-header">
-            <a href="#" class="link-top-header">Inicio</a>
-            <a href="#" class="link-top-header">Sobre</a>
-            <a href="#" class="link-top-header">Experiencias</a>
-            <a href="#" class="link-top-header">Tecnologias</a>
-            <a href="#" class="link-top-header">Projetos</a>
-            <a href="#" class="link-top-header">Contato</a>
+            <a href="#top" class="link-top-header">Inicio</a>
+            <a href="#about" class="link-top-header">Sobre</a>
+            <a href="#experiences" class="link-top-header">Experiencias</a>
+            <a href="#tech-icons" class="link-top-header">Tecnologias</a>
+            <a href="#projects" class="link-top-header">Projetos</a>
+            <a href="#contact" class="link-top-header">Contato</a>
 
             <button id="dark-light" onclick="darkMode()">
                 <i class="ri-moon-fill"></i>
@@ -60,16 +60,28 @@
 
                 <div class="social-midia">
                     <div class="box">
-                        <i class="ri-linkedin-fill icon-social-midia"></i>
+                        <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
+                            class="flex justify-center items-center">
+                            <i class="ri-linkedin-fill icon-social-midia"></i>
+                        </a>
                     </div>
                     <div class="box">
-                        <i class="ri-github-fill icon-social-midia"></i>
+                        <a href="https://github.com/VictorBonifac10" target="_blank"
+                            class="flex justify-center items-center">
+                            <i class="ri-github-fill icon-social-midia"></i>
+                        </a>
                     </div>
                     <div class="box">
-                        <i class="ri-article-fill icon-social-midia"></i>
+                        <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
+                            class="flex justify-center items-center">
+                            <i class="ri-article-fill icon-social-midia"></i>
+                        </a>
                     </div>
                     <div class="box">
-                        <i class="ri-whatsapp-fill icon-social-midia"></i>
+                        <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
+                            class="flex justify-center items-center">
+                            <i class="ri-whatsapp-fill icon-social-midia"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -187,70 +199,133 @@
             </div>
         </div>
 
-        <div class="tech-icons">
+        <div id="tech-icons">
             <h3 class="subtitle-main">Tecnologias</h3>
             <div class="carousel-wrapper">
                 <div class="carousel-tech-icons" id="iconCarousel">
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <i class="ri-html5-fill group-hover:text-orange-500 transition-colors"></i>
-                        <p>HTML5</p>
+                    <div class="carousel-track">
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-html5-fill group-hover:text-orange-500 transition-colors"></i>
+                            <p>HTML5</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-css3-fill group-hover:text-blue-500 transition-colors"></i>
+                            <p>CSS3</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-bootstrap-fill group-hover:text-purple-500 transition-colors"></i>
+                            <p>Bootstrap</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <svg viewBox="0 0 128 128" class="mt-2" width="40px" height="40px">
+                                <path
+                                    d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                                    fill="#363636">
+                                </path>
+                            </svg>
+                            <p class="mt-2">Tailwind</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-javascript-fill group-hover:text-yellow-500 transition-colors"></i>
+                            <p>Javascript</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-github-fill group-hover:text-red-500 transition-colors"></i>
+                            <p>Github</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="mt-2 devicon-git-plain group-hover:text-orange-500 transition-colors"></i>
+                            <p class="mt-2">Git</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-reactjs-fill group-hover:text-blue-800 transition-colors"></i>
+                            <p>React</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="mt-2 devicon-mongodb-plain group-hover:text-lime-500 transition-colors"></i>
+                            <p class="mt-2">MongoDB</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="mt-2 devicon-nodejs-plain group-hover:text-lime-500 transition-colors"></i>
+                            <p class="mt-2">Node.js</p>
+                        </div>
                     </div>
 
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <i class="ri-css3-fill group-hover:text-blue-500 transition-colors"></i>
-                        <p>CSS3</p>
-                    </div>
+                    <div class="carousel-track"> <!--duplicado-->
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-html5-fill group-hover:text-orange-500 transition-colors"></i>
+                            <p>HTML5</p>
+                        </div>
 
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <i class="ri-bootstrap-fill group-hover:text-purple-500 transition-colors"></i>
-                        <p>Bootstrap</p>
-                    </div>
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-css3-fill group-hover:text-blue-500 transition-colors"></i>
+                            <p>CSS3</p>
+                        </div>
 
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <svg viewBox="0 0 128 128" class="mt-2">
-                            <path
-                                d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
-                                fill="#363636">
-                            </path>
-                        </svg>
-                        <p class="mt-2">Tailwind</p>
-                    </div>
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-bootstrap-fill group-hover:text-purple-500 transition-colors"></i>
+                            <p>Bootstrap</p>
+                        </div>
 
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <i class="ri-javascript-fill group-hover:text-yellow-500 transition-colors"></i>
-                        <p>Javascript</p>
-                    </div>
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <svg viewBox="0 0 128 128" class="mt-2" width="40px" height="40px">
+                                <path
+                                    d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
+                                    fill="#363636">
+                                </path>
+                            </svg>
+                            <p class="mt-2">Tailwind</p>
+                        </div>
 
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <i class="ri-github-fill group-hover:text-red-500 transition-colors"></i>
-                        <p>Github</p>
-                    </div>
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-javascript-fill group-hover:text-yellow-500 transition-colors"></i>
+                            <p>Javascript</p>
+                        </div>
 
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <i class="mt-2 devicon-git-plain group-hover:text-orange-500 transition-colors"></i>
-                        <p class="mt-2">Git</p>
-                    </div>
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-github-fill group-hover:text-red-500 transition-colors"></i>
+                            <p>Github</p>
+                        </div>
 
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <i class="ri-reactjs-fill group-hover:text-blue-800 transition-colors"></i>
-                        <p>React</p>
-                    </div>
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="mt-2 devicon-git-plain group-hover:text-orange-500 transition-colors"></i>
+                            <p class="mt-2">Git</p>
+                        </div>
 
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <i class="mt-2 devicon-mongodb-plain group-hover:text-lime-500 transition-colors"></i>
-                        <p class="mt-2">MongoDB</p>
-                    </div>
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="ri-reactjs-fill group-hover:text-blue-800 transition-colors"></i>
+                            <p>React</p>
+                        </div>
 
-                    <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                        <i class="mt-2 devicon-nodejs-plain group-hover:text-lime-500 transition-colors"></i>
-                        <p class="mt-2">Node.js</p>
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="mt-2 devicon-mongodb-plain group-hover:text-lime-500 transition-colors"></i>
+                            <p class="mt-2">MongoDB</p>
+                        </div>
+
+                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                            <i class="mt-2 devicon-nodejs-plain group-hover:text-lime-500 transition-colors"></i>
+                            <p class="mt-2">Node.js</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div data-aos="fade-up" data-aos-duration="1500">
-            <div class="projects">
+            <div id="projects">
                 <h3 class="subtitle-main">Projetos</h3>
+                <div class="title-line">
+                    <hr>
+                    <h3 class="title-line-name">Front-End</h3>
+                </div>
                 <div class="card-container">
                     <div class="card-box">
                         <img src="./assets/img/my-photo.jpg" alt="projeto">
@@ -258,7 +333,7 @@
                             <h5 class="title-project">Eu sou um titulo</h5>
                             <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Blanditiis in molestias a.</p>
-                            <p class="technologies-project">
+                            <p class="technologies-project mt-2">
                                 <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
                                 <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
                             </p>
@@ -270,7 +345,7 @@
                             <h5 class="title-project">Eu sou um titulo</h5>
                             <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Blanditiis in molestias a.</p>
-                            <p class="technologies-project">
+                            <p class="technologies-project mt-2">
                                 <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
                                 <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
                             </p>
@@ -282,12 +357,17 @@
                             <h5 class="title-project">Eu sou um titulo</h5>
                             <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Blanditiis in molestias a.</p>
-                            <p class="technologies-project">
+                            <p class="technologies-project mt-2">
                                 <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
                                 <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
                             </p>
                         </div>
                     </div>
+                </div>
+
+                <div class="title-line">
+                    <h3 class="title-line-name">Back-End</h3>
+                    <hr>
                 </div>
 
                 <div class="card-container">
@@ -297,7 +377,7 @@
                             <h5 class="title-project">Eu sou um titulo</h5>
                             <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Blanditiis in molestias a.</p>
-                            <p class="technologies-project">
+                            <p class="technologies-project mt-2">
                                 <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
                                 <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
                             </p>
@@ -309,7 +389,7 @@
                             <h5 class="title-project">Eu sou um titulo</h5>
                             <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Blanditiis in molestias a.</p>
-                            <p class="technologies-project">
+                            <p class="technologies-project mt-2">
                                 <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
                                 <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
                             </p>
@@ -321,17 +401,20 @@
                             <h5 class="title-project">Eu sou um titulo</h5>
                             <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Blanditiis in molestias a.</p>
-                            <p class="technologies-project">
+                            <p class="technologies-project mt-2">
                                 <i class="bi bi-receipt" data-tooltip="Gestão de NFs"></i>
                                 <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
                             </p>
                         </div>
                     </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <a href="https://github.com/VictorBonifac10" target="_blank" class="text-blue-800">mais</a>
                 </div>
             </div>
         </div>
 
-        <div class="contact px-4 py-8">
+        <div class="contact px-4 py-8" id="contact">
             <div class="contact-flex flex flex-col md:flex-row gap-8">
                 <div class="contact-information md:w-1/2">
                     <h3 class="title-contact">Contato</h3>
@@ -342,18 +425,27 @@
                     </p>
                     <hr>
                     <h3 class="title-contact">Redes Sociais</h3>
-                    <div class="social-midia">
-                        <div class="box">
-                            <i class="ri-linkedin-fill icon-social-midia"></i>
+                    <div class="social-midia-contact">
+                        <div class="flex flex-col gap-2">
+                            <div class="box-contact">
+                                <i class="ri-linkedin-fill icon-social-midia-contact"></i>
+                                <a href="https://www.linkedin.com/in/victor-alves-bonifacio/"
+                                    target="_blank">Linkedin</a>
+                            </div>
+                            <div class="box-contact">
+                                <i class="ri-github-fill icon-social-midia-contact"></i>
+                                <a href="https://github.com/VictorBonifac10" target="_blank">Github</a>
+                            </div>
                         </div>
-                        <div class="box">
-                            <i class="ri-github-fill icon-social-midia"></i>
-                        </div>
-                        <div class="box">
-                            <i class="ri-article-fill icon-social-midia"></i>
-                        </div>
-                        <div class="box">
-                            <i class="ri-whatsapp-fill icon-social-midia"></i>
+                        <div class="flex flex-col gap-2">
+                            <div class="box-contact">
+                                <i class="ri-article-fill icon-social-midia-contact"></i>
+                                <a href="#" target="_blank">Currículo</a>
+                            </div>
+                            <div class="box-contact">
+                                <i class="ri-whatsapp-fill icon-social-midia-contact"></i>
+                                <a href="#" target="_blank">Whatsapp</a>
+                            </div>
                         </div>
                     </div>
                 </div>

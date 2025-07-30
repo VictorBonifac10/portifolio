@@ -99,23 +99,26 @@ function darkMode() {
 
 }
 
+//carousel tech icons
+
 const container = document.getElementById('iconCarousel');
-let scrollSpeed = 1; // pixels por passo
-let intervalTime = 5; // milissegundos por passo
+
+const originalContent = container.innerHTML;
+container.innerHTML += originalContent;
+
+let scrollSpeed = 1; // px por passo
+let intervalTime = 35; // velocidade
 
 function autoScroll() {
-    container.scrollBy({
-        left: scrollSpeed,
-        behavior: 'smooth'
-    });
+    container.scrollLeft += scrollSpeed;
 
-    // Verifica se chegou ao final e volta ao início (loop)
-    if (container.scrollLeft + container.clientWidth >= container.scrollWidth) {
-        container.scrollTo({ left: 0, behavior: 'smooth' });
+    if (container.scrollLeft >= container.scrollWidth / 2) { //volta para o início
+        container.scrollLeft = 0;
     }
 }
 
-// Começa o scroll automático
 setInterval(autoScroll, intervalTime);
+
+//header fixed
 
 
