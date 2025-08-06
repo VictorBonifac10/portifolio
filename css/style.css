@@ -1,5 +1,5 @@
+@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@tailwind;
 
 * {
     margin: 0;
@@ -8,12 +8,16 @@
     font-family: "Open Sans", sans-serif;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 25px;
-    padding: 10px;
-    align-items: center;
+.mask {
+    background: linear-gradient(109deg, rgba(255, 255, 255, 0.015) 15%, rgba(53, 48, 28, 0.284) 50%, rgba(0, 22, 88, 0.223) 85%);
+}
+
+.glassmorphism:hover {
+    transform: scale(1.1);
+    border-radius: 0%;
+    transition: 1s;
+
+    background-color: rgba(255, 213, 0, 0.055);
 }
 
 .link-top-header {
@@ -24,27 +28,7 @@ header {
     color: #0059ad;
 }
 
-#top-log {
-    display: flex;
-    align-items: center;
-}
-
-#logo {
-    width: 30px;
-    margin-right: 8px;
-}
-
-#name {
-    font-size: 25px;
-    font-weight: 750;
-    color: #3c3c54;
-}
-
-#first-name {
-    color: #8e8ec36d;
-}
-
-#dark-light {
+.dark-light {
     font-size: 15px;
     font-weight: 400;
     color: #3c3c54;
@@ -53,34 +37,6 @@ header {
     background-color: transparent;
     border: 1.5px solid #0059ad;
     cursor: pointer;
-}
-
-#content {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    margin: 60px 80px 30px 80px;
-}
-
-#img-darklight {
-    width: 370px;
-    /* defina um tamanho fixo */
-    height: 370px;
-    /* mantém a proporção original */
-    margin-left: 110px;
-    animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-50px);
-    }
 }
 
 #photo-img {
@@ -104,27 +60,8 @@ header {
     margin-right: 70px;
 }
 
-#paragraph-me {
-    text-align: justify;
-    max-width: 900px;
-}
-
 #element {
-    font-size: 32px;
-    font-weight: 800;
-    margin-bottom: 7px;
     color: #0059ad;
-}
-
-#subtitle,
-.subtitle-main {
-    margin-bottom: 15px;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-#subtitle {
-    color: #3c3c54;
 }
 
 .subtitle-main {
@@ -143,13 +80,7 @@ header {
     max-width: 510px;
 }
 
-.social-midia {
-    margin-top: 20px;
-    display: flex;
-}
-
 .box {
-    display: flex;
     background: #0059ad;
     padding: 5px;
     border-radius: 50%;
@@ -523,7 +454,7 @@ footer {
     justify-content: center;
 }
 
-.social-midia-contact{
+.social-midia-contact {
     display: flex;
     gap: 50px;
     margin-top: 30px;
@@ -535,7 +466,7 @@ footer {
     gap: 10px;
 }
 
-.box-contact p{
+.box-contact p {
     font-weight: 500;
 }
 
@@ -550,4 +481,3 @@ footer {
     align-items: center;
     cursor: pointer;
 }
-

@@ -27,70 +27,76 @@
 
 <body>
     <div id="tsparticles"></div>
-    <header id="top">
+    <header class="flex justify-between p-3">
 
-        <div id="top-log">
+        <video src="./assets/video/video.mp4" class="absolute top-0 left-0 w-full h-full object-cover z-[-10]"
+            preload="none" autoplay muted loop></video>
+        <div class="mask w-full h-full absolute top-0 left-0 z-[-9]"></div>
 
-            <img src="./assets/img/blue-logo.svg" alt="logo" id="logo">
-
-            <h2 id="name"><strong id="first-name">VICTOR</strong>BONIFACIO</h2>
+        <div class="flex justify-center items-center gap-2">
+            <i class="ri-code-box-fill text-amber-400 text-5xl"></i>
+            <h3 class="text-gray-400 font-extrabold text-2xl"><strong class="text-white">VICTOR</strong>BONIFACIO</h3>
         </div>
 
-        <div id="top-header">
-            <a href="#top" class="link-top-header">Inicio</a>
-            <a href="#about" class="link-top-header">Sobre</a>
-            <a href="#experiences" class="link-top-header">Experiencias</a>
-            <a href="#tech-icons" class="link-top-header">Tecnologias</a>
-            <a href="#projects" class="link-top-header">Projetos</a>
-            <a href="#contact" class="link-top-header">Contato</a>
+        <div class="flex gap-4 items-center">
+            <a href="#top" class=" text-white font-bold uppercase">Inicio</a>
+            <a href="#about" class="text-white font-bold uppercase">Sobre</a>
+            <a href="#experiences" class="text-white font-bold uppercase">Experiencias</a>
+            <a href="#tech-icons" class="text-white font-bold uppercase">Tecnologias</a>
+            <a href="#projects" class="text-white font-bold uppercase">Projetos</a>
+            <a href="#contact" class="text-white font-bold uppercase">Contato</a>
 
-            <button id="dark-light" onclick="darkMode()">
-                <i class="ri-moon-fill"></i>
+            <button class="border-1 rounded-full p-2 w-11" onclick="darkMode()">
+                <i class="ri-sun-fill text-lg text-white"></i>
             </button>
         </div>
+
     </header>
-    <main id="middle">
-        <div id="content">
-            <div id="introduction">
-                <span id="element">Sustainability that generates</span>
-                <h3 id="subtitle">Desenvolvedor Front-End</h3>
-                <p id="paragraph"> Sou apaixonado por tecnologia, inovação e por desenvolver soluções que gerem
+    <main>
+        <div class="container flex justify-center items-center text-center w-[900px] h-[450px] z-10">
+            <div class="glassmorphism bg-white/9 backdrop-blur-lg rounded-xl p-10">
+                <span class="text-3xl font-extrabold mt-2 text-amber-400">Sustainability that generates</span>
+                <h3 class="text-2xl font-bold mt-2 text-gray-300">Desenvolvedor Front-End</h3>
+                <p class="text-base max-w-lg mt-4 text-gray-100"> Sou apaixonado por tecnologia, inovação e por
+                    desenvolver soluções que gerem
                     impacto
                     real. Verifique abaixo ▼ </p>
-
-                <div class="social-midia">
-                    <div class="box">
+                <div class="flex justify-center mt-3 gap-2">
+                    <div class="bg-amber-400 p-2 rounded-full w-12">
                         <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
                             class="flex justify-center items-center">
-                            <i class="ri-linkedin-fill icon-social-midia"></i>
+                            <i class="ri-linkedin-fill text-white text-2xl"></i>
                         </a>
                     </div>
-                    <div class="box">
+                    <div class="bg-amber-400 p-2 rounded-full w-12">
                         <a href="https://github.com/VictorBonifac10" target="_blank"
                             class="flex justify-center items-center">
-                            <i class="ri-github-fill icon-social-midia"></i>
+                            <i class="ri-github-fill text-white text-2xl"></i>
                         </a>
                     </div>
-                    <div class="box">
+                    <div class="bg-amber-400 p-2 rounded-full w-12">
                         <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
                             class="flex justify-center items-center">
-                            <i class="ri-article-fill icon-social-midia"></i>
+                            <i class="ri-article-fill text-white text-2xl"></i>
                         </a>
                     </div>
-                    <div class="box">
+                    <div class="bg-amber-400 p-2 rounded-full w-12">
                         <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
                             class="flex justify-center items-center">
-                            <i class="ri-whatsapp-fill icon-social-midia"></i>
+                            <i class="ri-whatsapp-fill text-white text-2xl"></i>
                         </a>
                     </div>
                 </div>
             </div>
-            <img src="./assets/img/blue-rocket.svg" alt="Darklight" id="img-darklight">
         </div>
 
         <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
+        <br><br><br>
 
-        <div id="about">
+        <div id="about" class="mt-5">
             <img src="./assets/img/my-photo.jpg" alt="photo" width="400px" id="photo-img">
 
             <div id="about-me">
