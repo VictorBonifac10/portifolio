@@ -8,8 +8,12 @@
     font-family: "Open Sans", sans-serif;
 }
 
+body {
+    background-color: #020202;
+}
+
 .mask {
-    background: linear-gradient(109deg, rgba(0, 0, 0, 0.738) 15%, rgba(0, 0, 0, 0.738) 50%, rgba(0, 0, 0, 0.585) 85%);
+    background: linear-gradient(109deg, rgba(0, 0, 0, 0.178) 15%, rgba(0, 0, 0, 0.671) 50%, rgba(0, 0, 0, 0.585) 85%);
 }
 
 .glassmorphism:hover {
@@ -39,55 +43,6 @@
     cursor: pointer;
 }
 
-#photo-img {
-    margin-top: 25px;
-    margin-right: 50px;
-    border-radius: 50%;
-    border: 20px solid #0059ad;
-}
-
-#about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 45px 0px 30px 0px;
-    background-color: rgba(34, 80, 186, 0.196);
-    border: 1px solid rgba(34, 80, 186, 0.196);
-    padding: 30px 40px 40px 40px;
-}
-
-#about-me {
-    margin-right: 70px;
-}
-
-.subtitle-main {
-    display: flex;
-    justify-content: center;
-    color: #0059ad;
-}
-
-#about-me .subtitle-main {
-    display: block;
-}
-
-#paragraph {
-    color: #3c3c54;
-    margin-top: 30px;
-    max-width: 510px;
-}
-
-.box {
-    background: #0059ad;
-    padding: 5px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
 .icon-social-midia {
     display: flex;
     justify-content: center;
@@ -95,10 +50,6 @@
     align-items: center;
     font-size: 22px;
     cursor: pointer;
-}
-
-#projects-title {
-    margin-top: 20px;
 }
 
 body,
@@ -111,153 +62,36 @@ p,
     transition: color 0.3s ease, background-color 0.2s ease;
 }
 
-#experiences {
-    margin: 10px 10px 80px 10px;
-}
-
-#display {
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#stripe {
-    width: 1px;
-    height: 500px;
-    background-color: #0059ad;
-    margin-right: 40px;
-}
-
-.ponto {
-    position: relative;
-    left: 14%;
+.point {
+    left: 1px;
     transform: translateX(-46%);
-    width: 17px;
-    height: 17px;
-    background-color: #0059ad;
-    border-radius: 50%;
-    border: 5px solid rgba(230, 244, 255, 0.9);
+    border: 5px solid rgba(230, 244, 255, 0.822);
 }
 
-.ponto .um {
-    top: 90%;
+.box-job:hover {
+    transform: scale(1.1);
+    border-radius: 0%;
+    transition: 1s;
+
+    background-color: rgb(255, 255, 255);
+
 }
 
+.tech-icons {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
 
-#professional-exp {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
-.box-professional-exp {
-    width: 850px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border: 0.5px solid rgba(245, 245, 245, 0.8);
-    border-radius: 15px;
-    padding: 25px 25px 18px 25px;
-    box-shadow: 4px 4px 4px rgba(190, 190, 190, 0.4);
-    transition: 0.2s;
-}
-
-.box-professional-exp:hover {
-    background-color: rgba(250, 250, 250, 0.8);
-    box-shadow: 8px 8px 8px rgba(190, 190, 190, 0.4);
-}
-
-.title-job {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.company {
-    font-size: 13px;
-    margin-bottom: -12px;
-    font-weight: 500;
-}
-
-.job-details {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.year {
-    background-color: #fff;
-    color: #0059ad;
-    font-size: 12px;
-    font-weight: bolder;
-    border: 1px solid transparent;
-    border-radius: 50px;
-    box-shadow: 2px 2px 2px rgba(190, 190, 190, 0.4);
-    padding: 5px 13px 5px 13px;
-    margin-left: 20px;
-    font-size: 12px;
-}
-
-.functions {
-    display: flex;
-    font-size: 14px;
-    align-items: center;
-    text-align: justify;
-    max-width: 650px;
-    margin: 10px 0px 0px 0px;
-    gap: 10px;
-}
-
-.functions i {
-    color: #0059ad;
-    font-size: 30px;
-}
-
-.photoshop-icon span {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-}
-
-.technologies,
-.technologies-project {
-    display: flex;
-    margin-top: 5px;
-}
-
-.technologies {
-    margin-top: 5px;
-    gap: 10px;
-}
-
-.technologies-project {
-    margin-top: -13px;
-    gap: 5px;
-}
-
-.technologies i,
-.technologies-project i {
+.technologies i{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0059ad;
     background-color: #ffffff;
     box-shadow: 1px 1px 3px rgba(190, 190, 190, 0.2);
     border-radius: 50px;
     padding: 8px 14px;
-}
-
-.technologies i {
-    padding: 8px 14px;
-    font-size: 22px;
+    font-size: 20px;
     position: relative;
-}
-
-.technologies-project i {
-    padding: 5px 11px;
-    font-size: 17px;
 }
 
 .technologies i::after {
@@ -284,15 +118,6 @@ p,
     opacity: 1;
 }
 
-#tech-icons {
-    background-color: rgba(34, 80, 186, 0.196);
-    border: 1px solid rgba(34, 80, 186, 0.196);
-    border-right: none;
-    border-left: none;
-    margin: 90px 0px 90px 0px;
-    padding: 50px;
-}
-
 .carousel-tech-icons {
     display: flex;
     overflow-x: hidden;
@@ -300,11 +125,6 @@ p,
     gap: 24px;
     padding: 20px 18px;
     max-width: 850px;
-}
-
-.carousel-track {
-    display: flex;
-    gap: 20px;
 }
 
 .carousel-tech-icons::-webkit-scrollbar {
@@ -344,20 +164,6 @@ p,
     flex-shrink: 0;
 }
 
-.carousel-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    margin: 30px 5px;
-    padding: 10px 70px 10px 70px;
-    gap: 30px;
-}
-
 .card-box {
     display: flex;
     gap: 10px;
@@ -378,36 +184,6 @@ p,
     margin: 0;
     border-start-start-radius: 10px;
     border-end-start-radius: 10px;
-}
-
-.title-project {
-    margin: 10px 0px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #0059ad;
-}
-
-.title-line {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-}
-
-.title-line hr {
-    width: 1000px;
-    opacity: 0.1;
-}
-
-.description-project {
-    font-size: 12px;
-    max-width: auto;
-}
-
-.title-line-name {
-    font-size: 15px;
-    font-weight: 700;
-    color: #0059ad;
 }
 
 .contact-flex {

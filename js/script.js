@@ -1,3 +1,7 @@
+AOS.init();
+
+/*
+
 let dark = false
 const back = document.querySelector("body")
 const log = document.querySelector("#logo")
@@ -13,8 +17,6 @@ const myPhoto = document.querySelector("#photo-img")
 const aboutMe = document.querySelector("#paragraph-me")
 const workMe = document.querySelectorAll(".work")
 const arrowIcon = document.querySelectorAll(".arrow")
-
-AOS.init();
 
 function darkMode() {
     if (dark === false) {
@@ -98,6 +100,8 @@ function darkMode() {
     }
 
 }
+
+*/
 
 //carousel tech icons
 

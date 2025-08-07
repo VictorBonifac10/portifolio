@@ -9,16 +9,16 @@ tsParticles.load("tsparticles", {
       value: 50
     },
     color: {
-      value: "#949899" // cor das partículas
+      value: "#333333" // cor das partículas
     },
     opacity: {
-      value: 0.2 // opacidade das partículas
+      value: 0.3 // opacidade das partículas
     },
     links: {
       enable: true,
       distance: 150,
-      color: "#949899", // cor das linhas de conexão
-      opacity: 0.2 // opacidade das linhas
+      color: "#333333", // cor das linhas de conexão
+      opacity: 0.3 // opacidade das linhas
     },
     move: {
       enable: true,
