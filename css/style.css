@@ -9,7 +9,7 @@
 }
 
 .mask {
-    background: linear-gradient(109deg, rgba(255, 255, 255, 0.015) 15%, rgba(53, 48, 28, 0.284) 50%, rgba(0, 22, 88, 0.223) 85%);
+    background: linear-gradient(109deg, rgba(0, 0, 0, 0.738) 15%, rgba(0, 0, 0, 0.738) 50%, rgba(0, 0, 0, 0.585) 85%);
 }
 
 .glassmorphism:hover {
@@ -17,7 +17,7 @@
     border-radius: 0%;
     transition: 1s;
 
-    background-color: rgba(255, 213, 0, 0.055);
+    background-color: rgba(37, 35, 27, 0.484);
 }
 
 .link-top-header {
@@ -58,10 +58,6 @@
 
 #about-me {
     margin-right: 70px;
-}
-
-#element {
-    color: #0059ad;
 }
 
 .subtitle-main {
