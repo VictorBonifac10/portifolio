@@ -8,10 +8,6 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body {
-    background-color: #020202;
-}
-
 .mask {
     background: linear-gradient(109deg, rgba(0, 0, 0, 0.178) 15%, rgba(0, 0, 0, 0.671) 50%, rgba(0, 0, 0, 0.585) 85%);
 }
@@ -20,66 +16,15 @@ body {
     transform: scale(1.1);
     border-radius: 0%;
     transition: 1s;
-
     background-color: rgba(37, 35, 27, 0.484);
 }
 
-.link-top-header {
-    margin-right: 20px;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 600;
-    color: #0059ad;
-}
-
-.dark-light {
-    font-size: 15px;
-    font-weight: 400;
-    color: #3c3c54;
-    padding: 10px 14px;
-    border-radius: 50px;
-    background-color: transparent;
-    border: 1.5px solid #0059ad;
-    cursor: pointer;
-}
-
-.icon-social-midia {
-    display: flex;
-    justify-content: center;
-    color: #fff;
-    align-items: center;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-body,
-#name,
-.link-top-header,
-p,
-#subtitle,
-#title,
-.box {
-    transition: color 0.3s ease, background-color 0.2s ease;
-}
+/*exp*/
 
 .point {
     left: 1px;
     transform: translateX(-46%);
     border: 5px solid rgba(230, 244, 255, 0.822);
-}
-
-.box-job:hover {
-    transform: scale(1.1);
-    border-radius: 0%;
-    transition: 1s;
-
-    background-color: rgb(255, 255, 255);
-
-}
-
-.tech-icons {
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-
 }
 
 .technologies i{
@@ -118,11 +63,13 @@ p,
     opacity: 1;
 }
 
+/*technologies*/
+
 .carousel-tech-icons {
     display: flex;
     overflow-x: hidden;
     scroll-behavior: auto;
-    gap: 24px;
+    gap: 50px;
     padding: 20px 18px;
     max-width: 850px;
 }
@@ -140,7 +87,8 @@ p,
     width: 90px;
     height: 120px;
     background: white;
-    border-radius: 10px;
+    border: 1.5px solid white;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,107 +97,19 @@ p,
     transition: all 0.3s;
 }
 
-
-.box-i p {
-    font-size: 10px;
-}
-
-.box-i p {
-    font-size: 10px;
-}
-
 .carousel-tech-icons i {
     font-size: 32px;
     cursor: pointer;
     flex-shrink: 0;
 }
 
+/*projects*/
+
 .card-box {
-    display: flex;
-    gap: 10px;
-    width: 500px;
-    height: 150px;
-    background-color: #fff;
-    border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(190, 190, 190, 0.4);
     transition: 0.2s;
 }
 
 .card-box:hover {
     transform: scale(1.1);
-}
-
-.card-box img {
-    width: auto;
-    margin: 0;
-    border-start-start-radius: 10px;
-    border-end-start-radius: 10px;
-}
-
-.contact-flex {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-information {
-    max-width: 400px;
-}
-
-.box-form {
-    max-width: 400px;
-}
-
-.text-information {
-    margin-bottom: 20px;
-}
-
-.title-contact {
-    color: #0059ad;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 10px 0px;
-}
-
-
-.contact-information .social-midia {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-footer {
-    margin: 90px 0px 40px 0px;
-    display: flex;
-    justify-content: center;
-}
-
-.social-midia-contact {
-    display: flex;
-    gap: 50px;
-    margin-top: 30px;
-}
-
-.box-contact {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.box-contact p {
-    font-weight: 500;
-}
-
-.icon-social-midia-contact {
-    display: flex;
-    background: #0059ad;
-    color: #fff;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
 }

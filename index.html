@@ -25,7 +25,7 @@
     <title>Victor Bonifácio | Portifolio</title>
 </head>
 
-<body>
+<body class="bg-[#020202]">
     <div id="tsparticles"></div>
     <header class="flex justify-between p-4">
 
@@ -59,7 +59,7 @@
                 <h3 class="text-2xl font-bold mt-2 text-gray-300">Desenvolvedor Front-End</h3>
                 <p class="text-base max-w-lg mt-4 text-gray-100"> Sou apaixonado por tecnologia, inovação e por
                     desenvolver soluções que gerem impacto real. Verifique abaixo ▼ </p>
-                <div class="flex justify-center mt-4 mb-2 gap-2">
+                <div class="container flex justify-center mt-4 mb-2 gap-2">
                     <div class="bg-amber-400 p-2 rounded-full w-12">
                         <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
                             class="flex justify-center items-center">
@@ -92,21 +92,51 @@
         <div class="flex flex-col items-center mb-3">
             <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Sobre mim</h3>
             <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
-            <p class="text-gray-300">Desenvolvedor Web Front-End</p>
+            <p class="text-gray-300">Conheça-me mais</p>
         </div>
 
-        <div class="flex justify-center items-center gap-5">
-            <img src="./assets/img/my-photo.jpg" alt="photo" width="300px" class="rounded-2xl">
+        <div class="container flex justify-center items-center gap-4">
+            <div
+                class="bg-white/10 border-1 border-white/10 rounded-lg hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+                <img src="./assets/img/my-photo.jpg" alt="photo" width="370px" class="rounded-3xl p-3">
+            </div>
 
-            <div class="max-w-[700px] text-[18px] font-sm">
-                <h1 class="mb-1 text-white text-[25px]">Olá! Meu nome é <span class="font-semibold">Victor A.
-                        Bonifácio</span></h1>
-                <p class="mb-4 text-white">E gosto de transformar desafios em soluções digitais práticas, bem pensadas e
+            <div class="max-w-[700px] text-[18px] font-sm mb-2">
+                <h1
+                    class="bg-white/10 rounded-lg text-justify p-3 text-lg mb-2 text-white border-1 border-white/10 hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+                    Olá! Meu nome é
+                    <span id="myname" class="font-semibold text-amber-500">Victor A. Bonifácio</span>
+                </h1>
+                <p
+                    class="bg-white/10 rounded-lg p-3 text-lg mb-2 text-white border-1 border-white/10 hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+                    E gosto de transformar desafios em
+                    soluções digitais práticas, bem pensadas e
                     funcionais.</p>
-                <p class="text-justify text-white">
+                <p
+                    class="bg-white/10 rounded-lg p-3 text-lg text-white border-1 border-white/10 hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
                     Com formação em Sistemas para Internet, venho me dedicando ao desenvolvimento Front-End, focando em
                     criar interfaces acessíveis, organizadas e alinhadas ao que o projeto realmente precisa.
                 </p>
+
+                <div class="flex items-center mt-2 gap-3">
+                    <div
+                        class="bg-white/10 rounded-lg p-3 flex justify-center items-center gap-3 border-1 border-white/10 hover:border-lime-700 hover:scale-105 hover:bg-lime-700/10 hover:rounded-[1px] transition-all">
+                        <i class="ri-braces-line text-lg text-lime-700"></i>
+                        <p class="text-xs text-white">Foco em código limpo, versionamento eficaz e soluções organizadas.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white/10 rounded-lg p-3 flex justify-center items-center gap-3 border-1 border-white/10 hover:border-pink-600 hover:scale-105 hover:bg-pink-600/10 hover:rounded-[1px] transition-all">
+                        <i class="ri-edit-2-fill text-lg text-pink-600"></i>
+                        <p class="text-xs text-white">Valorizo o design funcional com foco na melhor experiência do
+                            usuário.</p>
+                    </div>
+                    <div
+                        class="bg-white/10 rounded-lg p-3 flex justify-center items-center gap-3 border-1 border-white/10 hover:border-blue-500 hover:scale-105 hover:bg-blue-500/10 hover:rounded-[1px] transition-all">
+                        <i class="ri-group-fill text-lg text-blue-500"></i>
+                        <p class="text-xs text-white">Comprometido com a colaboração e o aprendizado contínuo.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -114,13 +144,13 @@
         <div class="flex flex-col items-center mb-3">
             <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Experiencias</h3>
             <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
-            <p class="text-gray-300">Desenvolvedor Web Front-End</p>
+            <p class="text-gray-300">O caminho que me trouxe até aqui</p>
         </div>
 
 
         <div data-aos="fade-up" data-aos-duration="1500"> <!--AOS-->
             <div class="container">
-                <div class=" m-10 flex justify-center items-center">
+                <div class="mb-0 flex justify-center items-center">
 
                     <div class="w-1 h-[500px] bg-amber-400 mr-[20px]">
                         <div class="point relative w-[17px] h-[17px] bg-amber-400 rounded-full top-[4%]">
@@ -128,17 +158,18 @@
                     </div>
 
                     <div class="container m-5 flex flex-col gap-5 max-w-[900px]">
-                        <div class="container box-job flex flex-col gap-5 bg-white/70 rounded-2xl pt-3 pb-3 pl-5 pr-5">
+                        <div
+                            class="container flex flex-col gap-5 bg-white/10 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all pt-3 pb-3 pl-5 pr-5">
                             <div class="flex justify-between">
                                 <div>
-                                    <h5 class="text-base text-gray-600 font-extrabold">Desenvolvedor Front-End</h5>
-                                    <p class="text-sm font-extralight">Freelancer</p>
+                                    <h5 class="text-base text-gray-50 font-extrabold">Desenvolvedor Front-End</h5>
+                                    <p class="text-sm text-gray-200 font-extralight">Freelancer</p>
                                 </div>
                                 <p
-                                    class="text-sm text-amber-400 font-semibold bg-amber-50 rounded-full flex justify-center items-center w-[150px]">
+                                    class="text-sm text-amber-400 font-semibold bg-transparent flex justify-center items-center w-[150px] shadow-2xl">
                                     2025 - o momento</p>
                             </div>
-                            <p class="text-sm max-w-[750px] mt-[-35px] mb-[-40px]">
+                            <p class="text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
                                 <i class="ri-arrow-right-s-fill text-amber-400 text-lg"></i>
                                 Estruturadas. Meu foco é sempre otimizar processos complexos com eficiência, garantindo
                                 resultados consistentes e alinhados às necessidades do negócio.
@@ -153,18 +184,19 @@
                                 <i class="ri-database-2-fill" data-tooltip="Banco de Dados"></i>
                             </div>
                         </div>
-                        <div class="container box-job flex flex-col gap-5 bg-white/70 rounded-2xl pt-3 pb-3 pl-5 pr-5">
+                        <div
+                            class="container flex flex-col gap-5 bg-white/10 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all pt-3 pb-3 pl-5 pr-5">
                             <div class="flex justify-between">
                                 <div>
-                                    <h5 class="text-base text-gray-600 font-extrabold">Analista de Marketing e Mídias
+                                    <h5 class="text-base text-gray-50 font-extrabold">Analista de Marketing e Mídias
                                         Digitais</h5>
-                                    <p class="text-sm font-extralight">Rotsen Eqpto. Agropecuários LTDA</p>
+                                    <p class="text-sm text-gray-50 font-extralight">Rotsen Eqpto. Agropecuários LTDA</p>
                                 </div>
                                 <p
-                                    class="text-sm text-amber-400 font-semibold bg-amber-50 rounded-full flex justify-center items-center w-[150px]">
+                                    class="text-sm text-amber-400 font-semibold flex justify-center items-center w-[150px] shadow-2xl">
                                     2024 - 2025</p>
                             </div>
-                            <p class="text-sm max-w-[750px] mt-[-35px] mb-[-40px]">
+                            <p class="text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
                                 <i class="ri-arrow-right-s-fill text-amber-400 text-lg"></i>
                                 estruturadas. Meu foco é sempre otimizar processos complexos com eficiência, garantindo
                                 resultados
@@ -180,18 +212,19 @@
                                 <i class="ri-file-excel-2-fill" data-tooltip="Excel"></i>
                             </div>
                         </div>
-                        <div class="container box-job flex flex-col gap-5 bg-white/70 rounded-2xl pt-3 pb-3 pl-5 pr-5">
+                        <div
+                            class="container flex flex-col gap-5 bg-white/10 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all pt-3 pb-3 pl-5 pr-5">
                             <div class="flex justify-between">
                                 <div>
-                                    <h5 class="text-base text-gray-600 font-extrabold">Assistente Administrativo de
+                                    <h5 class="text-base text-gray-50 font-extrabold">Assistente Administrativo de
                                         Escritório</h5>
-                                    <p class="text-sm font-extralight">Triângulo Do Sol Auto - Estradas</p>
+                                    <p class="text-sm text-gray-50 font-extralight">Triângulo Do Sol Auto - Estradas</p>
                                 </div>
                                 <p
-                                    class="text-sm text-amber-400 font-semibold bg-amber-50 rounded-full flex justify-center items-center w-[150px]">
+                                    class="text-sm text-amber-400 font-semibold flex justify-center items-center w-[150px] shadow-2xl">
                                     2021 - 2022</p>
                             </div>
-                            <p class="text-sm max-w-[750px] mt-[-35px] mb-[-40px]">
+                            <p class="text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
                                 <i class="ri-arrow-right-s-fill text-amber-400 text-lg"></i>
                                 estruturadas. Meu foco é sempre otimizar processos complexos com eficiência, garantindo
                                 resultados
@@ -204,6 +237,11 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="flex justify-center items-center">
+                    <a href="#" target="_blank" class="text-amber-400 font-extrabold underline">Baixar CV Completo</a>
+                </div>
+
             </div>
         </div>
 
@@ -213,122 +251,142 @@
             <div class="flex flex-col items-center mb-3">
                 <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Tecnologias</h3>
                 <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
-                <p class="text-gray-300">Desenvolvedor Web Front-End</p>
+                <p class="text-gray-300">Ferramentas modernas para soluções inovadoras</p>
             </div>
 
             <div class="container flex items-center justify-center">
                 <div class="carousel-tech-icons" id="iconCarousel">
                     <div class="flex gap-5">
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-orange-500 hover:bg-orange-500/10 transition-all">
                             <i class="ri-html5-fill group-hover:text-orange-500 transition-colors"></i>
-                            <p>HTML5</p>
+                            <p class="group-hover:text-orange-500 text-[10px]">HTML5</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-blue-500 hover:bg-blue-500/10 transition-all">
                             <i class="ri-css3-fill group-hover:text-blue-500 transition-colors"></i>
-                            <p>CSS3</p>
+                            <p class="group-hover:text-blue-500 text-[10px]">CSS3</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-purple-500 hover:bg-blue-500/10 transition-all">
                             <i class="ri-bootstrap-fill group-hover:text-purple-500 transition-colors"></i>
-                            <p>Bootstrap</p>
+                            <p class="group-hover:text-purple-500 text-[10px]">Bootstrap</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-gray-700 hover:bg-gray-700/10 transition-all">
                             <svg viewBox="0 0 128 128" class="mt-2" width="40px" height="40px">
                                 <path
                                     d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
                                     fill="#363636">
                                 </path>
                             </svg>
-                            <p class="mt-2">Tailwind</p>
+                            <p class="mt-2 text-[10px] text-gray-700">Tailwind</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-yellow-500 hover:bg-yellow-500/10   transition-all">
                             <i class="ri-javascript-fill group-hover:text-yellow-500 transition-colors"></i>
-                            <p>Javascript</p>
+                            <p class="group-hover:text-yellow-500 text-[10px]">Javascript</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-red-500 hover:bg-red-500/10   transition-all">
                             <i class="ri-github-fill group-hover:text-red-500 transition-colors"></i>
-                            <p>Github</p>
+                            <p class="group-hover:text-red-500 text-[10px]">Github</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-orange-500 hover:bg-orange-500/10   transition-all">
                             <i class="mt-2 devicon-git-plain group-hover:text-orange-500 transition-colors"></i>
-                            <p class="mt-2">Git</p>
+                            <p class="mt-2 group-hover:text-orange-500 text-[10px]">Git</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-blue-800 hover:bg-blue-800/10 transition-all">
                             <i class="ri-reactjs-fill group-hover:text-blue-800 transition-colors"></i>
-                            <p>React</p>
+                            <p class="group-hover:text-blue-800 text-[10px]">React</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                            <i class="mt-2 devicon-mongodb-plain group-hover:text-lime-500 transition-colors"></i>
-                            <p class="mt-2">MongoDB</p>
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:bg-green-500/10  hover:border-lime-800  transition-all">
+                            <i class="mt-2 devicon-mongodb-plain group-hover:text-lime-700 transition-colors"></i>
+                            <p class="mt-2 group-hover:text-lime-700 text-[10px]">MongoDB</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:bg-lime-500/10  hover:border-lime-500  transition-all">
                             <i class="mt-2 devicon-nodejs-plain group-hover:text-lime-500 transition-colors"></i>
-                            <p class="mt-2">Node.js</p>
+                            <p class="mt-2 group-hover:text-lime-500 text-[10px]">Node.js</p>
                         </div>
                     </div>
 
                     <div class="flex gap-5"> <!--duplicado-->
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-orange-500 hover:bg-orange-500/10 transition-all">
                             <i class="ri-html5-fill group-hover:text-orange-500 transition-colors"></i>
-                            <p>HTML5</p>
+                            <p class="group-hover:text-orange-500 text-[10px]">HTML5</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-blue-500 hover:bg-blue-500/10 transition-all">
                             <i class="ri-css3-fill group-hover:text-blue-500 transition-colors"></i>
-                            <p>CSS3</p>
+                            <p class="group-hover:text-blue-500 text-[10px]">CSS3</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-purple-500 hover:bg-blue-500/10 transition-all">
                             <i class="ri-bootstrap-fill group-hover:text-purple-500 transition-colors"></i>
-                            <p>Bootstrap</p>
+                            <p class="group-hover:text-purple-500 text-[10px]">Bootstrap</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-gray-700 hover:bg-gray-700/10 transition-all">
                             <svg viewBox="0 0 128 128" class="mt-2" width="40px" height="40px">
                                 <path
                                     d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
                                     fill="#363636">
                                 </path>
                             </svg>
-                            <p class="mt-2">Tailwind</p>
+                            <p class="mt-2 text-[10px] text-gray-700">Tailwind</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-yellow-500 hover:bg-yellow-500/10   transition-all">
                             <i class="ri-javascript-fill group-hover:text-yellow-500 transition-colors"></i>
-                            <p>Javascript</p>
+                            <p class="group-hover:text-yellow-500 text-[10px]">Javascript</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-red-500 hover:bg-red-500/10   transition-all">
                             <i class="ri-github-fill group-hover:text-red-500 transition-colors"></i>
-                            <p>Github</p>
+                            <p class="group-hover:text-red-500 text-[10px]">Github</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-orange-500 hover:bg-orange-500/10   transition-all">
                             <i class="mt-2 devicon-git-plain group-hover:text-orange-500 transition-colors"></i>
-                            <p class="mt-2">Git</p>
+                            <p class="mt-2 group-hover:text-orange-500 text-[10px]">Git</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-blue-800 hover:bg-blue-800/10 transition-all">
                             <i class="ri-reactjs-fill group-hover:text-blue-800 transition-colors"></i>
-                            <p>React</p>
+                            <p class="group-hover:text-blue-800 text-[10px]">React</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
-                            <i class="mt-2 devicon-mongodb-plain group-hover:text-lime-500 transition-colors"></i>
-                            <p class="mt-2">MongoDB</p>
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:bg-green-500/10  hover:border-lime-800  transition-all">
+                            <i class="mt-2 devicon-mongodb-plain group-hover:text-lime-700 transition-colors"></i>
+                            <p class="mt-2 group-hover:text-lime-700 text-[10px]">MongoDB</p>
                         </div>
 
-                        <div class="box-i group hover:scale-110 hover:rounded-[1px] transition-all">
+                        <div
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:bg-lime-500/10  hover:border-lime-500  transition-all">
                             <i class="mt-2 devicon-nodejs-plain group-hover:text-lime-500 transition-colors"></i>
-                            <p class="mt-2">Node.js</p>
+                            <p class="mt-2 group-hover:text-lime-500 text-[10px]">Node.js</p>
                         </div>
                     </div>
                 </div>
@@ -338,157 +396,174 @@
         <div class="flex flex-col items-center mb-3">
             <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Projetos</h3>
             <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
-            <p class="text-gray-300">Desenvolvedor Web Front-End</p>
+            <p class="text-gray-300">Da ideia inicial ao projeto final</p>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1500"> <!--AOS-->
-            <div id="projects">
-                <div class="flex justify-center mt-[30px] mb-0 ml-5 mr-5 p-5 gap-5">
-                    <div class="card-box">
-                        <img src="./assets/img/my-photo.jpg" alt="projeto">
-                        <div class="">
-                            <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Blanditiis in molestias a.</p>
-                            <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                                <i
-                                    class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                                <i
-                                    class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-box">
-                        <img src="./assets/img/my-photo.jpg" alt="projeto">
-                        <div class="">
-                            <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Blanditiis in molestias a.</p>
-                            <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                                <i
-                                    class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                                <i
-                                    class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-box">
-                        <img src="./assets/img/my-photo.jpg" alt="projeto">
-                        <div class="">
-                            <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Blanditiis in molestias a.</p>
-                            <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                                <i
-                                    class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                                <i
-                                    class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            </div>
+            <div class="flex justify-center mt-[30px] mb-[-15px] ml-5 mr-5 p-5 gap-5">
+                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
+                        alt="projeto">
+                    <div class="">
+                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
+                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
+                            <i
+                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                            <i
+                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
                         </div>
                     </div>
                 </div>
+                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
+                        alt="projeto">
+                    <div class="">
+                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
+                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
+                            <i
+                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                            <i
+                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
+                        alt="projeto">
+                    <div class="">
+                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
+                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
+                            <i
+                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                            <i
+                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <div class="flex justify-center mt-[-20px] mb-[30px] ml-5 mr-5 p-5 gap-5">
-                    <div class="card-box">
-                        <img src="./assets/img/my-photo.jpg" alt="projeto">
-                        <div class="">
-                            <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Blanditiis in molestias a.</p>
-                            <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                                <i
-                                    class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                                <i
-                                    class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-box">
-                        <img src="./assets/img/my-photo.jpg" alt="projeto">
-                        <div class="">
-                            <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Blanditiis in molestias a.</p>
-                            <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                                <i
-                                    class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                                <i
-                                    class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-box">
-                        <img src="./assets/img/my-photo.jpg" alt="projeto">
-                        <div class="">
-                            <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                            <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Blanditiis in molestias a.</p>
-                            <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                                <i
-                                    class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                                <i
-                                    class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            </div>
+            <div class="flex justify-center mt-[-20px] mb-[30px] ml-5 mr-5 p-5 gap-5">
+                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
+                        alt="projeto">
+                    <div class="">
+                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
+                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
+                            <i
+                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                            <i
+                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
                         </div>
                     </div>
                 </div>
-                <div class="flex justify-center items-center">
-                    <a href="https://github.com/VictorBonifac10" target="_blank" class="text-amber-400">outros
-                        projetos...</a>
+                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
+                        alt="projeto">
+                    <div class="">
+                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
+                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
+                            <i
+                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                            <i
+                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        </div>
+                    </div>
                 </div>
+                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
+                        alt="projeto">
+                    <div class="">
+                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
+                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Blanditiis in molestias a.</p>
+                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
+                            <i
+                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                            <i
+                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center mt-[-30px]">
+                <a href="https://github.com/VictorBonifac10" target="_blank"
+                    class="text-amber-400 underline font-extrabold">Outros Projetos</a>
             </div>
         </div>
 
-        <div class="contact px-4 py-8" id="contact">
-            <div class="contact-flex flex flex-col md:flex-row gap-8">
-                <div class="contact-information md:w-1/2">
-                    <h3 class="title-contact">Contato</h3>
-                    <p class="text-information text-gray-700">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat tenetur
-                        iste,
-                        expedita, excepturi et alias quam ipsa voluptates delectus.
-                    </p>
-                    <hr>
-                    <h3 class="title-contact">Redes Sociais</h3>
-                    <div class="social-midia-contact">
-                        <div class="flex flex-col gap-2">
-                            <div class="box-contact">
-                                <i class="ri-linkedin-fill icon-social-midia-contact"></i>
-                                <a href="https://www.linkedin.com/in/victor-alves-bonifacio/"
-                                    target="_blank">Linkedin</a>
-                            </div>
-                            <div class="box-contact">
-                                <i class="ri-github-fill icon-social-midia-contact"></i>
-                                <a href="https://github.com/VictorBonifac10" target="_blank">Github</a>
-                            </div>
+        <div class="flex flex-col items-center mt-[80px] mb-3">
+            <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Contato</h3>
+            <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
+            <p class="text-gray-300">Envie-me uma mensagem!</p>
+        </div>
+
+        <div class="flex flex-row gap-8 justify-center mt-5">
+            <div class="max-w-[400px] mt-0">
+                <h3 class="text-amber-400 text-sm font-extrabold mb-2">Entre em contato comigo</h3>
+                <p class="flex items-center text-white mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat tenetur
+                    iste,
+                    expedita, excepturi et alias quam ipsa voluptates delectus.
+                </p>
+                <hr>
+                <h3 class="text-amber-400 text-sm font-extrabold mt-3">Redes Sociais</h3>
+                <div class="flex mt-4 gap-5">
+                    <div class="flex flex-col gap-2">
+                        <div class="flex items-center gap-2">
+                            <i
+                                class="ri-linkedin-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
+                            <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
+                                class="text-white">Linkedin</a>
                         </div>
-                        <div class="flex flex-col gap-2">
-                            <div class="box-contact">
-                                <i class="ri-article-fill icon-social-midia-contact"></i>
-                                <a href="#" target="_blank">Currículo</a>
-                            </div>
-                            <div class="box-contact">
-                                <i class="ri-whatsapp-fill icon-social-midia-contact"></i>
-                                <a href="#" target="_blank">Whatsapp</a>
-                            </div>
+                        <div class="flex items-center gap-2">
+                            <i
+                                class="ri-github-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
+                            <a href="https://github.com/VictorBonifac10" target="_blank" class="text-white">Github</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex items-center gap-2">
+                            <i
+                                class="ri-article-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
+                            <a href="#" target="_blank" class="text-white">Currículo</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i
+                                class="ri-whatsapp-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
+                            <a href="#" target="_blank" class="text-white">Whatsapp</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="box-form forms md:w-1/2 md:pl-8 md:border-l md:border-gray-300">
-                    <h3 class="title-contact">Envie-me uma mensagem!</h3>
-                    <form action="" class="flex flex-col gap-4">
-                        <input type="text" placeholder="Seu nome" class="border p-2 rounded" />
-                        <input type="text" placeholder="Seu e-mail" class="border p-2 rounded" />
-                        <textarea placeholder="Digite sua mensagem..."
-                            class="w-full h-32 p-2 border border-gray-300"></textarea>
-                        <button
-                            class="bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-colors">Enviar</button>
-                    </form>
-                </div>
+            <div class="max-w-[400px] forms md:w-1/2 md:pl-8 md:border-l md:border-gray-300">
+
+                <h3 class="text-amber-400 text-sm font-extrabold mb-2">Envie-me uma mensagem!</h3>
+
+                <form action="" class="flex flex-col gap-4">
+                    <input type="text" placeholder="Seu nome" class="border p-2 rounded" />
+                    <input type="text" placeholder="Seu e-mail" class="border p-2 rounded" />
+                    <textarea placeholder="Digite sua mensagem..."
+                        class="w-full h-32 p-2 border border-gray-300"></textarea>
+
+                    <button
+                        class="bg-amber-400 text-white py-2 rounded hover:bg-amber-500 transition-colors">Enviar</button>
+                </form>
             </div>
         </div>
     </main>
-    <footer>
-        <h3 class="rights-reserved">© 2025 Victor Bonifácio Portfolio. Todos os direitos reservados.</h3>
+    <footer class="flex justify-center m-5">
+        <h3>© 2025 Victor Bonifácio Portfolio. Todos os direitos reservados.</h3>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>
