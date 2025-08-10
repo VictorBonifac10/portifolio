@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./css/particles.css">
     <title>Victor Bonifácio | Portifolio</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/code-box-fill.svg" type="image/x-icon">
 </head>
 
 <body class="bg-[#020202]">
@@ -46,49 +48,44 @@
             <a href="#projects" class="text-white font-bold uppercase">Projetos</a>
             <a href="#contact" class="text-white font-bold uppercase">Contato</a>
 
-            <button class="border-1 rounded-full p-2 w-11" onclick="darkMode()">
+            <button class="border-1 rounded-full p-2 w-11" id="dark-light">
                 <i class="ri-sun-fill text-lg text-white"></i>
             </button>
         </div>
-
     </header>
+
     <main>
+        <a href="#top"
+            class="fixed bottom-4 right-4 flex justify-center items-center cursor-pointer bg-amber-400 rounded-full p-2 w-10 h-10 shadow-lg mr-3 mt-2">
+            <i class="ri-skip-up-line text-lg font-"></i>
+        </a>
         <div class="container flex justify-center items-center text-center w-[900px] h-[450px]">
             <div class="glassmorphism bg-white/9 backdrop-blur-[20px] rounded-xl p-10">
                 <span id="element" class="text-3xl font-extrabold mt-3 text-amber-400">...</span>
                 <h3 class="text-2xl font-bold mt-2 text-gray-300">Desenvolvedor Front-End</h3>
                 <p class="text-base max-w-lg mt-4 text-gray-100"> Sou apaixonado por tecnologia, inovação e por
                     desenvolver soluções que gerem impacto real. Verifique abaixo ▼ </p>
-                <div class="container flex justify-center mt-4 mb-2 gap-2">
-                    <div class="bg-amber-400 p-2 rounded-full w-12">
-                        <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
-                            class="flex justify-center items-center">
-                            <i class="ri-linkedin-fill text-white text-2xl"></i>
-                        </a>
-                    </div>
-                    <div class="bg-amber-400 p-2 rounded-full w-12">
-                        <a href="https://github.com/VictorBonifac10" target="_blank"
-                            class="flex justify-center items-center">
-                            <i class="ri-github-fill text-white text-2xl"></i>
-                        </a>
-                    </div>
-                    <div class="bg-amber-400 p-2 rounded-full w-12">
-                        <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
-                            class="flex justify-center items-center">
-                            <i class="ri-article-fill text-white text-2xl"></i>
-                        </a>
-                    </div>
-                    <div class="bg-amber-400 p-2 rounded-full w-12">
-                        <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
-                            class="flex justify-center items-center">
-                            <i class="ri-whatsapp-fill text-white text-2xl"></i>
-                        </a>
-                    </div>
+                <div class="container technologies flex justify-center mt-4 mb-2 gap-2">
+                    <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
+                        class="flex justify-center items-center">
+                        <i class="ri-linkedin-fill text-white text-2xl" data-tooltip="Linkedin"></i>
+                    </a>
+                    <a href="https://github.com/VictorBonifac10" target="_blank"
+                        class="flex justify-center items-center">
+                        <i class="ri-github-fill text-white text-2xl" data-tooltip="Github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="flex justify-center items-center">
+                        <i class="ri-article-fill text-white text-2xl" data-tooltip="Currículo"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
+                        class="flex justify-center items-center">
+                        <i class="ri-whatsapp-fill text-white text-2xl" data-tooltip="Contato"></i>
+                    </a>
                 </div>
             </div>
         </div>
 
-        <br> <br> <br> <br> <br> <br>
+        <br><br><br><br><br><br>
         <div class="flex flex-col items-center mb-3">
             <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Sobre mim</h3>
             <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
@@ -147,7 +144,6 @@
             <p class="text-gray-300">O caminho que me trouxe até aqui</p>
         </div>
 
-
         <div data-aos="fade-up" data-aos-duration="1500"> <!--AOS-->
             <div class="container">
                 <div class="mb-0 flex justify-center items-center">
@@ -166,7 +162,7 @@
                                     <p class="text-sm text-gray-200 font-extralight">Freelancer</p>
                                 </div>
                                 <p
-                                    class="text-sm text-amber-400 font-semibold bg-transparent flex justify-center items-center w-[150px] shadow-2xl">
+                                    class="text-sm text-amber-400 font-semibold bg-transparent flex justify-center items-center w-[150px]">
                                     2025 - o momento</p>
                             </div>
                             <p class="text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
@@ -193,7 +189,7 @@
                                     <p class="text-sm text-gray-50 font-extralight">Rotsen Eqpto. Agropecuários LTDA</p>
                                 </div>
                                 <p
-                                    class="text-sm text-amber-400 font-semibold flex justify-center items-center w-[150px] shadow-2xl">
+                                    class="text-sm text-amber-400 font-semibold flex justify-center items-center w-[150px]">
                                     2024 - 2025</p>
                             </div>
                             <p class="text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
@@ -204,8 +200,8 @@
                             </p>
                             <div class="technologies flex gap-2 text-amber-400">
                                 <i class="ri-file-ppt-2-fill" data-tooltip="PowerPoint"></i>
-                                <i class="photoshop-icon" data-tooltip="Photoshop"><span
-                                        class="font-bold not-italic">PS</span></i>
+                                <i class="photoshop-icon" data-tooltip="Photoshop">
+                                    <span class="font-bold not-italic">PS</span></i>
                                 <i class="ri-meta-fill" data-tooltip="Meta Business Suite"></i>
                                 <i class="bi bi-trello" data-tooltip="Trello"></i>
                                 <i class="bi bi-bar-chart-fill" data-tooltip="Analytics"></i>
@@ -221,7 +217,7 @@
                                     <p class="text-sm text-gray-50 font-extralight">Triângulo Do Sol Auto - Estradas</p>
                                 </div>
                                 <p
-                                    class="text-sm text-amber-400 font-semibold flex justify-center items-center w-[150px] shadow-2xl">
+                                    class="text-sm text-amber-400 font-semibold flex justify-center items-center w-[150px]">
                                     2021 - 2022</p>
                             </div>
                             <p class="text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
@@ -276,14 +272,14 @@
                         </div>
 
                         <div
-                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-gray-700 hover:bg-gray-700/10 transition-all">
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-neutral-700 hover:bg-gray-700/10 transition-all">
                             <svg viewBox="0 0 128 128" class="mt-2" width="40px" height="40px">
                                 <path
                                     d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
                                     fill="#363636">
                                 </path>
                             </svg>
-                            <p class="mt-2 text-[10px] text-gray-700">Tailwind</p>
+                            <p class="mt-2 text-[10px] text-neutral-700">Tailwind</p>
                         </div>
 
                         <div
@@ -343,14 +339,14 @@
                         </div>
 
                         <div
-                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-gray-700 hover:bg-gray-700/10 transition-all">
+                            class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-neutral-700 hover:bg-gray-700/10 transition-all">
                             <svg viewBox="0 0 128 128" class="mt-2" width="40px" height="40px">
                                 <path
                                     d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597 6.398-8.531 13.867-11.73 22.398-9.597 4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602-6.399 8.536-13.867 11.735-22.399 9.602-4.87-1.215-8.347-4.746-12.207-8.66-6.27-6.367-13.53-13.738-29.394-13.738zM32.004 64c-17.066 0-27.73 8.531-32 25.602C6.402 81.066 13.87 77.867 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66 6.274 6.367 13.536 13.738 29.395 13.738 17.066 0 27.73-8.53 32-25.597-6.399 8.531-13.867 11.73-22.399 9.597-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64zm0 0"
                                     fill="#363636">
                                 </path>
                             </svg>
-                            <p class="mt-2 text-[10px] text-gray-700">Tailwind</p>
+                            <p class="mt-2 text-[10px] text-neutral-700">Tailwind</p>
                         </div>
 
                         <div
@@ -401,96 +397,115 @@
 
         <div data-aos="fade-up" data-aos-duration="1500"> <!--AOS-->
             <div class="flex justify-center mt-[30px] mb-[-15px] ml-5 mr-5 p-5 gap-5">
-                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                <div
+                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
                     <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
                         alt="projeto">
-                    <div class="">
+                    <div>
                         <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Blanditiis in molestias a.</p>
-                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                            <i
-                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            <i
-                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
+                            <a href="#">
+                                <i class="ri-github-fill" data-tooltip="Github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ri-link" data-tooltip="Site"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                <div
+                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
                     <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
                         alt="projeto">
                     <div class="">
                         <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Blanditiis in molestias a.</p>
-                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                            <i
-                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            <i
-                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
+                            <a href="#">
+                                <i class="ri-github-fill" data-tooltip="Github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ri-link" data-tooltip="Site"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                <div
+                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
                     <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
                         alt="projeto">
                     <div class="">
                         <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Blanditiis in molestias a.</p>
-                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                            <i
-                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            <i
-                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
+                            <a href="#">
+                                <i class="ri-github-fill" data-tooltip="Github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ri-link" data-tooltip="Site"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="flex justify-center mt-[-20px] mb-[30px] ml-5 mr-5 p-5 gap-5">
-                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                <div
+                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
                     <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
                         alt="projeto">
                     <div class="">
                         <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Blanditiis in molestias a.</p>
-                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                            <i
-                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            <i
-                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
+                            <a href="#">
+                                <i class="ri-github-fill" data-tooltip="Github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ri-link" data-tooltip="Site"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                <div
+                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
                     <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
                         alt="projeto">
                     <div class="">
                         <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Blanditiis in molestias a.</p>
-                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                            <i
-                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            <i
-                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
+                            <a href="#">
+                                <i class="ri-github-fill" data-tooltip="Github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ri-link" data-tooltip="Site"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="card-box flex gap-2 w-[500px] h-[150px] bg-white rounded-2xl">
+                <div
+                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
+
                     <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
                         alt="projeto">
                     <div class="">
                         <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Blanditiis in molestias a.</p>
-                        <div class="flex gap-1 mt-2 text-2xl text-amber-400">
-                            <i
-                                class="tech-icons ri-github-fill bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
-                            <i
-                                class="tech-icons ri-link bg-white p-1 w-[41px] rounded-full flex justify-center items-center"></i>
+                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
+                            <a href="#">
+                                <i class="ri-github-fill" data-tooltip="Github"></i>
+                            </a>
+                            <a href="#">
+                                <i class="ri-link" data-tooltip="Site"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -508,7 +523,8 @@
         </div>
 
         <div class="flex flex-row gap-8 justify-center mt-5">
-            <div class="max-w-[400px] mt-0">
+            <div
+                class="max-w-[400px] mt-0 bg-white/10 p-3 border-1 border-white/10 rounded-lg hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
                 <h3 class="text-amber-400 text-sm font-extrabold mb-2">Entre em contato comigo</h3>
                 <p class="flex items-center text-white mb-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat tenetur
@@ -517,7 +533,7 @@
                 </p>
                 <hr>
                 <h3 class="text-amber-400 text-sm font-extrabold mt-3">Redes Sociais</h3>
-                <div class="flex mt-4 gap-5">
+                <div class="flex mt-4 gap-5 bg-white/10 p-3 rounded-sm">
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center gap-2">
                             <i
@@ -548,9 +564,11 @@
 
             <div class="max-w-[400px] forms md:w-1/2 md:pl-8 md:border-l md:border-gray-300">
 
-                <h3 class="text-amber-400 text-sm font-extrabold mb-2">Envie-me uma mensagem!</h3>
+                <form action=""
+                    class="flex flex-col gap-4 bg-white/10 p-3 border-1 border-white/10 rounded-lg hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
 
-                <form action="" class="flex flex-col gap-4">
+                    <h3 class="text-amber-400 text-sm font-extrabold">Envie-me uma mensagem!</h3>
+
                     <input type="text" placeholder="Seu nome" class="border p-2 rounded" />
                     <input type="text" placeholder="Seu e-mail" class="border p-2 rounded" />
                     <textarea placeholder="Digite sua mensagem..."

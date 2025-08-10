@@ -27,12 +27,11 @@
     border: 5px solid rgba(230, 244, 255, 0.822);
 }
 
-.technologies i{
+.technologies i {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 3px rgba(190, 190, 190, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     padding: 8px 14px;
     font-size: 20px;
@@ -43,12 +42,11 @@
     content: attr(data-tooltip);
     position: absolute;
     bottom: -20%;
-    /* Fica acima do ícone */
     left: 90%;
     transform: translateX(-50%);
     background-color: #ffffff;
     color: #777777;
-    padding: 4px 8px;
+    padding: 4px 10px;
     border-radius: 50px;
     font-size: 12px;
     font-style: italic;
@@ -86,8 +84,8 @@
     flex: 0 0 auto;
     width: 90px;
     height: 120px;
-    background: white;
-    border: 1.5px solid white;
+    background: rgba(255, 255, 255, 0.697);
+    border: 1.5px solid rgba(255, 255, 255, 0);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -101,15 +99,4 @@
     font-size: 32px;
     cursor: pointer;
     flex-shrink: 0;
-}
-
-/*projects*/
-
-.card-box {
-    box-shadow: 2px 2px 5px rgba(190, 190, 190, 0.4);
-    transition: 0.2s;
-}
-
-.card-box:hover {
-    transform: scale(1.1);
 }

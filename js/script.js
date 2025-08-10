@@ -101,6 +101,20 @@ function darkMode() {
 
 }
 
+
+const toggleBtn = document.querySelector("#dark-light");
+const html = document.documentElement;
+
+toggleBtn.addEventListener("click", () => {
+  if(html.classList.contains("dark")) {
+    // Se está no dark, quer deixar no light
+    html.classList.add("dark");
+  } else {
+    // Se está no light, quer deixar no dark
+    html.classList.remove("dark");
+  }
+})
+
 */
 
 //carousel tech icons
