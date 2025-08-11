@@ -29,29 +29,54 @@
 
 <body class="bg-[#020202]">
     <div id="tsparticles"></div>
+
     <header class="flex justify-between p-4">
 
         <video src="./assets/video/video2.mp4" class="absolute top-0 left-0 w-full h-full object-cover z-[-10]"
             preload="none" autoplay muted loop></video>
         <div class="mask w-full h-full absolute top-0 left-0 z-[-9]"></div>
 
-        <div class="flex justify-center items-center gap-2">
-            <i class="ri-code-box-fill text-amber-400 text-5xl"></i>
-            <h3 class="text-gray-500 font-extrabold text-2xl"><strong class="text-white">VICTOR</strong>BONIFACIO</h3>
-        </div>
+        <nav class="navbar navbar-expand- flex justify-between bg-yellow-400 fixed-top">
+            <div class="flex justify-center items-center gap-2">
+                <i class="ri-code-box-fill text-amber-400 text-5xl"></i>
+                <h3 class="text-gray-500 font-extrabold text-2xl"><strong class="text-white">VICTOR</strong>BONIFACIO
+                </h3>
+            </div>
 
-        <div class="flex gap-4 items-center no-underline">
-            <a href="#top" class=" text-white font-bold uppercase">Inicio</a>
-            <a href="#about" class="text-white font-bold uppercase">Sobre</a>
-            <a href="#experiences" class="text-white font-bold uppercase">Experiencias</a>
-            <a href="#tech-icons" class="text-white font-bold uppercase">Tecnologias</a>
-            <a href="#projects" class="text-white font-bold uppercase">Projetos</a>
-            <a href="#contact" class="text-white font-bold uppercase">Contato</a>
+            <div class="flex gap-4 items-center no-underline">
+                <a href="#top" class=" text-white font-bold uppercase">Inicio</a>
+                <a href="#about" class="text-white font-bold uppercase">Sobre</a>
+                <a href="#experiences" class="text-white font-bold uppercase">Experiencias</a>
+                <a href="#tech-icons" class="text-white font-bold uppercase">Tecnologias</a>
+                <a href="#projects" class="text-white font-bold uppercase">Projetos</a>
+                <a href="#contact" class="text-white font-bold uppercase">Contato</a>
 
-            <button class="border-1 rounded-full p-2 w-11" id="dark-light">
-                <i class="ri-sun-fill text-lg text-white"></i>
+                <button class="border-1 rounded-full p-2 w-11" id="light-mode">
+                    <i class="ri-sun-fill text-lg text-white"></i>
+                </button>
+            </div>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-        </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                aria-labelledby="navbarOffcanvasLgLabel">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -85,53 +110,56 @@
             </div>
         </div>
 
-        <br><br><br><br><br><br>
-        <div class="flex flex-col items-center mb-3">
+        <div class="flex flex-col items-center mt-[600px] mb-3">
             <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Sobre mim</h3>
             <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
-            <p class="text-gray-300">Conheça-me mais</p>
+            <p class="textToggle text-gray-300">Conheça-me mais</p>
         </div>
 
-        <div class="container flex justify-center items-center gap-4">
+        <div class="container flex flex-col lg:flex-row justify-center items-center gap-4">
             <div
-                class="bg-white/10 border-1 border-white/10 rounded-lg hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+                class="box-color bg-gray-500/20 border-1 border-white/10 rounded-lg hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
                 <img src="./assets/img/my-photo.jpg" alt="photo" width="370px" class="rounded-3xl p-3">
             </div>
 
             <div class="max-w-[700px] text-[18px] font-sm mb-2">
                 <h1
-                    class="bg-white/10 rounded-lg text-justify p-3 text-lg mb-2 text-white border-1 border-white/10 hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+                    class="textToggle bg-gray-500/20 rounded-lg text-justify p-3 text-lg mb-2 text-gray-300 border-1 border-white/10 hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
                     Olá! Meu nome é
                     <span id="myname" class="font-semibold text-amber-500">Victor A. Bonifácio</span>
                 </h1>
                 <p
-                    class="bg-white/10 rounded-lg p-3 text-lg mb-2 text-white border-1 border-white/10 hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+                    class="textToggle bg-gray-500/20 rounded-lg p-3 text-lg mb-2 text-gray-300 border-1 border-white/10 hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
                     E gosto de transformar desafios em
                     soluções digitais práticas, bem pensadas e
                     funcionais.</p>
+
                 <p
-                    class="bg-white/10 rounded-lg p-3 text-lg text-white border-1 border-white/10 hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+                    class="textToggle bg-gray-500/20 rounded-lg p-3 text-lg text-gray-300 border-1 border-white/10 hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
                     Com formação em Sistemas para Internet, venho me dedicando ao desenvolvimento Front-End, focando em
                     criar interfaces acessíveis, organizadas e alinhadas ao que o projeto realmente precisa.
                 </p>
 
                 <div class="flex items-center mt-2 gap-3">
                     <div
-                        class="bg-white/10 rounded-lg p-3 flex justify-center items-center gap-3 border-1 border-white/10 hover:border-lime-700 hover:scale-105 hover:bg-lime-700/10 hover:rounded-[1px] transition-all">
+                        class="bg-gray-500/20 rounded-lg p-3 flex justify-center items-center gap-3 border-1 border-white/10 hover:border-lime-700 hover:scale-105 hover:bg-lime-700/10 hover:rounded-[1px] transition-all">
                         <i class="ri-braces-line text-lg text-lime-700"></i>
-                        <p class="text-xs text-white">Foco em código limpo, versionamento eficaz e soluções organizadas.
+                        <p class="textToggle text-xs text-gray-300">Foco em código limpo, versionamento eficaz e
+                            soluções organizadas.
                         </p>
                     </div>
                     <div
-                        class="bg-white/10 rounded-lg p-3 flex justify-center items-center gap-3 border-1 border-white/10 hover:border-pink-600 hover:scale-105 hover:bg-pink-600/10 hover:rounded-[1px] transition-all">
+                        class="bg-gray-500/20 rounded-lg p-3 flex justify-center items-center gap-3 border-1 border-white/10 hover:border-pink-600 hover:scale-105 hover:bg-pink-600/10 hover:rounded-[1px] transition-all">
                         <i class="ri-edit-2-fill text-lg text-pink-600"></i>
-                        <p class="text-xs text-white">Valorizo o design funcional com foco na melhor experiência do
+                        <p class="textToggle text-xs text-gray-300">Valorizo o design funcional com foco na melhor
+                            experiência do
                             usuário.</p>
                     </div>
                     <div
-                        class="bg-white/10 rounded-lg p-3 flex justify-center items-center gap-3 border-1 border-white/10 hover:border-blue-500 hover:scale-105 hover:bg-blue-500/10 hover:rounded-[1px] transition-all">
+                        class="bg-gray-500/20 rounded-lg p-3 flex justify-center items-center gap-3 border-1 border-white/10 hover:border-blue-500 hover:scale-105 hover:bg-blue-500/10 hover:rounded-[1px] transition-all">
                         <i class="ri-group-fill text-lg text-blue-500"></i>
-                        <p class="text-xs text-white">Comprometido com a colaboração e o aprendizado contínuo.</p>
+                        <p class="textToggle text-xs text-gray-300">Comprometido com a colaboração e o aprendizado
+                            contínuo.</p>
                     </div>
                 </div>
             </div>
@@ -141,7 +169,7 @@
         <div class="flex flex-col items-center mb-3">
             <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Experiencias</h3>
             <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
-            <p class="text-gray-300">O caminho que me trouxe até aqui</p>
+            <p class="textToggle text-gray-300">O caminho que me trouxe até aqui</p>
         </div>
 
         <div data-aos="fade-up" data-aos-duration="1500"> <!--AOS-->
@@ -155,17 +183,18 @@
 
                     <div class="container m-5 flex flex-col gap-5 max-w-[900px]">
                         <div
-                            class="container flex flex-col gap-5 bg-white/10 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all pt-3 pb-3 pl-5 pr-5">
+                            class="container flex flex-col gap-5 bg-gray-500/20 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all pt-3 pb-3 pl-5 pr-5">
                             <div class="flex justify-between">
                                 <div>
-                                    <h5 class="text-base text-gray-50 font-extrabold">Desenvolvedor Front-End</h5>
-                                    <p class="text-sm text-gray-200 font-extralight">Freelancer</p>
+                                    <h5 class="textToggle text-base text-gray-50 font-extrabold">Desenvolvedor Front-End
+                                    </h5>
+                                    <p class="textToggle text-sm text-gray-200 font-extralight">Freelancer</p>
                                 </div>
                                 <p
                                     class="text-sm text-amber-400 font-semibold bg-transparent flex justify-center items-center w-[150px]">
                                     2025 - o momento</p>
                             </div>
-                            <p class="text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
+                            <p class="textToggle text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
                                 <i class="ri-arrow-right-s-fill text-amber-400 text-lg"></i>
                                 Estruturadas. Meu foco é sempre otimizar processos complexos com eficiência, garantindo
                                 resultados consistentes e alinhados às necessidades do negócio.
@@ -181,18 +210,20 @@
                             </div>
                         </div>
                         <div
-                            class="container flex flex-col gap-5 bg-white/10 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all pt-3 pb-3 pl-5 pr-5">
+                            class="container flex flex-col gap-5 bg-gray-500/20 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all pt-3 pb-3 pl-5 pr-5">
                             <div class="flex justify-between">
                                 <div>
-                                    <h5 class="text-base text-gray-50 font-extrabold">Analista de Marketing e Mídias
+                                    <h5 class="textToggle text-base text-gray-50 font-extrabold">Analista de Marketing e
+                                        Mídias
                                         Digitais</h5>
-                                    <p class="text-sm text-gray-50 font-extralight">Rotsen Eqpto. Agropecuários LTDA</p>
+                                    <p class="textToggle text-sm text-gray-50 font-extralight">Rotsen Eqpto.
+                                        Agropecuários LTDA</p>
                                 </div>
                                 <p
                                     class="text-sm text-amber-400 font-semibold flex justify-center items-center w-[150px]">
                                     2024 - 2025</p>
                             </div>
-                            <p class="text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
+                            <p class="textToggle text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
                                 <i class="ri-arrow-right-s-fill text-amber-400 text-lg"></i>
                                 estruturadas. Meu foco é sempre otimizar processos complexos com eficiência, garantindo
                                 resultados
@@ -209,18 +240,20 @@
                             </div>
                         </div>
                         <div
-                            class="container flex flex-col gap-5 bg-white/10 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all pt-3 pb-3 pl-5 pr-5">
+                            class="container flex flex-col gap-5 bg-gray-500/20 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all pt-3 pb-3 pl-5 pr-5">
                             <div class="flex justify-between">
                                 <div>
-                                    <h5 class="text-base text-gray-50 font-extrabold">Assistente Administrativo de
+                                    <h5 class="textToggle text-base text-gray-50 font-extrabold">Assistente
+                                        Administrativo de
                                         Escritório</h5>
-                                    <p class="text-sm text-gray-50 font-extralight">Triângulo Do Sol Auto - Estradas</p>
+                                    <p class="textToggle text-sm text-gray-50 font-extralight">Triângulo do Sol Auto
+                                        Estradas</p>
                                 </div>
                                 <p
                                     class="text-sm text-amber-400 font-semibold flex justify-center items-center w-[150px]">
                                     2021 - 2022</p>
                             </div>
-                            <p class="text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
+                            <p class="textToggle text-sm text-gray-50 max-w-[750px] mt-[-35px] mb-[-40px]">
                                 <i class="ri-arrow-right-s-fill text-amber-400 text-lg"></i>
                                 estruturadas. Meu foco é sempre otimizar processos complexos com eficiência, garantindo
                                 resultados
@@ -241,13 +274,12 @@
             </div>
         </div>
 
-        <div
-            class="container border-r-0 border-l-0 ml-0 mr-0 mt-[100px] mb-[100px] bg-amber-400/15 pt-[50px] pb-[60px]">
+        <div class="border-r-0 border-l-0 ml-0 mr-0 mt-[100px] mb-[100px] bg-amber-400/15 pt-[50px] pb-[60px]">
 
             <div class="flex flex-col items-center mb-3">
                 <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Tecnologias</h3>
                 <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
-                <p class="text-gray-300">Ferramentas modernas para soluções inovadoras</p>
+                <p class="textToggle text-gray-300">Ferramentas modernas para soluções inovadoras</p>
             </div>
 
             <div class="container flex items-center justify-center">
@@ -392,196 +424,184 @@
         <div class="flex flex-col items-center mb-3">
             <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Projetos</h3>
             <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
-            <p class="text-gray-300">Da ideia inicial ao projeto final</p>
+            <p class="textToggle text-gray-300">Da ideia inicial ao projeto final</p>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="1500"> <!--AOS-->
-            <div class="flex justify-center mt-[30px] mb-[-15px] ml-5 mr-5 p-5 gap-5">
-                <div
-                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
-                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
-                        alt="projeto">
-                    <div>
-                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Blanditiis in molestias a.</p>
-                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
-                            <a href="#">
-                                <i class="ri-github-fill" data-tooltip="Github"></i>
-                            </a>
-                            <a href="#">
-                                <i class="ri-link" data-tooltip="Site"></i>
-                            </a>
+        <div data-aos="fade-up" data-aos-duration="1500">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 p-5 justify-items-center">
+                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                    transition-all overflow-hidden">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto"
+                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3">
+                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">Eu sou um título</h5>
+                        <p class="textToggle text-xs text-gray-300 truncate">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="technologies flex gap-3 mt-2 text-2xl text-amber-400">
+                            <a href="#" class="flex-shrink-0"><i class="ri-github-fill" data-tooltip="Github"></i></a>
+                            <a href="#" class="flex-shrink-0"><i class="ri-link" data-tooltip="Site"></i></a>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
-                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
-                        alt="projeto">
-                    <div class="">
-                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Blanditiis in molestias a.</p>
-                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
-                            <a href="#">
-                                <i class="ri-github-fill" data-tooltip="Github"></i>
-                            </a>
-                            <a href="#">
-                                <i class="ri-link" data-tooltip="Site"></i>
-                            </a>
+                </article>
+                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                    transition-all overflow-hidden">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto"
+                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3">
+                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">Eu sou um título</h5>
+                        <p class="textToggle text-xs text-gray-300 truncate">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="technologies flex gap-3 mt-2 text-2xl text-amber-400">
+                            <a href="#" class="flex-shrink-0"><i class="ri-github-fill" data-tooltip="Github"></i></a>
+                            <a href="#" class="flex-shrink-0"><i class="ri-link" data-tooltip="Site"></i></a>
                         </div>
                     </div>
-                </div>
-                <div
-                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
-                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
-                        alt="projeto">
-                    <div class="">
-                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Blanditiis in molestias a.</p>
-                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
-                            <a href="#">
-                                <i class="ri-github-fill" data-tooltip="Github"></i>
-                            </a>
-                            <a href="#">
-                                <i class="ri-link" data-tooltip="Site"></i>
-                            </a>
+                </article>
+                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                    transition-all overflow-hidden">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto"
+                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3">
+                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">Eu sou um título</h5>
+                        <p class="textToggle text-xs text-gray-300 truncate">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="technologies flex gap-3 mt-2 text-2xl text-amber-400">
+                            <a href="#" class="flex-shrink-0"><i class="ri-github-fill" data-tooltip="Github"></i></a>
+                            <a href="#" class="flex-shrink-0"><i class="ri-link" data-tooltip="Site"></i></a>
                         </div>
                     </div>
-                </div>
+                </article>
+                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                    transition-all overflow-hidden">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto"
+                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3">
+                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">Eu sou um título</h5>
+                        <p class="textToggle text-xs text-gray-300 truncate">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="technologies flex gap-3 mt-2 text-2xl text-amber-400">
+                            <a href="#" class="flex-shrink-0"><i class="ri-github-fill" data-tooltip="Github"></i></a>
+                            <a href="#" class="flex-shrink-0"><i class="ri-link" data-tooltip="Site"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                    transition-all overflow-hidden">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto"
+                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3">
+                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">Eu sou um título</h5>
+                        <p class="textToggle text-xs text-gray-300 truncate">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="technologies flex gap-3 mt-2 text-2xl text-amber-400">
+                            <a href="#" class="flex-shrink-0"><i class="ri-github-fill" data-tooltip="Github"></i></a>
+                            <a href="#" class="flex-shrink-0"><i class="ri-link" data-tooltip="Site"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                    transition-all overflow-hidden">
+                    <img src="./assets/img/my-photo.jpg" alt="projeto"
+                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3">
+                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">Eu sou um título</h5>
+                        <p class="textToggle text-xs text-gray-300 truncate">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                        <div class="technologies flex gap-3 mt-2 text-2xl text-amber-400">
+                            <a href="#" class="flex-shrink-0"><i class="ri-github-fill" data-tooltip="Github"></i></a>
+                            <a href="#" class="flex-shrink-0"><i class="ri-link" data-tooltip="Site"></i></a>
+                        </div>
+                    </div>
+                </article>
             </div>
-
-            <div class="flex justify-center mt-[-20px] mb-[30px] ml-5 mr-5 p-5 gap-5">
-                <div
-                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
-                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
-                        alt="projeto">
-                    <div class="">
-                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Blanditiis in molestias a.</p>
-                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
-                            <a href="#">
-                                <i class="ri-github-fill" data-tooltip="Github"></i>
-                            </a>
-                            <a href="#">
-                                <i class="ri-link" data-tooltip="Site"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
-                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
-                        alt="projeto">
-                    <div class="">
-                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Blanditiis in molestias a.</p>
-                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
-                            <a href="#">
-                                <i class="ri-github-fill" data-tooltip="Github"></i>
-                            </a>
-                            <a href="#">
-                                <i class="ri-link" data-tooltip="Site"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="flex gap-2 w-[500px] h-[150px] border-1 border-white/10 bg-white/10 rounded-2xl hover:rounded-none hover:border-amber-400 hover:scale-105 transition-all">
-
-                    <img src="./assets/img/my-photo.jpg" class="w-auto m-0 rounded-tl-[10px] rounded-bl-[10px]"
-                        alt="projeto">
-                    <div class="">
-                        <h5 class="mt-2 mb-2 text-amber-400 font-semibold">Eu sou um titulo</h5>
-                        <p class="text-xs text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Blanditiis in molestias a.</p>
-                        <div class="technologies flex gap-1 mt-2 text-2xl text-amber-400">
-                            <a href="#">
-                                <i class="ri-github-fill" data-tooltip="Github"></i>
-                            </a>
-                            <a href="#">
-                                <i class="ri-link" data-tooltip="Site"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-center items-center mt-[-30px]">
+            <div class="flex justify-center items-center mt-4">
                 <a href="https://github.com/VictorBonifac10" target="_blank"
-                    class="text-amber-400 underline font-extrabold">Outros Projetos</a>
+                    class="text-amber-400 underline font-extrabold">
+                    Outros Projetos
+                </a>
             </div>
         </div>
 
-        <div class="flex flex-col items-center mt-[80px] mb-3">
+        <div class=" flex flex-col items-center mt-[80px] mb-3">
             <h3 class="text-3xl font-extrabold text-amber-400 mb-1">Contato</h3>
             <hr class="w-20 border-amber-400 border-4 mb-3 rounded-full">
-            <p class="text-gray-300">Envie-me uma mensagem!</p>
+            <p class="textToggle text-gray-300">Envie-me uma mensagem!</p>
         </div>
 
-        <div class="flex flex-row gap-8 justify-center mt-5">
-            <div
-                class="max-w-[400px] mt-0 bg-white/10 p-3 border-1 border-white/10 rounded-lg hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+        <div class="flex flex-col items-center lg:flex-row gap-8 justify-center mt-5">
+
+            <!-- Card de contato -->
+            <div class="max-w-[400px] w-full bg-gray-500/20 p-3 border border-white/10 rounded-lg 
+                hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+
                 <h3 class="text-amber-400 text-sm font-extrabold mb-2">Entre em contato comigo</h3>
-                <p class="flex items-center text-white mb-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat tenetur
-                    iste,
-                    expedita, excepturi et alias quam ipsa voluptates delectus.
+                <p class="textToggle flex items-center text-gray-300 mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum placeat tenetur iste, expedita,
+                    excepturi et alias quam ipsa voluptates delectus.
                 </p>
-                <hr>
+
+                <hr class="border-white/10">
+
                 <h3 class="text-amber-400 text-sm font-extrabold mt-3">Redes Sociais</h3>
-                <div class="flex mt-4 gap-5 bg-white/10 p-3 rounded-sm">
+                <div class="flex mt-4 gap-5 bg-gray-500/20 p-3 rounded-sm">
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center gap-2">
                             <i
                                 class="ri-linkedin-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
                             <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
-                                class="text-white">Linkedin</a>
+                                class="textToggle text-gray-300">Linkedin</a>
                         </div>
                         <div class="flex items-center gap-2">
                             <i
                                 class="ri-github-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
-                            <a href="https://github.com/VictorBonifac10" target="_blank" class="text-white">Github</a>
+                            <a href="https://github.com/VictorBonifac10" target="_blank"
+                                class="textToggle text-gray-300">Github</a>
                         </div>
                     </div>
                     <div class="flex flex-col gap-2">
                         <div class="flex items-center gap-2">
                             <i
                                 class="ri-article-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
-                            <a href="#" target="_blank" class="text-white">Currículo</a>
+                            <a href="#" target="_blank" class="textToggle text-gray-300">Currículo</a>
                         </div>
                         <div class="flex items-center gap-2">
                             <i
                                 class="ri-whatsapp-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
-                            <a href="#" target="_blank" class="text-white">Whatsapp</a>
+                            <a href="#" target="_blank" class="textToggle text-gray-300">Whatsapp</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="max-w-[400px] forms md:w-1/2 md:pl-8 md:border-l md:border-gray-300">
-
-                <form action=""
-                    class="flex flex-col gap-4 bg-white/10 p-3 border-1 border-white/10 rounded-lg hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
+            <!-- Formulário -->
+            <div class="max-w-[400px] w-full lg:w-1/2 lg:pl-8 lg:border-l lg:border-gray-300">
+                <form action="https://formsubmit.co/victor.alvesbonifacio@gmail.com" method="POST" class="flex flex-col gap-4 bg-gray-500/20 p-3 border border-white/10 rounded-lg 
+                     hover:border-amber-500 hover:scale-105 hover:bg-amber-500/10 hover:rounded-[1px] transition-all">
 
                     <h3 class="text-amber-400 text-sm font-extrabold">Envie-me uma mensagem!</h3>
 
-                    <input type="text" placeholder="Seu nome" class="border p-2 rounded" />
-                    <input type="text" placeholder="Seu e-mail" class="border p-2 rounded" />
-                    <textarea placeholder="Digite sua mensagem..."
+                    <input type="text" name="name" required placeholder="Nome completo" class="border p-2 rounded" />
+                    <input type="email" name="email" required placeholder="E-mail p/ contato"
+                        class="border p-2 rounded" />
+                    <textarea name="area" placeholder="Digite sua mensagem..."
                         class="w-full h-32 p-2 border border-gray-300"></textarea>
 
-                    <button
+                    <button type="submit"
                         class="bg-amber-400 text-white py-2 rounded hover:bg-amber-500 transition-colors">Enviar</button>
                 </form>
             </div>
         </div>
+
+
     </main>
     <footer class="flex justify-center m-5">
-        <h3>© 2025 Victor Bonifácio Portfolio. Todos os direitos reservados.</h3>
+        <h3 class="textToggle">© 2025 Victor Bonifácio Portfolio. Todos os direitos reservados.</h3>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/script.js"></script>

@@ -76,9 +76,7 @@
     display: none;
 }
 
-.carousel-tech-icons {
-    scrollbar-width: none;
-}
+/*icons*/
 
 .box-i {
     flex: 0 0 auto;

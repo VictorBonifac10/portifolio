@@ -1,123 +1,39 @@
 AOS.init();
 
-/*
 
-let dark = false
-const back = document.querySelector("body")
-const log = document.querySelector("#logo")
-const nameLogo = document.querySelector("#name")
-const linkHeader = document.querySelectorAll(".link-top-header")
-const botao = document.querySelector("#dark-light")
-const img = document.querySelector("#img-darklight")
-const paragraph = document.querySelector("p")
-const subTitle = document.querySelector("#subtitle")
-const titlePrincipal = document.querySelector("#element")
-const iconSocial = document.querySelectorAll(".box")
-const myPhoto = document.querySelector("#photo-img")
-const aboutMe = document.querySelector("#paragraph-me")
-const workMe = document.querySelectorAll(".work")
-const arrowIcon = document.querySelectorAll(".arrow")
+// --> darkmode/lightmode
 
-function darkMode() {
-    if (dark === false) {
-        //liga o modo escuro
+let light = false; // começa no escuro
+const btnLightMode = document.querySelector("#light-mode");
+const body = document.querySelector("body");
+const textToggle = document.querySelectorAll(".textToggle"); // apenas esses mudam
 
-        back.style.background = "#272737" //background
+// cores
+const blackSoft = "#1F1F1E";
+const whiteSoft = "#ffffff";
+const lightBg = "#f5f5f5";
+const darkBg = "#020202";
 
-        log.src = "./assets/img/yellow-logo.svg" //logo
-        nameLogo.style.color = "#fff"
+function lightMode() {
+    if (!light) {
+        // Escuro → Claro
+        body.style.background = lightBg;
+        textToggle.forEach(el => el.style.color = blackSoft);
 
-        linkHeader.forEach(linkHeader => { //header
-            linkHeader.style.color = "#ffdf56"
-        });
-
-        botao.style.color = "#fff"
-        botao.style.border = "1.5px solid #ffdf56"
-        botao.innerHTML = '<i class="ri-sun-fill"></i>'
-
-        img.src = "./assets/img/yellow-rocket.svg" //img
-
-        paragraph.style.color = "#fff" //textos
-        subTitle.style.color = "#fff"
-        element.style.color = "#ffdf56"
-
-        iconSocial.forEach(iconSocial => { //icones
-            iconSocial.style.background = "#ffdf56"
-        });
-
-        aboutMe.style.color = "#fff"
-        myPhoto.style.border = "20px solid #ffdf56"
-
-        workMe.src = "./assets/img/yellow-job.svg" //logo
-        arrowIcon.src = "./assets/img/yellow-arrow.svg" //logo
-
-        workMe.forEach(work => {
-            work.src = "./assets/img/yellow-job.svg" //logo          
-        });
-
-        arrowIcon.forEach(arrow => {
-            arrow.src = "./assets/img/yellow-arrow.svg" //logo
-        });
-
-        dark = true; // agora estamos no modo claro
-
+        light = true;
     } else {
-        // VOLTA para o modo claro
-        back.style.backgroundColor = "#ffffff";
-        log.src = "./assets/img/blue-logo.svg";
-        nameLogo.style.color = "#3c3c54";
+        // Claro → Escuro
+        body.style.background = darkBg;
+        textToggle.forEach(el => el.style.color = whiteSoft);
 
-        linkHeader.forEach(link => {
-            link.style.color = "#0059ad";
-        });
-
-        botao.style.color = "#3c3c54"
-        botao.style.border = "1.5px solid #0059ad"
-        botao.innerHTML = '<i class="ri-moon-fill"></i>'
-
-        img.src = "./assets/img/blue-rocket.svg";
-
-        paragraph.style.color = "#3c3c54";
-        subTitle.style.color = "#3c3c54";
-        titlePrincipal.style.color = "#0059ad";
-
-        iconSocial.forEach(icon => {
-            icon.style.backgroundColor = "#0059ad";
-        });
-
-        aboutMe.style.color = "#000"
-        myPhoto.style.border = "20px solid #0059ad"
-
-        workMe.forEach(work => {
-            work.src = "./assets/img/blue-job.svg" //logo          
-        });
-
-        arrowIcon.forEach(arrow => {
-            arrow.src = "./assets/img/blue-arrow.svg" //logo
-        });
-
-        dark = false; // agora estamos no modo escuro
+        light = false;
     }
-
 }
 
+btnLightMode.addEventListener("click", lightMode);
 
-const toggleBtn = document.querySelector("#dark-light");
-const html = document.documentElement;
 
-toggleBtn.addEventListener("click", () => {
-  if(html.classList.contains("dark")) {
-    // Se está no dark, quer deixar no light
-    html.classList.add("dark");
-  } else {
-    // Se está no light, quer deixar no dark
-    html.classList.remove("dark");
-  }
-})
-
-*/
-
-//carousel tech icons
+// --> carousel
 
 const container = document.getElementById('iconCarousel');
 
@@ -137,6 +53,5 @@ function autoScroll() {
 
 setInterval(autoScroll, intervalTime);
 
-//header fixed
 
 

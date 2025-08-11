@@ -1,40 +1,11 @@
-@media screen and (max-width: 800px) {
-    main {
-        display: block;
-    }
+@media screen and (max-width: 999px) {
 
-    #img-darklight {
-        display: block;
-        margin: 0px auto;
-
-        margin-top: 40px;
-    }
-
-    #paragraph {
-        display: block;
-        margin: 0px auto;
-    }
-
-    #title,
-    #subtitle,
-    #paragraph {
-        text-align: center;
-    }
-
-    #social-midia {
+    .box-contact{
         display: flex;
-        justify-content: center;
-    }
-
-    .link-top-header {
-        display: none;
+        flex-direction: column;
     }
 }
 
 @media screen and (max-width: 430px) {
 
-    #img-darklight {
-        width: 280px;
-        height: 280px;
-    }
 }
