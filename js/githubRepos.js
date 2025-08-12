@@ -1,14 +1,13 @@
 const username = "VictorBonifac10";
 const container = document.getElementById("github-projects");
 
-// Nomes dos repositórios que você quer exibir
 const reposDesejados = ["car-shop-landing-page", "calculadora", "dev-sorteio", "menu-online", "conversor-monetario", "nike-landing-page"];
 
 fetch(`https://api.github.com/users/${username}/repos`)
   .then(response => response.json())
   .then(repos => {
     repos
-      .filter(repo => reposDesejados.includes(repo.name)) // só os que você quer
+      .filter(repo => reposDesejados.includes(repo.name)) // repo especificos
       .forEach(repo => { 
         const card = document.createElement("div");
         card.classList.add("repo-card");

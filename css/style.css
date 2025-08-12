@@ -1,12 +1,27 @@
+/*Imports*/
+
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*All*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif !important;
 }
+
+/*Header*/
+
+nav.scrolled{
+    margin: 0;
+    background-color: rgba(38, 45, 56, 0.973) !important;
+    box-shadow: 0 2px 4px rgb(27, 27, 27);
+    transition: 1s;
+}
+
+/*Introduction*/
 
 .mask {
     background: linear-gradient(109deg, rgba(0, 0, 0, 0.178) 15%, rgba(0, 0, 0, 0.671) 50%, rgba(0, 0, 0, 0.585) 85%);

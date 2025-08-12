@@ -53,5 +53,16 @@ function autoScroll() {
 
 setInterval(autoScroll, intervalTime);
 
+// --> nav fixed
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector("nav");
+  if (window.scrollY > 10) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
 
 
