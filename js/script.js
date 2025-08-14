@@ -19,13 +19,14 @@ function lightMode() {
         // Escuro → Claro
         body.style.background = lightBg;
         textToggle.forEach(el => el.style.color = blackSoft);
+        btnLightMode.innerHTML = `<i class="ri-moon-fill text-lg text-white"></i>`
 
         light = true;
     } else {
         // Claro → Escuro
         body.style.background = darkBg;
         textToggle.forEach(el => el.style.color = whiteSoft);
-
+        btnLightMode.innerHTML = `<i class="ri-sun-fill text-lg text-white"></i>`
         light = false;
     }
 }
