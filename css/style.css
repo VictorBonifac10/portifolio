@@ -14,7 +14,7 @@
 
 /*Header*/
 
-nav.scrolled{
+nav.scrolled {
     margin: 0;
     background-color: rgba(38, 45, 56, 0.973) !important;
     box-shadow: 0 2px 4px rgb(27, 27, 27);
@@ -49,7 +49,7 @@ nav.scrolled{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50px;
     padding: 8px 14px;
-    font-size: 20px;
+    font-size: 19px;
     position: relative;
 }
 
@@ -112,4 +112,12 @@ nav.scrolled{
     font-size: 32px;
     cursor: pointer;
     flex-shrink: 0;
+}
+
+/*responsive*/
+
+@media (max-width: 575.98px) {
+    #navbarOffcanvasLg {
+        width: 85% !important;
+    }
 }

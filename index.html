@@ -31,7 +31,7 @@
     <div id="tsparticles"></div>
     <!-- Header -->
     <header class="flex justify-between p-4">
-        <!--background video-->
+        <!--Background Video-->
         <video src="./assets/video/video2.mp4" class="absolute top-0 left-0 w-full h-full object-cover z-[-10]"
             preload="none" autoplay muted loop></video>
         <div class="mask w-full h-full absolute top-0 left-0 z-[-9]"></div>
@@ -43,26 +43,50 @@
                     <strong class="text-white">VICTOR</strong>BONIFACIO
                 </h3>
             </div>
-
+            <!--Menu-->
             <div class="flex gap-4 items-center d-none d-lg-flex">
-                <a href="#top" class="text-white font-bold uppercase">Inicio</a>
-                <a href="#about" class="text-white font-bold uppercase">Sobre</a>
-                <a href="#experiences" class="text-white font-bold uppercase">Experiencias</a>
-                <a href="#tech-icons" class="text-white font-bold uppercase">Tecnologias</a>
-                <a href="#projects" class="text-white font-bold uppercase">Projetos</a>
-                <a href="#contact" class="text-white font-bold uppercase">Contato</a>
+                <a href="#top" class="relative group text-white font-bold uppercase">
+                    Inicio
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#about" class="relative group text-white font-bold uppercase">
+                    Sobre
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#experiences" class="relative group text-white font-bold uppercase">
+                    Experiencias
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#tech-icons" class="relative group text-white font-bold uppercase">
+                    Tecnologias
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#projects" class="relative group text-white font-bold uppercase">
+                    Projetos
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
+                <a href="#contact" class="relative group text-white font-bold uppercase">
+                    Contato
+                    <span
+                        class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
+                </a>
                 <button class="border-1 rounded-full p-2 w-11" id="light-mode">
                     <i class="ri-sun-fill text-lg text-white"></i>
                 </button>
             </div>
 
-            <!-- hamburger button (mobile) -->
+            <!-- Hamburger Button (mobile) -->
             <button class="navbar-toggler d-lg-none bg-white/20" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#navbarOffcanvasLg" aria-scontrols="navbarOffcanvasLg" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- offcanvas menu (mobile) -->
+            <!-- Offcanvas Menu (mobile) -->
             <div class="offcanvas offcanvas-end bg-gray-700/95 d-lg-none" tabindex="-1" id="navbarOffcanvasLg"
                 aria-labelledby="navbarOffcanvasLgLabel">
                 <ul class="navbar-nav justify-content-start flex-grow-1 pe-3 p-2">
@@ -76,8 +100,7 @@
                     </li>
                     <hr>
                     <li class="nav-item">
-                        <a class="nav-link text-white font-bold uppercase mt-2" aria-current="page"
-                            href="#top">Inicio</a>
+                        <a class="nav-link text-white font-bold uppercase mt-2" href="#top">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white font-bold uppercase mt-2" href="#about">Sobre</a>
@@ -245,9 +268,11 @@
                                 <i class="ri-html5-fill" data-tooltip="HTML5"></i>
                                 <i class="ri-css3-fill" data-tooltip="CSS3"></i>
                                 <i class="ri-bootstrap-fill" data-tooltip="Bootstrap"></i>
+                                <i class="devicon-tailwindcss-plain" data-tooltip="TailwindCSS"></i>
                                 <i class="ri-javascript-fill" data-tooltip="Javascript"></i>
                                 <i class="ri-github-fill" data-tooltip="Github"></i>
-                                <i class="ri-reactjs-fill" data-tooltip="React"></i>
+                                <i class="ri-reactjs-fill" data-tooltip="React.js"></i>
+                                <i class="devicon-nodejs-plain" data-tooltip="Node.js"></i>
                                 <i class="ri-database-2-fill" data-tooltip="Banco de Dados"></i>
                             </div>
                         </div>
@@ -273,7 +298,8 @@
                             </p>
                             <div class="technologies flex flex-wrap gap-2 text-amber-400 text-lg">
                                 <i class="ri-file-ppt-2-fill" data-tooltip="PowerPoint"></i>
-                                <i class="photoshop-icon font-bold not-italic" data-tooltip="Photoshop">PS</i>
+                                <i class="photoshop-icon not-italic" data-tooltip="Photoshop">PS</i>
+                                <i class="devicon-canva-original" data-tooltip="Canva"></i>
                                 <i class="ri-meta-fill" data-tooltip="Meta Business Suite"></i>
                                 <i class="bi bi-trello" data-tooltip="Trello"></i>
                                 <i class="bi bi-bar-chart-fill" data-tooltip="Analytics"></i>
@@ -348,7 +374,7 @@
                         <div
                             class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-neutral-700 hover:bg-neutral-700/10 transition-all">
                             <i class="devicon-tailwindcss-plain group-hover:text-neutral-700 transition-colors"></i>
-                            <p class="mt-2 text-[10px] text-neutral-700">Tailwind</p>
+                            <p class="mt-2 text-[10px] text-neutral-700">TailwindCSS</p>
                         </div>
 
                         <div
@@ -377,7 +403,8 @@
 
                         <div
                             class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-pink-500 hover:bg-pink-500/10 transition-all">
-                            <i class="devicon-styledcomponents-plain group-hover:text-pink-500 transition-colors mb-3"></i>
+                            <i
+                                class="devicon-styledcomponents-plain group-hover:text-pink-500 transition-colors mb-3"></i>
                             <p class="group-hover:text-pink-500 text-[8px]">Styled-Components</p>
                         </div>
 
@@ -445,7 +472,8 @@
 
                         <div
                             class="box-i group hover:scale-110 hover:rounded-[1px] hover:border-pink-500 hover:bg-pink-500/10 transition-all">
-                            <i class="devicon-styledcomponents-plain group-hover:text-pink-500 transition-colors mb-3"></i>
+                            <i
+                                class="devicon-styledcomponents-plain group-hover:text-pink-500 transition-colors mb-3"></i>
                             <p class="group-hover:text-pink-500 text-[7px]">Styled-Components</p>
                         </div>
 
@@ -589,9 +617,10 @@
                                 MongoDB</p>
                         </div>
                         <div class="technologies flex gap-3 mt-2 text-2xl text-amber-400">
-                            <a href="https://github.com/VictorBonifac10/patient-manager" target="_blank" class="flex-shrink-0"><i
-                                    class="ri-github-fill" data-tooltip="Github"></i></a>
-                            <a href="https://patients-manager-erp.netlify.app/" target="_blank" class="flex-shrink-0"><i class="ri-link" data-tooltip="Site"></i></a>
+                            <a href="https://github.com/VictorBonifac10/patient-manager" target="_blank"
+                                class="flex-shrink-0"><i class="ri-github-fill" data-tooltip="Github"></i></a>
+                            <a href="https://patients-manager-erp.netlify.app/" target="_blank" class="flex-shrink-0"><i
+                                    class="ri-link" data-tooltip="Site"></i></a>
                         </div>
                     </div>
                 </article>
@@ -655,30 +684,30 @@
                 <hr class="border-1 border-white/10">
 
                 <h3 class="text-amber-400 text-sm font-extrabold mt-4">Redes Sociais</h3>
-                <div class="flex mt-4 gap-5 bg-gray-500/20 p-3 rounded-sm">
-                    <div class="flex flex-col gap-2">
+                <div class="flex mt-4 gap-5 p-3 rounded-sm">
+                    <div class="flex flex-col gap-4">
                         <div class="flex items-center gap-2">
                             <i
-                                class="ri-linkedin-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
+                                class="ri-linkedin-fill flex bg-white/10 text-amber-400 rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
                             <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
                                 class="textToggle text-gray-300">Linkedin</a>
                         </div>
                         <div class="flex items-center gap-2">
                             <i
-                                class="ri-github-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
+                                class="ri-github-fill flex bg-white/10 text-amber-400 rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
                             <a href="https://github.com/VictorBonifac10" target="_blank"
                                 class="textToggle text-gray-300">Github</a>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2">
+                    <div class="flex flex-col gap-4">
                         <div class="flex items-center gap-2">
                             <i
-                                class="ri-article-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
+                                class="ri-article-fill flex bg-white/10 text-amber-400 rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
                             <a href="#" target="_blank" class="textToggle text-gray-300">Currículo</a>
                         </div>
                         <div class="flex items-center gap-2">
                             <i
-                                class="ri-whatsapp-fill flex bg-amber-400 text-white rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
+                                class="ri-whatsapp-fill flex bg-white/10 text-amber-400 rounded-full w-[40px] h-[40px] justify-center items-center cursor-pointer"></i>
                             <a href="https://wa.me/5516993090225?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio!"
                                 target="_blank" class="textToggle text-gray-300">Whatsapp</a>
                         </div>
