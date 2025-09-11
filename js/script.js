@@ -1,38 +1,40 @@
 AOS.init();
 
-
 // --> darkmode/lightmode
 
-let light = false; // começa no escuro
-const btnLightMode = document.querySelector("#light-mode");
+let light = false; // start dark
+const btnLightMode = document.querySelectorAll(".light-mode");
 const body = document.querySelector("body");
 const textToggle = document.querySelectorAll(".textToggle"); // apenas esses mudam
 
-// cores
+// colors
 const blackSoft = "#1F1F1E";
 const whiteSoft = "#ffffff";
 const lightBg = "#f5f5f5";
 const darkBg = "#020202";
 
+btnLightMode.forEach(element => {
+  element.addEventListener('click', lightMode)
+});
+
 function lightMode() {
+
     if (!light) {
-        // Escuro → Claro
+        // dark → light
         body.style.background = lightBg;
-        textToggle.forEach(el => el.style.color = blackSoft);
+        textToggle.forEach(element => element.style.color = blackSoft);
         btnLightMode.innerHTML = `<i class="ri-moon-fill text-lg text-white"></i>`
 
         light = true;
     } else {
-        // Claro → Escuro
+        // light → dark
         body.style.background = darkBg;
-        textToggle.forEach(el => el.style.color = whiteSoft);
+        textToggle.forEach(element => element.style.color = whiteSoft);
         btnLightMode.innerHTML = `<i class="ri-sun-fill text-lg text-white"></i>`
+
         light = false;
     }
 }
-
-btnLightMode.addEventListener("click", lightMode);
-
 
 // --> carousel
 
@@ -45,11 +47,11 @@ let scrollSpeed = 1; // px por passo
 let intervalTime = 35; // velocidade
 
 function autoScroll() {
-    container.scrollLeft += scrollSpeed;
+  container.scrollLeft += scrollSpeed;
 
-    if (container.scrollLeft >= container.scrollWidth / 2) { //volta para o início
-        container.scrollLeft = 0;
-    }
+  if (container.scrollLeft >= container.scrollWidth / 2) { //volta para o início
+    container.scrollLeft = 0;
+  }
 }
 
 setInterval(autoScroll, intervalTime);
