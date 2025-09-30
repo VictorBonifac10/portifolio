@@ -16,22 +16,18 @@
 
 nav.scrolled {
     margin: 0;
-    background-color: rgba(38, 45, 56, 0.973) !important;
+    background-color: #32353bee !important;
     box-shadow: 0 2px 4px rgb(27, 27, 27);
     transition: 1s;
 }
 
 /*Introduction*/
 
-.mask {
-    background: linear-gradient(109deg, rgba(0, 0, 0, 0.178) 15%, rgba(0, 0, 0, 0.671) 50%, rgba(0, 0, 0, 0.585) 85%);
-}
-
 .glassmorphism:hover {
     transform: scale(1.1);
     border-radius: 0%;
-    transition: 1s;
-    background-color: rgba(37, 35, 27, 0.484);
+    transition: 1.5s;
+    background-color: rgba(86, 86, 86, 0.134);
 }
 
 /*exp*/
@@ -46,7 +42,7 @@ nav.scrolled {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(125, 125, 125, 0.186);
     border-radius: 50px;
     padding: 8px 14px;
     font-size: 19px;
@@ -120,4 +116,22 @@ nav.scrolled {
     #navbarOffcanvasLg {
         width: 85% !important;
     }
+}
+
+/* lightmode */
+
+body.light-mode {
+    background-color: rgb(249, 249, 249);
+}
+
+.textToggle, .textToggleNav {
+    color: #ffffff;
+}
+
+body.light-mode .textToggle {
+    color: #4c525c;
+}
+
+body.light-mode .textToggleNav {
+    color: #8c95a0;
 }

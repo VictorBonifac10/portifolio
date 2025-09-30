@@ -1,40 +1,19 @@
 AOS.init();
 
 // --> darkmode/lightmode
+const btns = document.querySelectorAll('.light-mode');
+const body = document.body;
 
-let light = false; // start dark
-const btnLightMode = document.querySelectorAll(".light-mode");
-const body = document.querySelector("body");
-const textToggle = document.querySelectorAll(".textToggle"); // apenas esses mudam
+btns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
 
-// colors
-const blackSoft = "#1F1F1E";
-const whiteSoft = "#ffffff";
-const lightBg = "#f5f5f5";
-const darkBg = "#020202";
-
-btnLightMode.forEach(element => {
-  element.addEventListener('click', lightMode)
+    // atualizar ícone do botão (se quiser)
+    btn.innerHTML = body.classList.contains('light-mode')
+      ? '<i class="ri-moon-fill text-lg textToggleNav"></i>'
+      : '<i class="ri-sun-fill text-lg textToggleNav"></i>';
+  });
 });
-
-function lightMode() {
-
-    if (!light) {
-        // dark → light
-        body.style.background = lightBg;
-        textToggle.forEach(element => element.style.color = blackSoft);
-        btnLightMode.innerHTML = `<i class="ri-moon-fill text-lg text-white"></i>`
-
-        light = true;
-    } else {
-        // light → dark
-        body.style.background = darkBg;
-        textToggle.forEach(element => element.style.color = whiteSoft);
-        btnLightMode.innerHTML = `<i class="ri-sun-fill text-lg text-white"></i>`
-
-        light = false;
-    }
-}
 
 // --> carousel
 

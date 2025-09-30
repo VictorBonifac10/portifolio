@@ -27,56 +27,52 @@
     <link rel="icon" href="./assets/img/code-box-fill.svg" type="image/x-icon">
 </head>
 
-<body class="bg-[#020202]">
+<body class="bg-[#18181c]">
     <div id="tsparticles"></div>
     <!-- Header -->
     <header class="flex justify-between p-4">
-        <!--Background Video-->
-        <video src="./assets/video/video2.mp4" class="absolute top-0 left-0 w-full h-full object-cover z-[-10]"
-            preload="none" autoplay muted loop></video>
-        <div class="mask w-full h-full absolute top-0 left-0 z-[-9]"></div>
 
         <nav class="navbar navbar-expand-lg bg-transparent fixed-top p-3 flex justify-between items-center">
             <div class="flex justify-center items-center gap-2">
                 <i class="ri-code-box-fill text-amber-400 text-5xl"></i>
                 <h3 class="text-gray-500 font-extrabold text-2xl">
-                    <strong class="text-white">VICTOR</strong>BONIFACIO
+                    <strong class="text-gray-300">VICTOR</strong>BONIFACIO
                 </h3>
             </div>
             <!--Menu-->
             <div class="flex gap-4 items-center d-none d-lg-flex">
-                <a href="#top" class="relative group text-white font-bold uppercase">
+                <a href="#top" class="textToggleNav relative group font-bold uppercase">
                     Inicio
                     <span
                         class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#about" class="relative group text-white font-bold uppercase">
+                <a href="#about" class="textToggleNav relative group font-bold uppercase">
                     Sobre
                     <span
                         class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#experiences" class="relative group text-white font-bold uppercase">
+                <a href="#experiences" class="textToggleNav relative group font-bold uppercase">
                     Experiencias
                     <span
                         class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#tech-icons" class="relative group text-white font-bold uppercase">
+                <a href="#tech-icons" class="textToggleNav relative group font-bold uppercase">
                     Tecnologias
                     <span
                         class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#projects" class="relative group text-white font-bold uppercase">
+                <a href="#projects" class="textToggleNav relative group font-bold uppercase">
                     Projetos
                     <span
                         class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#contact" class="relative group text-white font-bold uppercase">
+                <a href="#contact" class="textToggleNav relative group font-bold uppercase">
                     Contato
                     <span
                         class="absolute left-0 -bottom-1 w-0 h-[2px] bg-amber-400 transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <button class="border-1 rounded-full p-2 w-11 light-mode">
-                    <i class="ri-sun-fill text-lg text-white"></i>
+                    <i class="ri-sun-fill text-lg textToggleNav"></i>
                 </button>
             </div>
 
@@ -94,32 +90,32 @@
                         <div class="flex items-center gap-2 mt-2 mb-2">
                             <i class="ri-code-box-fill text-amber-400 text-5xl"></i>
                             <h3 class="text-gray-500 font-extrabold text-2xl">
-                                <strong class="text-white">VICTOR</strong>BONIFACIO
+                                <strong class="text-gray-300">VICTOR</strong>BONIFACIO
                             </h3>
                         </div>
                     </li>
                     <hr>
                     <li class="nav-item">
-                        <a class="nav-link text-white font-bold uppercase mt-2" href="#top">Inicio</a>
+                        <a class="nav-link textToggleNav font-bold uppercase mt-2" href="#top">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white font-bold uppercase mt-2" href="#about">Sobre</a>
+                        <a class="nav-link textToggleNav font-bold uppercase mt-2" href="#about">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white font-bold uppercase mt-2" href="#experiences">Experiencias</a>
+                        <a class="nav-link textToggleNav font-bold uppercase mt-2" href="#experiences">Experiencias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white font-bold uppercase mt-2" href="#tech-icons">Tecnologias</a>
+                        <a class="nav-link textToggleNav font-bold uppercase mt-2" href="#tech-icons">Tecnologias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white font-bold uppercase mt-2" href="#projects">Projetos</a>
+                        <a class="nav-link textToggleNav font-bold uppercase mt-2" href="#projects">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white font-bold uppercase mt-2" href="#contact">Contato</a>
+                        <a class="nav-link textToggleNav font-bold uppercase mt-2" href="#contact">Contato</a>
                     </li>
                     <li class="nav-item mt-2">
                         <button class="border-1 rounded-full p-2 w-11 light-mode">
-                            <i class="ri-sun-fill text-lg text-white"></i>
+                            <i class="ri-sun-fill text-lg textToggleNav "></i>
                         </button>
                     </li>
                 </ul>
@@ -130,18 +126,18 @@
     <main>
         <!-- Top Button -->
         <a href="#top"
-            class="fixed bottom-4 right-4 flex justify-center items-center cursor-pointer bg-amber-400 rounded-full p-2 w-10 h-10 shadow-lg mr-3 mt-2">
-            <i class="ri-skip-up-line text-lg font-"></i>
+            class="fixed bottom-4 right-4 z-20 flex justify-center items-center cursor-pointer bg-amber-400 rounded-full p-2 w-10 h-10 mr-3 mt-2">
+            <i class="ri-skip-up-line text-lg"></i>
         </a>
         <!-- Introduction Card -->
         <div
             class="container flex justify-center items-center text-center w-full max-w-[900px] h-auto min-h-[450px] p-5 mt-5 mb-5">
-            <div class="glassmorphism bg-white/9 backdrop-blur-[20px] rounded-xl p-6 sm:p-10">
-                <span id="element" class="text-2xl sm:text-3xl font-extrabold mt-3 text-amber-400">...</span>
-                <h3 class="text-lg sm:text-2xl font-bold mt-2 text-gray-300">
+            <div class="glassmorphism backdrop-blur-[4px] rounded-xl p-6 sm:p-10">
+                <span id="element" class="text-4xl font-extrabold mt-3 text-amber-400">...</span>
+                <h3 class="textToggleNav text-2xl font-bold mt-2">
                     Desenvolvedor Front-End
                 </h3>
-                <p class="text-sm sm:text-base max-w-lg mt-4 text-gray-100">
+                <p class="textToggle text-lg max-w-xl mt-4 text-gray-100">
                     Sou apaixonado por tecnologia, inovação e por desenvolver soluções que gerem impacto real.
                     Verifique abaixo ▼
                 </p>
@@ -149,18 +145,18 @@
                 <div class="technologies flex justify-center mt-4 mb-2 gap-4 flex-wrap">
                     <a href="https://www.linkedin.com/in/victor-alves-bonifacio/" target="_blank"
                         class="flex justify-center items-center">
-                        <i class="ri-linkedin-fill text-white text-2xl" data-tooltip="Linkedin"></i>
+                        <i class="ri-linkedin-fill text-amber-400 text-2xl" data-tooltip="Linkedin"></i>
                     </a>
                     <a href="https://github.com/VictorBonifac10" target="_blank"
                         class="flex justify-center items-center">
-                        <i class="ri-github-fill text-white text-2xl" data-tooltip="Github"></i>
+                        <i class="ri-github-fill text-amber-400 text-2xl" data-tooltip="Github"></i>
                     </a>
                     <a href="#" target="_blank" class="flex justify-center items-center">
-                        <i class="ri-article-fill text-white text-2xl" data-tooltip="Currículo"></i>
+                        <i class="ri-article-fill text-amber-400 text-2xl" data-tooltip="Currículo"></i>
                     </a>
                     <a href="https://wa.me/5516993090225?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Estou%20entrando%20em%20contato%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio!"
                         target="_blank" class="flex justify-center items-center">
-                        <i class="ri-whatsapp-fill text-white text-2xl" data-tooltip="Whatsapp"></i>
+                        <i class="ri-whatsapp-fill text-amber-400 text-2xl" data-tooltip="Whatsapp"></i>
                     </a>
                 </div>
             </div>
@@ -249,7 +245,7 @@
                             class="container flex flex-col gap-3 bg-gray-500/20 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all p-4">
                             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-0">
                                 <div>
-                                    <h5 class="textToggle text-base sm:text-lg text-gray-50 font-extrabold">
+                                    <h5 class="textToggle text-base sm:text-lg font-extrabold">
                                         Desenvolvedor Front-End</h5>
                                     <p class="textToggle text-sm text-gray-200 font-extralight">Freelancer</p>
                                 </div>
@@ -258,7 +254,7 @@
                                     2025 - o momento
                                 </p>
                             </div>
-                            <p class="textToggle text-sm text-gray-50 leading-relaxed">
+                            <p class="textToggle text-sm leading-relaxed">
                                 <i class="ri-arrow-right-s-fill text-amber-400 text-lg"></i>
                                 Desenvolvimento de sites institucionais, landing pages e sistemas web responsivos com
                                 foco em performance e experiência do usuário. Integração de layouts personalizados e
@@ -281,9 +277,9 @@
                             class="container flex flex-col gap-3 bg-gray-500/20 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all p-4">
                             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-0">
                                 <div>
-                                    <h5 class="textToggle text-base sm:text-lg text-gray-50 font-extrabold">Analista de
+                                    <h5 class="textToggle text-base sm:text-lg font-extrabold">Analista de
                                         Marketing e Mídias Digitais</h5>
-                                    <p class="textToggle text-sm text-gray-50 font-extralight">Rotsen Eqpto.
+                                    <p class="textToggle text-sm font-extralight">Rotsen Eqpto.
                                         Agropecuários LTDA</p>
                                 </div>
                                 <p
@@ -291,7 +287,7 @@
                                     2024 - 2025
                                 </p>
                             </div>
-                            <p class="textToggle text-sm text-gray-50 leading-relaxed">
+                            <p class="textToggle text-sm leading-relaxed">
                                 <i class="ri-arrow-right-s-fill text-amber-400 text-lg"></i>
                                 Criação de conteúdo estratégico e produção audiovisual para redes sociais, com
                                 planejamento e monitoramento de campanhas pagas para maximizar resultados.
@@ -311,9 +307,9 @@
                             class="container flex flex-col gap-3 bg-gray-500/20 border-1 border-white/10 rounded-2xl hover:rounded-none hover:bg-amber-400/10 hover:border-amber-400 hover:scale-105 transition-all p-4">
                             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-0">
                                 <div>
-                                    <h5 class="textToggle text-base sm:text-lg text-gray-50 font-extrabold">Assistente
+                                    <h5 class="textToggle text-base sm:text-lg font-extrabold">Assistente
                                         Administrativo de Escritório</h5>
-                                    <p class="textToggle text-sm text-gray-50 font-extralight">Triângulo do Sol Auto
+                                    <p class="textToggle text-sm font-extralight">Triângulo do Sol Auto
                                         Estradas</p>
                                 </div>
                                 <p
@@ -321,7 +317,7 @@
                                     2021 - 2022
                                 </p>
                             </div>
-                            <p class="textToggle text-sm text-gray-50 leading-relaxed">
+                            <p class="textToggle text-sm leading-relaxed">
                                 <i class="ri-arrow-right-s-fill text-amber-400 text-lg"></i>
                                 Controle financeiro, organização de documentos e envio de correspondências oficiais no
                                 departamento de engenharia.
@@ -501,14 +497,14 @@
 
         <div data-aos="fade-up" data-aos-duration="1500">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 p-5 justify-items-center">
-                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                <article class="flex flex-col gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
                     transition-all overflow-hidden">
                     <img src="./assets/img/project01.png" alt="projeto"
-                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
-                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3 gap-2">
-                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">WL Motorcycle Aesthetics</h5>
-                        <p class="textToggle text-xs text-gray-300">
-                            Desenv. de uma Landing Page responsiva para um Lava Rápido de motos.
+                        class="w-auto sm:w-[150px] flex-shrink-0 object-cover">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full p-3 pt-1 gap-2">
+                        <h5 class="text-amber-400 font-semibold text-lg leading-tight">WL Motorcycle Aesthetics</h5>
+                        <p class="textToggle text-[13px] text-gray-300 mb-2">
+                            Desenvolvimento de uma Landing Page responsiva para um Lava Rápido de Motos.
                         </p>
                         <div class="flex flex-wrap gap-1">
                             <p
@@ -517,6 +513,9 @@
                             <p
                                 class="text-[10px] text-blue-500 bg-blue-500/20 p-2 border-1 border-blue-500 rounded-md items-center justify-center">
                                 CSS3</p>
+                            <p
+                                class="text-[10px] text-purple-500 bg-purple-500/20 p-2 border-1 border-purple-500 rounded-md items-center justify-center">
+                                Bootstrap</p>
                             <p
                                 class="text-[10px] text-yellow-500 bg-yellow-500/20 p-2 border-1 border-yellow-500 rounded-md items-center justify-center">
                                 JavaScript</p>
@@ -529,14 +528,15 @@
                         </div>
                     </div>
                 </article>
-                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                <article class="flex flex-col gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
                     transition-all overflow-hidden">
                     <img src="./assets/img/project02.png" alt="projeto"
-                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
-                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3 gap-2">
-                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">FlatVault Business</h5>
-                        <p class="textToggle text-xs text-gray-300">
-                            Desenv. de uma Landing Page responsiva para negócios.
+                        class="w-auto sm:w-[150px] flex-shrink-0 object-cover">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full p-3 pt-1 gap-2">
+                        <h5 class="text-amber-400 font-semibold text-lg leading-tight">Sir Wallet Bank</h5>
+                        <p class="textToggle text-[13px] text-gray-300 mb-2">
+                            Desenvolvimento de uma Landing Page responsiva para serviços bancários com conversor
+                            monetário.
                         </p>
 
                         <div class="flex flex-wrap gap-1">
@@ -552,23 +552,27 @@
                             <p
                                 class="text-[10px] text-gray-500 bg-gray-500/20 p-2 border-1 border-gray-500 rounded-md items-center justify-center">
                                 TailwindCSS</p>
+                            <p
+                                class="text-[10px] text-yellow-500 bg-yellow-500/20 p-2 border-1 border-yellow-500 rounded-md items-center justify-center">
+                                JavaScript</p>
                         </div>
                         <div class="technologies flex gap-3 mt-2 text-2xl text-amber-400">
                             <a href="https://github.com/VictorBonifac10/business-website" target="_blank"
                                 class="flex-shrink-0"><i class="ri-github-fill" data-tooltip="Github"></i></a>
-                            <a href="https://flatvault.netlify.app/" target="_blank" class="flex-shrink-0"><i
+                            <a href="https://sirwalletbank.netlify.app/" target="_blank" class="flex-shrink-0"><i
                                     class="ri-link" data-tooltip="Site"></i></a>
                         </div>
                     </div>
                 </article>
-                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                <article class="flex flex-col gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
                     transition-all overflow-hidden">
                     <img src="./assets/img/project03.png" alt="projeto"
-                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
-                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3 gap-2">
-                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">Cake House Online</h5>
-                        <p class="textToggle text-xs text-gray-300">
-                            Desenv. de uma Landing Page responsiva para confeitarias.
+                        class="w-auto sm:w-[150px] flex-shrink-0 object-cover">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full p-3 pt-1 gap-2">
+                        <h5 class="text-amber-400 font-semibold text-lg leading-tight">Cake House Confeitaria</h5>
+                        <p class="textToggle text-[13px] text-gray-300 mb-2">
+                            Desenvolvimento de uma Landing Page responsiva para serviços de uma confeitária, com
+                            carrinho de compras.
                         </p>
                         <div class="flex flex-wrap gap-1">
                             <p
@@ -592,14 +596,14 @@
                         </div>
                     </div>
                 </article>
-                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                <article class="flex flex-col gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
                     transition-all overflow-hidden">
                     <img src="./assets/img/project05.png" alt="projeto"
-                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
-                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3">
-                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">UpTrend Marketing</h5>
-                        <p class="textToggle text-xs text-gray-300">
-                            Desenv. de uma Landing Page responsiva para uma agência de marketing.
+                        class="w-auto sm:w-[150px] flex-shrink-0 object-cover">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full p-3 pt-1 gap-2">
+                        <h5 class="text-amber-400 font-semibold text-lg leading-tight">Uptrend Marketing</h5>
+                        <p class="textToggle text-[13px] text-gray-300 mb-2">
+                            Desenvolvimento de uma Landing Page responsiva para serviços de uma agência de marketing.
                         </p>
                         <div class="flex flex-wrap gap-1">
                             <p
@@ -623,14 +627,14 @@
                         </div>
                     </div>
                 </article>
-                <article class="flex gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
+                <article class="flex flex-col gap-3 w-full max-w-[390px] min-h-[150px] border-1 border-white/10 bg-gray-500/20 rounded-2xl hover:rounded-none hover:border-amber-400 hover:bg-amber-500/10 hover:scale-105
                     transition-all overflow-hidden">
                     <img src="./assets/img/project04.png" alt="projeto"
-                        class="w-20 sm:w-[150px] flex-shrink-0 object-cover rounded-tl-[10px] rounded-bl-[10px]">
-                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full py-3 pr-3 gap-2">
-                        <h5 class="text-amber-400 font-semibold text-sm leading-tight">Patient Manager</h5>
-                        <p class="textToggle text-xs text-gray-300">
-                            Desenv. de um Sistema de gerenciamento online p/ cadastro de pacientes.
+                        class="w-auto sm:w-[150px] flex-shrink-0 object-cover">
+                    <div class="flex flex-col justify-between flex-1 min-w-0 h-full p-3 pt-1 gap-2">
+                        <h5 class="text-amber-400 font-semibold text-lg leading-tight">Patient Manager</h5>
+                        <p class="textToggle text-[13px] text-gray-300 mb-2">
+                            Desenvolvimento de um sitema online, para a gestão de cadastro de pacientes.
                         </p>
                         <div class="flex flex-wrap gap-1">
                             <p
