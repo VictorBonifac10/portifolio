@@ -1,5 +1,5 @@
 const typed = new Typed('#element', {
-  strings: ['Bem-vindo ao meu portifólio', 'Bem-vindo ao meu portifólio'],
+  strings: ['Bem-vindo ao meu portfólio', 'Bem-vindo ao meu portfólio'],
   typeSpeed: 40,
 });
 
