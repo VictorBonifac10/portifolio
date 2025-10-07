@@ -81,7 +81,11 @@ function renderProjects(list) {
               </div>
               <div class="technologies flex gap-3 mt-2 text-2xl text-amber-400">
                   <a href="${element.repository}" target="_blank" class="flex-shrink-0"><i class="ri-github-fill" data-tooltip="Github"></i></a>
-                  <a href="${element.site}" target="_blank" class="flex-shrink-0"><i class="ri-link" data-tooltip="Site"></i></a>
+              ${element.site ?
+                      `<a href="${element.site}" target="_blank" class="flex-shrink-0">
+                                  <i class="ri-link" data-tooltip="Site"></i>
+                              </a>`
+                      : ''}
               </div>
           </div>
       </article>

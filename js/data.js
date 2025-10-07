@@ -38,19 +38,37 @@ export const projects = [
     {
         src: './assets/img/project04.png',
         name: 'Patient Manager',
-        description: 'Desenvolvimento de um sitema online, para a gestão de cadastro de pacientes.',
+        description: 'Desenvolvimento de um sistema online, para a gestão de cadastro de pacientes.',
         stacks: ['React', 'Styled-Components', 'Node.js', 'MongoDB'],
-        repository: 'https://patient-manager-xkq0.onrender.com/',
-        site: 'https://github.com/VictorBonifac10/patient-manager',
+        repository: 'https://github.com/VictorBonifac10/patient-manager',
+        site: 'https://patient-manager-xkq0.onrender.com/',
         field: 'Full-Stack'
     },
     {
-        src: '',
-        name: 'Api Cadastro de Usuários',
-        description: 'Api',
-        stacks: ['Node.js'],
-        repository: 'https://patient-manager-xkq0.onrender.com/',
-        site: 'https://github.com/VictorBonifac10/patient-manager',
+        src: './assets/img/dev_burger_api.png',
+        name: 'API DevBurger',
+        description: 'API completa,  desenvolvida com implementação dos principais métodos CRUD, autenticação de usuários, upload de imagens e rotas privadas.',
+        stacks: ['Node.js', 'Express', 'JWT', 'PostgreSQL'],
+        repository: 'https://github.com/VictorBonifac10/devburger_api',
+        site: null,
+        field: 'Back-End'
+    },
+    {
+        src: './assets/img/api-usuarios.png',
+        name: 'API registerUser',
+        description: 'API de cadastro de usuários, desenvolvida com implementação dos principais métodos CRUD.',
+        stacks: ['Node.js', 'Prisma', 'MongoDB'],
+        repository: 'https://github.com/VictorBonifac10/cadastro-usuarios-node',
+        site: null,
+        field: 'Back-End'
+    },
+    {
+        src: './assets/img/miniCRUD.png',
+        name: 'miniCRUD',
+        description: 'Mini CRUD de usuários desenvolvido em C# com .NET, simulando operações de banco de dados por meio de arrays.',
+        stacks: ['C#', '.NET', 'Console Application'],
+        repository: 'https://github.com/VictorBonifac10/miniCrud',
+        site: null,
         field: 'Back-End'
     },
 
