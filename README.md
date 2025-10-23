@@ -1,4 +1,4 @@
-# Portifólio
+# Portfólio
 Meu portfólio apresenta uma landing page responsiva desenvolvida com HTML5, CSS3, JavaScript e bibliotecas, com foco em semântica, design adaptável e código limpo.
 
 ## 💻 Demonstração
