@@ -1,9 +1,11 @@
 import { ContainerFooter, Text } from "./styles";
 
+import Logo from '../../assets/img/logo.svg'
+
 export function Footer() {
     return (
         <ContainerFooter>
-            {/* <img src={Logo} alt='Logo da Empresa' /> */}
+            <img src={Logo} alt="Logo do Portfólio" />
             <Text>
                 Leve sua marca para o próximo nível e conquiste sua presença online de forma única!
             </Text>
@@ -13,10 +15,6 @@ export function Footer() {
                 </li>
                 <li>
                     <a href="/portfolio">Portfólio</a>
-
-                </li>
-                <li>
-                    <a href="#">Termos e Condições</a>
                 </li>
             </ul>
             <div>
@@ -25,7 +23,7 @@ export function Footer() {
                 <i className="ri-instagram-line"></i>
             </div>
             <Text>
-                © 2025 evolve solutions - All rights reserved.
+                © 2025 Victor Bonifácio Portfólio. Todos os direitos reservados.
             </Text>
             <svg
                 className="waves"

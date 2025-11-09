@@ -19,14 +19,17 @@ export const ContainerFooter = styled.footer`
     display: flex;
     gap: 20px;
     list-style: none;
+    padding: 0;
 
   li{
     a{
       text-decoration: none;
       color: #fff;
+
        &:hover{
         color: #00fbff96;
       }
+      
      }
     }
   }

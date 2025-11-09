@@ -8,13 +8,12 @@ export const ContainerBody = styled.div`
 export const ContainerTop = styled.div`
     width: 100%;
     height: 100vh;
-    padding: 0px 50px 50px 50px;
     
     img{
       width: 350px;
       position: relative;
       z-index: 2;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
 
         @media (max-width: 1085px) {
             max-width: 200px;
@@ -25,7 +24,9 @@ export const ContainerTop = styled.div`
     .containerBanner{
 
       display: flex;
+      justify-content: space-between;
       align-items: center;
+      padding: 120px 40px 0px 40px;
         
       @media (max-width: 1085px) {
         flex-direction: column;
@@ -57,7 +58,6 @@ export const ContentLeft = styled.div`
     align-items: flex-start;
     position: relative;
     z-index: 2;
-    margin-top: 90px;
 
     @media (max-width: 1085px) {
         align-items: center;
@@ -185,9 +185,8 @@ export const ContainerAbout = styled.div`
     width: 100%;
     height: 100vh;
     gap: 120px;
-    padding: 0px 170px 0px 170px;
-    margin:  40px 0px 40px 0px;
-
+    padding: 0px 170px;
+    margin:  40px 0px;
 
   @media (max-width: 1300px) {
     flex-direction: column;
@@ -265,7 +264,7 @@ export const Text = styled.div`
 
 export const ContainerServices = styled.div`
   padding: 0px 170px;
-  margin:  70px 0px;
+  margin:  40px 0px;
   width: 100%;
 
   @media (max-width: 850px) {
@@ -279,9 +278,16 @@ export const ContainerPortfolio = styled.div`
   position: relative; 
   width: 100%;
   overflow: hidden;
-  margin:  150px 0px;
-  padding: 23px 170px;
+  margin:  40px 0px;
+  padding: 70px;
   color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
 
   video {
     position: absolute;
@@ -296,7 +302,9 @@ export const ContainerPortfolio = styled.div`
   .content {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .custom-button{
@@ -329,7 +337,7 @@ export const ContainerContact = styled.div`
   justify-content: center;
   width: 100%;
   gap: 220px;
-  margin:  150px 0px;
+  margin:  40px 0px;
   padding: 0px 170px;
 
   .content-contact-card{
@@ -477,4 +485,81 @@ export const TechBox = styled.div`
     border-radius: 0;
     transform: scale(1.09);
   }
+`;
+
+
+export const AttributeContainer = styled.div`
+
+display: flex;
+flex-wrap: wrap;
+margin-top: 50px;
+padding: 10px 10px 10px 0px;
+gap: 20px;
+`;
+
+export const AttributeCard = styled.div`
+  border-radius: 1rem;
+  padding: 2rem;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.29);
+  position: relative;
+  overflow: hidden;
+  transition: 1s;
+  background: linear-gradient(318deg, #2814da2b, #c012a627, #00aaff34, #1b1b1b3e, #0000002b);
+  background-size: 1000% 1000%;
+  
+  -webkit-animation: Coolgradient 41s linear infinite;
+  -moz-animation: Coolgradient 41s linear infinite;
+  -o-animation: Coolgradient 41s linear infinite;
+  animation: Coolgradient 41s linear infinite;
+
+  @-webkit-keyframes Coolgradient {
+      0%{background-position:5% 0%}
+      50%{background-position:96% 100%}
+      100%{background-position:5% 0%}
+  }
+
+  @-moz-keyframes Coolgradient {
+      0%{background-position:5% 0%}
+      50%{background-position:96% 100%}
+      100%{background-position:5% 0%}
+  }
+
+  @-o-keyframes Coolgradient {
+      0%{background-position:5% 0%}
+      50%{background-position:96% 100%}
+      100%{background-position:5% 0%}
+  }
+
+  @keyframes Coolgradient { 
+      0%{background-position:5% 0%}
+      50%{background-position:96% 100%}
+      100%{background-position:5% 0%}
+  }
+
+  &:hover{
+      transform: scale(1.05);
+      border: 1px solid #fff;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  padding: 15px;
+  max-width: 230px;
+  gap: 15px;
+
+  i {
+    color: #00fbff96;
+    border: 1px solid #00fbff96;
+    border-radius: 50px;
+    padding: 5px 9px;
+    font-size: 17px;
+  }
+
+  p{
+    margin: 0;
+  }
+
 `;

@@ -77,13 +77,15 @@ export const CardTitle = styled.div`
   padding-top: 1.5rem;
 
   i {
-    border: 1px solid #fff;
+    color: #00fbff96;
+    border: 1px solid #00fbff96;
     border-radius: 50px;
     padding: 5px 9px;
     font-size: 17px;
   }
 
   h4 {
+    color: #00fbff96;
     margin: 0;
     font-size: 1.1rem;
     font-weight: 600;
