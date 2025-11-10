@@ -275,46 +275,7 @@ export const ContainerServices = styled.div`
 `;
 
 export const ContainerPortfolio = styled.div`
-  position: relative; 
-  width: 100%;
-  overflow: hidden;
-  margin:  40px 0px;
-  padding: 70px;
-  color: #fff;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-  }
-
-  .content {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .custom-button{
-    width: 15%;
-  }
-  
-  @media (max-width: 850px) {
-      padding: 50px 20px;
-      margin-top: 50px;
-  }
 `;
 
 export const Mask = styled.div`

@@ -9,9 +9,9 @@ import { Button, Footer, Header, ScrollIndicator, ServicesCards, SupportButton, 
 import { ContainerBody, Banner, ContainerTop, ContentLeft, ContentRight, FirstDescription, SecondDescription, ContainerMain, ContainerAbout, Text, ContainerServices, ContainerPortfolio, Mask, ContainerContact, ContactCard, TechnologiesContainer, TechBox, AttributeContainer, AttributeCard } from "./styles";
 
 import videoHomePage from '../../assets/video/HomePage.mp4'
-import videoPortfolioSection from '../../assets/video/PortfolioSection.mp4'
 import ImgAboutSection from '../../assets/img/my-photo.jpg'
 import Logo from '../../assets/img/logo.svg'
+import { Portfolio } from "../Portfolio";
 
 export function Home() {
 
@@ -73,7 +73,7 @@ export function Home() {
                     </div>
                 </section>
                 <Title subtitle="Conheça mais sobre mim">Sobre</Title>
-                <ContainerAbout>
+                <ContainerAbout id='about'>
                     <div className="aboutText">
                         <Text>
                             Olá! Meu nome é Victor Alves Bonifácio e atuo como Desenvolvedor Web Full-Stack. Ao longo da minha carreira desenvolvi diversos projetos profissionais e acadêmicos em diferentes setores, o que me permitiu dominar ferramentas e metodologias voltadas à criação e ao gerenciamento de software, sempre com foco na entrega de valor.
@@ -113,7 +113,7 @@ export function Home() {
                 <ContainerServices id="services">
                     <ServicesCards />
                 </ContainerServices>
-                <TechnologiesContainer>
+                <TechnologiesContainer id='technologies'>
                     <div className="titleContainer">
                         <Title subtitle="Ferramentas modernas para soluções inovadoras">Tecnologias</Title>
                     </div>
@@ -127,20 +127,9 @@ export function Home() {
                         }
                     </div>
                 </TechnologiesContainer>
-                <ContainerPortfolio>
-                    <video src={videoPortfolioSection} preload="none" autoPlay muted loop></video>
-                    <Mask />
-                    <div className="content">
-                        <Title subtitle="Da ideia inicial ao resultado final">Projetos</Title>
-                        <Text>
-                            Clique em "Veja mais" e tenha acesso a todos os nossos serviços, desde sites institucionais e landing pages até estratégias para fortalecer sua presença online. Cada projeto é desenvolvido com atenção aos detalhes, design moderno e funcionalidade, garantindo que sua marca se destaque e conquiste resultados reais.
-                            <br /><br />
-                            Explore nosso portfólio e descubra como podemos impulsionar sua presença digital de forma autêntica e eficiente.
-                        </Text>
-                    </div>
-                    <div className="custom-button">
-                        <Button href="/portfolio">Veja mais <i className="ri-arrow-right-down-long-line"></i></Button>
-                    </div>
+                <ContainerPortfolio id='portfolio'>
+                    <Title subtitle="Da ideia inicial ao resultado final">Projetos</Title>
+                    <Portfolio />
                 </ContainerPortfolio>
                 <Title subtitle="Envie-me uma mensagem">Contato</Title>
                 <ContainerContact id="contact">

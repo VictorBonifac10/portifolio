@@ -14,7 +14,19 @@ export function Footer() {
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="/portfolio">Portfólio</a>
+                    <a href="#about">Sobre</a>
+                </li>
+                <li>
+                    <a href="#services">Serviços</a>
+                </li>
+                <li>
+                    <a href="#technologies">Tecnologias</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfólio</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
                 </li>
             </ul>
             <div>

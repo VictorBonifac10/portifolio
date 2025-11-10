@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ContainerButton = styled.a`
     background-color: ${(props) => (props.variant === "secondary" ? "transparent" : "#fff")};
-    border: ${(props) => (props.variant === "secondary" ? "1px solid #25D366" : "none")};
-    color: ${(props) => (props.variant === "secondary" ? "#25D366" : "#000")};
+    border: ${(props) => (props.variant === "secondary" ? "1px solid #00fbff96" : "none")};
+    color: ${(props) => (props.variant === "secondary" ? "#00fbff96" : "#000")};
     text-decoration: none;
     border-radius: 5px;
     padding: 14px;
@@ -18,10 +18,13 @@ export const ContainerButton = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    text-align: center;
+    gap: 7px;
+    cursor: pointer;
+    transition: 0.5s all;
 
     &:hover{
-        background-color: ${(props) => (props.variant === "secondary" ? "#25D366" : "#ffffffc4")};
+        background-color: ${(props) => (props.variant === "secondary" ? "#00fbff96" : "#ffffffc4")};
         color: ${(props) => (props.variant === "secondary" ? "#fff" : "#000")};
     }
 

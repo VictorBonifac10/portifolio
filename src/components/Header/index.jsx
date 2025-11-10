@@ -1,4 +1,3 @@
-import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react'
 import {
     CContainer,
@@ -16,9 +15,7 @@ import { StyledNavbar, StyledOffcanvas, StyledNavbarToggler, StyledNavLink } fro
 export function Header() {
     const [visible, setVisible] = useState(false)
     const [scrolled, setScrolled] = useState(false)
-
-    const { pathname } = useLocation();
-
+    
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20)
         window.addEventListener('scroll', handleScroll)
@@ -31,13 +28,33 @@ export function Header() {
             <CContainer fluid className="d-flex justify-content-end align-items-center">
                 <CNavbarNav className="d-none d-lg-flex flex-row gap-5 justify-content-end">
                     <CNavItem>
-                        <StyledNavLink href="/" $isActive={pathname === '/'}>
+                        <StyledNavLink href="/">
                             Home
                         </StyledNavLink>
                     </CNavItem>
                     <CNavItem>
-                        <StyledNavLink href="/portfolio" $isActive={pathname === '/portfolio'}>
+                        <StyledNavLink href="#about">
+                            Sobre
+                        </StyledNavLink>
+                    </CNavItem>
+                    <CNavItem>
+                        <StyledNavLink href="#services">
+                            Serviços
+                        </StyledNavLink>
+                    </CNavItem>
+                    <CNavItem>
+                        <StyledNavLink href="#technologies">
+                            Tecnologias
+                        </StyledNavLink>
+                    </CNavItem>
+                    <CNavItem>
+                        <StyledNavLink href="#portfolio">
                             Portfólio
+                        </StyledNavLink>
+                    </CNavItem>
+                    <CNavItem>
+                        <StyledNavLink href="#contact">
+                            Contato
                         </StyledNavLink>
                     </CNavItem>
                 </CNavbarNav>
@@ -63,13 +80,33 @@ export function Header() {
                     <COffcanvasBody>
                         <CNavbarNav className="flex-column gap-3">
                             <CNavItem>
-                                <StyledNavLink href="/" $isActive={pathname === '/'}>
+                                <StyledNavLink href="/">
                                     Home
                                 </StyledNavLink>
                             </CNavItem>
                             <CNavItem>
-                                <StyledNavLink href="/portfolio" $isActive={pathname === '/portfolio'}>
+                                <StyledNavLink href="#about">
+                                    Sobre
+                                </StyledNavLink>
+                            </CNavItem>
+                            <CNavItem>
+                                <StyledNavLink href="#services">
+                                    Serviços
+                                </StyledNavLink>
+                            </CNavItem>
+                            <CNavItem>
+                                <StyledNavLink href="#technologies">
+                                    Tecnologias
+                                </StyledNavLink>
+                            </CNavItem>
+                            <CNavItem>
+                                <StyledNavLink href="#portfolio">
                                     Portfólio
+                                </StyledNavLink>
+                            </CNavItem>
+                            <CNavItem>
+                                <StyledNavLink href="#contact">
+                                    Contato
                                 </StyledNavLink>
                             </CNavItem>
                         </CNavbarNav>

@@ -13,7 +13,7 @@ export const ContainerTitle = styled.h2`
         color: #00fbff96;
 
     &::first-letter {
-        font-size: 2em;  
+        font-size: 50px;  
     }
 
     hr{

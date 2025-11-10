@@ -15,7 +15,7 @@ export const StyledNavbar = styled(CNavbar)`
     -webkit-backdrop-filter: blur(15px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-`
+`;
 
 export const StyledOffcanvas = styled(COffcanvas)`
   background-color: rgba(0, 0, 0, 0.05);
@@ -31,7 +31,7 @@ export const StyledOffcanvas = styled(COffcanvas)`
   .nav-link {
     color: #fff !important;
   }
-`
+`;
 
 export const StyledNavbarToggler = styled(CNavbarToggler)`
   border: none !important;
@@ -62,13 +62,13 @@ export const StyledNavbarToggler = styled(CNavbarToggler)`
   .navbar-toggler-icon::after {
     top: 7px;
   }
-`
+`;
 
 export const StyledNavLink = styled(CNavLink)`
-color: ${props => (props.$isActive ? '#00fbff96 !important' : '#FFFFFF !important')};  border-bottom: ${props => (props.$isActive ? `2px solid #00fbff96` : 'none')};
-  display: inline-block;
+  color:  #ffff;
 
   &:hover{
     color: #00fbff96;
+    border-bottom: 2px solid #00fbff96;
   }
-`
+`;
