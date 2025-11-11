@@ -16,9 +16,12 @@ const GlobalStyles = createGlobalStyle`
     //Body
 
     body{
-        background-color: rgba(5, 6, 8, 1);
-        background-image: radial-gradient(#1C1C1C 0.7px, transparent 0.7px);
-        background-size: 25px 25px;
+    // background-color: rgba(5, 6, 8, 1);
+    //background-image: radial-gradient(#1C1C1C 0.7px, transparent 0.7px);
+    //background-size: 25px 25px;
+
+        background: ${({ theme }) => theme.bg};
+        color: ${({ theme }) => theme.text};
     }
 
     //Scroll

@@ -64,9 +64,9 @@ export const ContentLeft = styled.div`
     }
 
     span{
-      font-weight: bold;
       color: #00fbff96;
       font-size: 50px;
+      font-family: "Jersey 10", sans-serif;
 
     }
 `;
@@ -140,7 +140,7 @@ export const ContentRight = styled.div`
 
 export const ContainerMain = styled.main`
 
-    section{
+    .animatedSection{
         display: flex;
         justify-content: center;
         padding: 10px;
@@ -179,20 +179,28 @@ export const ContainerMain = styled.main`
 `;
 
 export const ContainerAbout = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    gap: 120px;
-    padding: 0px 170px;
-    margin:  40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+
+.aboutSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 120px;
+  padding: 0px 170px;
 
   @media (max-width: 1300px) {
     flex-direction: column;
     gap: 90px;
-    margin-top: 80px;
+    padding: 0px 40px;
   }
+
+}
 
   .aboutText{
       @media (max-width: 1300px) {
@@ -232,10 +240,11 @@ export const ContainerAbout = styled.div`
   }
 
   #text-on-path {
-    font-size: 16px;
+    font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 5px;
     fill: #00fbff96;
+    font-family: "Jersey 10", sans-serif;
   }
 
   @keyframes rotate-text {
@@ -275,7 +284,6 @@ export const ContainerServices = styled.div`
 `;
 
 export const ContainerPortfolio = styled.div`
-
 `;
 
 export const Mask = styled.div`
@@ -295,24 +303,35 @@ export const Mask = styled.div`
 
 export const ContainerContact = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:  90px 0px;
+
+.contactSection{
+
+  display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%;
   gap: 220px;
-  margin:  40px 0px;
   padding: 0px 170px;
 
+  @media(max-width: 1200px){
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 40px;
+    gap: 20px;
+  }
+
+}
   .content-contact-card{
     display: flex;
     flex-direction: column;
     gap: 35px;
   }
 
-  @media(max-width: 1200px){
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-  }
 `;
 
 export const ContactCard = styled.div`
@@ -391,10 +410,14 @@ export const TechnologiesContainer = styled.div`
 
   background-color: #00fbff4e;
   width: 100%;
-  margin:  150px 0px;
+  margin: 60px 0px;
 
   .titleContainer{
     padding: 20px 170px 0px 170px;
+
+    @media(max-width: 1220px){
+      padding: 20px 40px;
+    }
   }
 
   .techContainer{
@@ -452,16 +475,14 @@ export const TechBox = styled.div`
 export const AttributeContainer = styled.div`
 
 display: flex;
-flex-wrap: wrap;
-margin-top: 50px;
+margin-top: 40px;
 padding: 10px 10px 10px 0px;
-gap: 20px;
+gap: 10px;
 `;
 
 export const AttributeCard = styled.div`
-  border-radius: 1rem;
+  border-radius: 20px;
   padding: 2rem;
-  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.29);
   position: relative;
   overflow: hidden;
@@ -503,24 +524,24 @@ export const AttributeCard = styled.div`
       border: 1px solid #fff;
   }
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  padding: 15px;
-  max-width: 230px;
-  gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 15px;
+    width: 100%;
+    gap: 15px;
+    font-family: "Jersey 10", sans-serif;
 
-  i {
+  span{
     color: #00fbff96;
-    border: 1px solid #00fbff96;
-    border-radius: 50px;
-    padding: 5px 9px;
-    font-size: 17px;
+    font-size: 42px;
   }
 
   p{
     margin: 0;
+    color: #fff;
+    font-size: 20px;
   }
 
 `;

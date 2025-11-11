@@ -11,6 +11,7 @@ export const ContainerTitle = styled.h2`
 
     h2{
         color: #00fbff96;
+        font-family: "Jersey 10", sans-serif;
 
     &::first-letter {
         font-size: 50px;  
@@ -18,7 +19,7 @@ export const ContainerTitle = styled.h2`
 
     hr{
         width: 150px;
-        border: 2px solid #fff;
+        border: 2px solid #00fbff96;
         border-radius: 50px;
         margin: 0px 0px 2px 0px;
         padding: 0;
@@ -27,11 +28,10 @@ export const ContainerTitle = styled.h2`
     }
 
     p{
-        color: #00fbff96;
+        color: #ffffff96;
         font-weight: 400;
         font-size: 18px;
         margin-bottom: 20px;
         padding: 0;
-
     }
 `

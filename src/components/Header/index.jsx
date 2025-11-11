@@ -9,13 +9,16 @@ import {
     CCloseButton,
 } from '@coreui/react'
 import '@coreui/coreui/dist/css/coreui.min.css'
+import { useTheme } from "next-themes";
 
 import { StyledNavbar, StyledOffcanvas, StyledNavbarToggler, StyledNavLink } from './styles'
 
 export function Header() {
     const [visible, setVisible] = useState(false)
     const [scrolled, setScrolled] = useState(false)
-    
+
+    const { theme, setTheme } = useTheme();
+
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20)
         window.addEventListener('scroll', handleScroll)
@@ -56,6 +59,11 @@ export function Header() {
                         <StyledNavLink href="#contact">
                             Contato
                         </StyledNavLink>
+                    </CNavItem>
+                    <CNavItem>
+                        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+                            <i class="ri-sun-line"></i>
+                        </button>
                     </CNavItem>
                 </CNavbarNav>
 

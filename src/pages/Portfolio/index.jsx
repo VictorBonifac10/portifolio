@@ -33,14 +33,17 @@ export function Portfolio() {
         <PortfolioContainer>
             <ButtonContainer>
                 <ActionButton onClick={() => handleFilter("Front-End")}>
+                    <i className="ri-pages-line"></i>
                     Front-End
                 </ActionButton>
 
                 <ActionButton onClick={() => handleFilter("Back-End")}>
+                    <i className="bi bi-database-gear"></i>
                     Back-End
                 </ActionButton>
 
                 <ActionButton onClick={() => handleFilter("Full-Stack")}>
+                    <i class="bi bi-layout-wtf"></i>
                     Full-Stack
                 </ActionButton>
             </ButtonContainer>

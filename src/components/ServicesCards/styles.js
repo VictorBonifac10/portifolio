@@ -87,8 +87,7 @@ export const CardTitle = styled.div`
   h4 {
     color: #00fbff96;
     margin: 0;
-    font-size: 1.1rem;
-    font-weight: 600;
+    font-family: "Jersey 10", sans-serif;
   }
 
   @media (max-width: 850px) {

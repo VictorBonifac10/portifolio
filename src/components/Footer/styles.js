@@ -17,9 +17,13 @@ export const ContainerFooter = styled.footer`
 
   ul{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
     list-style: none;
     padding: 0;
+    max-width: 300px;
 
   li{
     a{

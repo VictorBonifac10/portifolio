@@ -7,7 +7,7 @@ export function Footer() {
         <ContainerFooter>
             <img src={Logo} alt="Logo do Portfólio" />
             <Text>
-                Leve sua marca para o próximo nível e conquiste sua presença online de forma única!
+                Construindo aplicações modernas, performáticas e funcionais.
             </Text>
             <ul>
                 <li>

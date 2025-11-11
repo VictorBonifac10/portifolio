@@ -29,9 +29,10 @@ export const Button = styled.button`
   transition: background-position 0.4s ease-out, color 0.3s ease;
 
   h2 {
-    font-size: 17px;
+    font-size: 30px;
     color: #00fbff96;
     transition: color 0.3s ease;
+    font-family: "Jersey 10", sans-serif;
   }
 
   i {

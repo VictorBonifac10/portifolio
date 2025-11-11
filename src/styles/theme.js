@@ -1,0 +1,1 @@
+export const lightTheme = { bg: "#ffffff", text: "#111111", cardBg: "#f5f5f5", accent: "#007aff", }; export const darkTheme = { bg: "#0f0f0f", text: "#eaeaea", cardBg: "#1a1a1a", accent: "#4da2ff", };

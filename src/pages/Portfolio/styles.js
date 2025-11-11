@@ -132,6 +132,8 @@ export const Description = styled.div`
   h2{
     color: #00fbff96;
     margin-bottom: 30px;
+    font-size: 40px;
+    font-family: "Jersey 10", sans-serif;
   }
 `;
 
@@ -185,14 +187,22 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ActionButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   text-align: center;
   background-color: transparent;
   color: #00fbff96;
   border: 1px solid #00fbff96;
   border-radius: 6px;
   padding: 10px;
-  gap: 14px;
   transition: 0.5s all;
+
+  i{
+    padding: 0;
+    margin: 0;
+  }
 
   &:hover{
     background-color: #00fbff96;
