@@ -1,5 +1,10 @@
+//Tags from Styles
 import { ContainerFooter, Text } from "./styles";
 
+//Datas
+import { links } from "../../data/links";
+
+//Medias
 import Logo from '../../assets/img/logo.svg'
 
 export function Footer() {
@@ -29,11 +34,22 @@ export function Footer() {
                     <a href="#contato">Contato</a>
                 </li>
             </ul>
-            <div>
-                <i className="ri-whatsapp-line"></i>
-                <i className="ri-google-line"></i>
-                <i className="ri-instagram-line"></i>
-            </div>
+            {links.map(data => (
+                <section>
+                    <a href={data.whatsapp} target="_blank">
+                        <i className="ri-whatsapp-line"></i>
+                    </a>
+                    <a href={data.email} target="_blank">
+                        <i className="ri-google-line"></i>
+                    </a>
+                    <a href={data.linkedin} target="_blank">
+                        <i className="ri-linkedin-line"></i>
+                    </a>
+                    <a href={data.github} target="_blank">
+                        <i className="ri-github-line"></i>
+                    </a>
+                </section>
+            ))}
             <Text>
                 © 2025 Victor Bonifácio Portfólio. Todos os direitos reservados.
             </Text>
@@ -49,10 +65,10 @@ export function Footer() {
                     <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
                 </defs>
                 <g className="parallax">
-                    <use href="#gentle-wave" x="48" y="0" fill="#00fbff96" />
-                    <use href="#gentle-wave" x="48" y="3" fill="#00fbff54" />
-                    <use href="#gentle-wave" x="48" y="5" fill="#00fbffc9" />
-                    <use href="#gentle-wave" x="48" y="7" fill="#00fbff4e" />
+                    <use href="#gentle-wave" x="48" y="0" />
+                    <use href="#gentle-wave" x="48" y="3" />
+                    <use href="#gentle-wave" x="48" y="5" />
+                    <use href="#gentle-wave" x="48" y="7" />
                 </g>
             </svg>
         </ContainerFooter>

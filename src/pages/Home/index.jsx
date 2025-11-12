@@ -1,65 +1,90 @@
+//React
 import { useEffect } from "react";
+
+//Utils
 import { carouselFunction } from "../../utils/carouselFunction";
 import { typeWriterFunction } from "../../utils/typeWriterFunction";
 
+//CountUp Library
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
+//Aos Library
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+//Datas
 import { technologies } from "../../data/technologies";
+import { links } from "../../data/links";
 
-import { Button, Footer, Header, ScrollIndicator, ServicesCards, SupportButton, Title } from "../../components";
+//Components
+import { Button, Footer, Header, Portfolio, ScrollIndicator, ServiceCards, SupportButton, Title } from "../../components";
 
-import { ContainerBody, Banner, ContainerTop, ContentLeft, ContentRight, FirstDescription, SecondDescription, ContainerMain, ContainerAbout, Text, ContainerServices, ContainerPortfolio, Mask, ContainerContact, ContactCard, TechnologiesContainer, TechBox, AttributeContainer, AttributeCard } from "./styles";
+//Tags from Styles
+import { Body, Banner, TopContainer, LeftContent, RightContent, FirstDescription, SecondDescription, Main, AboutContainer, Text, ServicesContainer, PortfolioContainer, Mask, ContactContainer, ContactCard, TechnologiesContainer, TechBox, AttributeContainer, AttributeCard } from "./styles";
 
+//Medias
 import videoHomePage from '../../assets/video/HomePage.mp4'
 import ImgAboutSection from '../../assets/img/my-photo.jpg'
 import Logo from '../../assets/img/logo.svg'
-import { Portfolio } from "../Portfolio";
 
 export function Home() {
-
     useEffect(() => {
+        //Aos Init
+        Aos.init({ once: true });
+        //Utils Init
         carouselFunction();
         typeWriterFunction();
     }, []);
 
+    //CountUp Library Config
     const { ref, inView } = useInView({ triggerOnce: true });
 
     return (
-        <ContainerBody>
+        <Body>
             <Header />
             <SupportButton />
-            <ContainerTop>
+            <TopContainer>
                 <Banner>
                     <video src={videoHomePage} preload="none" autoPlay muted loop></video>
                     <Mask />
-                    <div className="containerBanner">
-                        <ContentLeft>
+                    <section className="containerBanner">
+                        <LeftContent>
                             <img src={Logo} alt="Logo do Portfólio" />
                             <span id="typewriter">...</span>
                             <FirstDescription>
                                 Desenvolvedor Web Full-Stack
                             </FirstDescription>
                             <SecondDescription>
-                                Sou apaixonado por tecnologia, inovação e por desenvolver soluções que gerem impacto real. Verifique abaixo ▼
+                                Sou apaixonado por tecnologia, inovação e por desenvolver soluções que gerem impacto real. Verifique abaixo
                             </SecondDescription>
                             <div className="custom-button">
                                 <Button href="#services">
                                     Veja mais
-                                    <i className="ri-arrow-right-down-long-line"></i>
                                 </Button>
                             </div>
-                        </ContentLeft>
-                        <ContentRight>
-                            <i className="ri-whatsapp-line"></i>
-                            <i className="ri-google-line"></i>
-                            <i className="ri-instagram-line"></i>
-                        </ContentRight>
-                    </div>
+                        </LeftContent>
+                        {links.map(data => (
+                            <RightContent>
+                                <a href={data.whatsapp} target="_blank">
+                                    <i className="ri-whatsapp-line"></i>
+                                </a>
+                                <a href={data.email} target="_blank">
+                                    <i className="ri-google-line"></i>
+                                </a>
+                                <a href={data.linkedin} target="_blank">
+                                    <i className="ri-linkedin-line"></i>
+                                </a>
+                                <a href={data.github} target="_blank">
+                                    <i className="ri-github-line"></i>
+                                </a>
+                            </RightContent>
+                        ))}
+                    </section>
                     <ScrollIndicator />
                 </Banner>
-            </ContainerTop>
-            <ContainerMain>
+            </TopContainer>
+            <Main>
                 <section className="animatedSection">
                     <div id="animated-text">
                         <p className="text-custom">Optimization</p>
@@ -72,60 +97,64 @@ export function Home() {
                         <p className="text-custom">➲</p>
                     </div>
                 </section>
-                <ContainerAbout id='about'>
-                    <Title subtitle="Conheça mais sobre mim">Sobre</Title>
-                    <section className="aboutSection">
-                        <div className="aboutText">
-                            <Text>
-                                Olá! Meu nome é Victor Alves Bonifácio e atuo como Desenvolvedor Web Full-Stack. Ao longo da minha carreira desenvolvi diversos projetos profissionais e acadêmicos em diferentes setores, o que me permitiu dominar ferramentas e metodologias voltadas à criação e ao gerenciamento de software, sempre com foco na entrega de valor.
-                                <br /><br />
-                                Com formação em Sistemas para Internet, venho me dedicando ao desenvolvimento aplicações, focando em criar interfaces acessíveis, organizadas e alinhadas ao que o projeto realmente precisa.
-                            </Text>
-                            <AttributeContainer>
-                                <AttributeCard>
-                                    <span ref={ref}>
-                                        {inView && <CountUp end={10} duration={5} />}
-                                        +
-                                    </span>
-                                    <p>Stacks dominadas</p>
-                                </AttributeCard>
-                                <AttributeCard>
-                                    <span ref={ref}>
-                                        {inView && <CountUp end={50} duration={5} />}
-                                        +
-                                    </span>
-                                    <p>Projetos Concluídos</p>
-                                </AttributeCard>
-                            </AttributeContainer>
-                        </div>
-                        <div className="aboutImage">
-                            <img src={ImgAboutSection} alt='Desenvolvedor-de-sites' />
-                            <div class="rotating-container">
-                                <svg viewBox="0 0 300 300" width="200" height="200">
-                                    <path id="circle-path" d="M 150, 150
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <AboutContainer id='about'>
+                        <Title subtitle="Conheça mais sobre mim">Sobre</Title>
+                        <section className="aboutSection">
+                            <section className="aboutText">
+                                <Text>
+                                    Olá! Meu nome é Victor Alves Bonifácio e atuo como Desenvolvedor Web Full-Stack. Ao longo da minha carreira desenvolvi diversos projetos profissionais e acadêmicos em diferentes setores, o que me permitiu dominar ferramentas e metodologias voltadas à criação e ao gerenciamento de software, sempre com foco na entrega de valor.
+                                    <br /><br />
+                                    Com formação em Sistemas para Internet, venho me dedicando ao desenvolvimento aplicações, focando em criar interfaces acessíveis, organizadas e alinhadas ao que o projeto realmente precisa.
+                                </Text>
+                                <AttributeContainer>
+                                    <AttributeCard>
+                                        <span ref={ref}>
+                                            {inView && <CountUp end={10} duration={5} />}
+                                            +
+                                        </span>
+                                        <p>Stacks dominadas</p>
+                                    </AttributeCard>
+                                    <AttributeCard>
+                                        <span ref={ref}>
+                                            {inView && <CountUp end={50} duration={5} />}
+                                            +
+                                        </span>
+                                        <p>Projetos Concluídos</p>
+                                    </AttributeCard>
+                                </AttributeContainer>
+                            </section>
+                            <section className="aboutImage">
+                                <img src={ImgAboutSection} alt='Desenvolvedor-de-sites' />
+                                <div className="rotating-container">
+                                    <svg viewBox="0 0 300 300" width="200" height="200">
+                                        <path id="circle-path" d="M 150, 150
                                     m -100, 0 
                                     a 100,100 0 1,1 200,0
                                     a 100,100 0 1,1 -200,0" fill="none" />
-                                    <circle cx="150" cy="150" r="80" class="inner-circle" />
-                                    <text id="text-on-path">
-                                        <textPath href="#circle-path" startOffset="0%">
-                                            • HANDS-ON TECH • CODE • HANDS-ON TECH • CODE
-                                        </textPath>
-                                    </text>
-                                </svg>
-                            </div>
-                        </div>
-                    </section>
-                </ContainerAbout>
-                <ContainerServices id="services">
-                    <Title subtitle="Porque escolher nossa equipe?">Serviços</Title>
-                    <ServicesCards />
-                </ContainerServices>
+                                        <circle cx="150" cy="150" r="80" className="inner-circle" />
+                                        <text id="text-on-path">
+                                            <textPath href="#circle-path" startOffset="0%">
+                                                • HANDS-ON TECH • CODE • HANDS-ON TECH • CODE
+                                            </textPath>
+                                        </text>
+                                    </svg>
+                                </div>
+                            </section>
+                        </section>
+                    </AboutContainer>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <ServicesContainer id="services">
+                        <Title subtitle="Porque escolher nossa equipe?">Serviços</Title>
+                        <ServiceCards />
+                    </ServicesContainer>
+                </div>
                 <TechnologiesContainer id='technologies'>
-                    <div className="titleContainer">
+                    <article className="titleContainer">
                         <Title subtitle="Ferramentas modernas para soluções inovadoras">Tecnologias</Title>
-                    </div>
-                    <div className="techContainer" id="animated-tech-icons">
+                    </article>
+                    <article className="techContainer" id="animated-tech-icons">
                         {technologies.map(data => (
                             <TechBox key={data.name} color={data.color}>
                                 <i className={data.icon}></i>
@@ -133,51 +162,77 @@ export function Home() {
                             </TechBox>
                         ))
                         }
-                    </div>
+                    </article>
                 </TechnologiesContainer>
-                <ContainerPortfolio id='portfolio'>
-                    <Title subtitle="Da ideia inicial ao resultado final">Projetos</Title>
-                    <Portfolio />
-                </ContainerPortfolio>
-                <ContainerContact id="contact">
-                    <Title subtitle="Envie-me uma mensagem">Contato</Title>
-                    <section className="contactSection">
-                        <div className="content">
-                            <Text>
-                                Seja para tirar dúvidas, solicitar um orçamento ou iniciar um projeto, nossa equipe está sempre pronta para ouvir suas ideias e oferecer o ideal para o seu negócio.
-                                <br /><br />
-                                Portanto, envie-nos uma mensagem e agarre agora mesmo a oportunidade de criar experiências digitais únicas e que conectam sua marca ao público certo.
-                                <br /><br />
-                                Vamos juntos rumo à evolução da sua presença online!
-                            </Text>
-                        </div>
-                        <div className="content-contact-card">
-                            <ContactCard>
-                                <div>
-                                    <i className="ri-whatsapp-line"></i>
-                                    <h3>WhatsApp</h3>
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <PortfolioContainer id='portfolio'>
+                        <Title subtitle="Da ideia inicial ao resultado final">Projetos</Title>
+                        <Portfolio />
+                    </PortfolioContainer>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <ContactContainer id="contact">
+                        <Title subtitle="Envie-me uma mensagem">Contato</Title>
+                        <section className="contactSection">
+                            <section className="content">
+                                <Text>
+                                    Seja para discutir uma ideia, colaborar em um projeto ou esclarecer dúvidas técnicas, estou sempre aberto a novas conexões e desafios no universo do desenvolvimento.
+                                    <br /><br />
+                                    Envie uma mensagem e vamos explorar juntos soluções criativas e eficientes para transformar conceitos em produtos digitais reais e impactantes.
+                                    <br /><br />
+                                    Vamos construir o futuro da tecnologia, uma linha de código por vez!
+                                </Text>
+                                <div className="arrowContainer">
+                                    <div className="arrow"></div>
+                                    <div className="arrow"></div>
+                                    <div className="arrow"></div>
                                 </div>
-                                <p>+55(16)9908-3476</p>
-                            </ContactCard>
-                            <ContactCard>
-                                <div>
-                                    <i className="ri-google-line"></i>
-                                    <h3>Email</h3>
-                                </div>
-                                <p>evolvesolutions@gmail.com</p>
-                            </ContactCard>
-                            <ContactCard>
-                                <div>
-                                    <i className="ri-instagram-line"></i>
-                                    <h3>Instagram</h3>
-                                </div>
-                                <p>@evolvesolutions</p>
-                            </ContactCard>
-                        </div>
-                    </section>
-                </ContainerContact>
-            </ContainerMain>
+                            </section>
+                            {links.map(data => (
+                                <section className="content-contact-card">
+                                    <a href={data.whatsapp} target="_blank">
+                                        <ContactCard>
+                                            <article>
+                                                <i className="ri-whatsapp-line"></i>
+                                                <h3>WhatsApp</h3>
+                                            </article>
+                                            <p>+55 (16)99309-0225</p>
+                                        </ContactCard>
+                                    </a>
+                                    <a href={data.email} target="_blank">
+                                        <ContactCard>
+                                            <article>
+                                                <i className="ri-google-line"></i>
+                                                <h3>Email</h3>
+                                            </article>
+                                            <p>victor.alvesbonifacio@gmail.com</p>
+                                        </ContactCard>
+                                    </a>
+                                    <a href={data.linkedin} target="_blank">
+                                        <ContactCard>
+                                            <article>
+                                                <i className="ri-linkedin-line"></i>
+                                                <h3>LinkedIn</h3>
+                                            </article>
+                                            <p>Victor Alves Bonifácio</p>
+                                        </ContactCard>
+                                    </a>
+                                    <a href={data.github} target="_blank">
+                                        <ContactCard>
+                                            <article>
+                                                <i className="ri-github-line"></i>
+                                                <h3>Github</h3>
+                                            </article>
+                                            <p>@VictorBonifac10</p>
+                                        </ContactCard>
+                                    </a>
+                                </section>
+                            ))}
+                        </section>
+                    </ContactContainer>
+                </div>
+            </Main>
             <Footer />
-        </ContainerBody>
+        </Body >
     )
-}
+};

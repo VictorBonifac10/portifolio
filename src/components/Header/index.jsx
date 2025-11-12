@@ -1,17 +1,23 @@
+//React
 import { useState, useEffect } from 'react'
+
+//CoreUi Library
 import {
     CContainer,
     CNavbarNav,
-    CNavItem,
     COffcanvasHeader,
     COffcanvasTitle,
     COffcanvasBody,
     CCloseButton,
 } from '@coreui/react'
+
 import '@coreui/coreui/dist/css/coreui.min.css'
+
+//Next Themes Library
 import { useTheme } from "next-themes";
 
-import { StyledNavbar, StyledOffcanvas, StyledNavbarToggler, StyledNavLink } from './styles'
+//Tags from Styles
+import { StyledNavbar, StyledOffcanvas, StyledNavbarToggler, StyledNavLink, Item } from './styles'
 
 export function Header() {
     const [visible, setVisible] = useState(false)
@@ -19,6 +25,7 @@ export function Header() {
 
     const { theme, setTheme } = useTheme();
 
+    //Header Config
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20)
         window.addEventListener('scroll', handleScroll)
@@ -30,41 +37,41 @@ export function Header() {
 
             <CContainer fluid className="d-flex justify-content-end align-items-center">
                 <CNavbarNav className="d-none d-lg-flex flex-row gap-5 justify-content-end">
-                    <CNavItem>
+                    <Item>
                         <StyledNavLink href="/">
                             Home
                         </StyledNavLink>
-                    </CNavItem>
-                    <CNavItem>
+                    </Item>
+                    <Item>
                         <StyledNavLink href="#about">
                             Sobre
                         </StyledNavLink>
-                    </CNavItem>
-                    <CNavItem>
+                    </Item>
+                    <Item>
                         <StyledNavLink href="#services">
                             Serviços
                         </StyledNavLink>
-                    </CNavItem>
-                    <CNavItem>
+                    </Item>
+                    <Item>
                         <StyledNavLink href="#technologies">
                             Tecnologias
                         </StyledNavLink>
-                    </CNavItem>
-                    <CNavItem>
+                    </Item>
+                    <Item>
                         <StyledNavLink href="#portfolio">
                             Portfólio
                         </StyledNavLink>
-                    </CNavItem>
-                    <CNavItem>
+                    </Item>
+                    <Item>
                         <StyledNavLink href="#contact">
                             Contato
                         </StyledNavLink>
-                    </CNavItem>
-                    <CNavItem>
-                        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-                            <i class="ri-sun-line"></i>
+                    </Item>
+                    <Item>
+                        <button className="darkMode" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+                            <i className={theme === "dark" ? "ri-sun-line" : "ri-moon-line"}></i>
                         </button>
-                    </CNavItem>
+                    </Item>
                 </CNavbarNav>
 
                 <StyledNavbarToggler
@@ -87,36 +94,41 @@ export function Header() {
                     </COffcanvasHeader>
                     <COffcanvasBody>
                         <CNavbarNav className="flex-column gap-3">
-                            <CNavItem>
+                            <Item>
                                 <StyledNavLink href="/">
                                     Home
                                 </StyledNavLink>
-                            </CNavItem>
-                            <CNavItem>
+                            </Item>
+                            <Item>
                                 <StyledNavLink href="#about">
                                     Sobre
                                 </StyledNavLink>
-                            </CNavItem>
-                            <CNavItem>
+                            </Item>
+                            <Item>
                                 <StyledNavLink href="#services">
                                     Serviços
                                 </StyledNavLink>
-                            </CNavItem>
-                            <CNavItem>
+                            </Item>
+                            <Item>
                                 <StyledNavLink href="#technologies">
                                     Tecnologias
                                 </StyledNavLink>
-                            </CNavItem>
-                            <CNavItem>
+                            </Item>
+                            <Item>
                                 <StyledNavLink href="#portfolio">
                                     Portfólio
                                 </StyledNavLink>
-                            </CNavItem>
-                            <CNavItem>
+                            </Item>
+                            <Item>
                                 <StyledNavLink href="#contact">
                                     Contato
                                 </StyledNavLink>
-                            </CNavItem>
+                            </Item>
+                            <Item>
+                                <button className="darkMode" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+                                    <i className={theme === "dark" ? "ri-sun-line" : "ri-moon-line"}></i>
+                                </button>
+                            </Item>
                         </CNavbarNav>
                     </COffcanvasBody>
                 </StyledOffcanvas>

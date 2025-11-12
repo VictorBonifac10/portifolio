@@ -10,18 +10,16 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         outline: none;
-        text-decoration: none;
     }
 
     //Body
 
     body{
-    // background-color: rgba(5, 6, 8, 1);
-    //background-image: radial-gradient(#1C1C1C 0.7px, transparent 0.7px);
-    //background-size: 25px 25px;
+    background-color: ${({ theme }) => theme.bg};
+    background-image: radial-gradient(${({ theme }) => theme.bgPoint} 0.7px, transparent 0.7px);
+    background-size: 25px 25px;
 
-        background: ${({ theme }) => theme.bg};
-        color: ${({ theme }) => theme.text};
+    color: ${({ theme }) => theme.text};
     }
 
     //Scroll
@@ -31,7 +29,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: #00fbff96;
+        background-color:  ${({ theme }) => theme.blueHighlight};
         border-radius: 6px;
     }
 
@@ -43,6 +41,11 @@ const GlobalStyles = createGlobalStyle`
 
     button{
         cursor: pointer;
+    }
+
+    a{
+        text-decoration: none;
+        font-style: none;
     }
     
 `;

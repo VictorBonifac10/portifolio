@@ -10,7 +10,7 @@ export const ContainerTitle = styled.h2`
     margin: 0;
 
     h2{
-        color: #00fbff96;
+        color: ${({ theme }) => theme.blueHighlight};;
         font-family: "Jersey 10", sans-serif;
 
     &::first-letter {
@@ -19,7 +19,7 @@ export const ContainerTitle = styled.h2`
 
     hr{
         width: 150px;
-        border: 2px solid #00fbff96;
+        border: 2px solid ${({ theme }) => theme.blueHighlight};;
         border-radius: 50px;
         margin: 0px 0px 2px 0px;
         padding: 0;
@@ -28,7 +28,7 @@ export const ContainerTitle = styled.h2`
     }
 
     p{
-        color: #ffffff96;
+        color: ${({ theme }) => theme.text};
         font-weight: 400;
         font-size: 18px;
         margin-bottom: 20px;

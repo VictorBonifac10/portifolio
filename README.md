@@ -1,5 +1,5 @@
 # Portfólio
-Meu portfólio apresenta uma landing page responsiva desenvolvida com HTML5, CSS3, JavaScript e bibliotecas, com foco em semântica, design adaptável e código limpo.
+Meu portfólio apresenta uma landing page responsiva desenvolvida com React, Styled-Components e bibliotecas, com foco em semântica, design adaptável e código limpo.
 
 ## 💻 Demonstração
 
@@ -9,10 +9,8 @@ Meu portfólio apresenta uma landing page responsiva desenvolvida com HTML5, CSS
 
 ## ✨ Recursos
 
-- HTML5
-- CSS3
-- TailwindCSS
-- JavaScript
+- React.js
+- Styled-Components
 - Bibliotecas
 - Design responsivo
 - Código limpo e organizado

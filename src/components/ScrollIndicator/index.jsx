@@ -1,13 +1,14 @@
+//Tags from Styles
 import { ScrollContainer } from './styles'
 
 export function ScrollIndicator() {
     return (
         <ScrollContainer>
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
-            </div>
+            <section className="scroll-indicator">
+                <article className="mouse">
+                    <div className="wheel"></div>
+                </article>
+            </section>
         </ScrollContainer>
     )
-}
+};

@@ -31,13 +31,13 @@ export const PortfolioContainer = styled.div`
   }
 
   .swiper-button-next {
-      color: #00fbff96;
+      color: ${({ theme }) => theme.blueHighlight};;
       width: 15px;
       right: 30px;
   }
 
   .swiper-button-prev {
-      color: #00fbff96;
+      color: ${({ theme }) => theme.blueHighlight};;
       width: 15px;
       left: 35px;
   }
@@ -74,7 +74,7 @@ export const ProjectCard = styled.div`
     position: relative; 
     overflow: hidden;
     gap: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.09);
+    border: 1px solid ${({ theme }) => theme.border};;
     border-radius: 40px;
 
     padding: 40px 60px;
@@ -103,7 +103,7 @@ export const ProjectCard = styled.div`
 
     &:hover{
       transform: scale(1.02);
-      border: 1px solid #fff;
+      border: 1px solid ${({ theme }) => theme.border};;
       border-radius: 10px;
     }
 `;
@@ -130,7 +130,7 @@ export const Description = styled.div`
   justify-content: center;
 
   h2{
-    color: #00fbff96;
+    color: ${({ theme }) => theme.blueHighlight};;
     margin-bottom: 30px;
     font-size: 40px;
     font-family: "Jersey 10", sans-serif;
@@ -193,8 +193,8 @@ export const ActionButton = styled.button`
   gap: 8px;
   text-align: center;
   background-color: transparent;
-  color: #00fbff96;
-  border: 1px solid #00fbff96;
+  color: ${({ theme }) => theme.blueHighlight};
+  border: 1px solid ${({ theme }) => theme.blueHighlight};;
   border-radius: 6px;
   padding: 10px;
   transition: 0.5s all;
@@ -205,7 +205,7 @@ export const ActionButton = styled.button`
   }
 
   &:hover{
-    background-color: #00fbff96;
+    background-color: ${({ theme }) => theme.blueHighlight};;
     color: #fff;
   }
 `

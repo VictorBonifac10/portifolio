@@ -21,8 +21,8 @@ export const CardGrid = styled.div`
 export const Card = styled.div`
   border-radius: 1rem;
   padding: 2rem;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.29);
+  color: ${({ theme }) => theme.text};
+  border: 1px solid ${({ theme }) => theme.borderStandard};
   position: relative;
   overflow: hidden;
   transition: 1s;
@@ -58,7 +58,7 @@ animation: Coolgradient 41s linear infinite;
 
 &:hover{
     transform: scale(1.05);
-    border: 1px solid #fff;
+    border: 1px solid ${({ theme }) => theme.borderHoverEffect};;
 }
 
   @media (max-width: 850px) {
@@ -77,15 +77,15 @@ export const CardTitle = styled.div`
   padding-top: 1.5rem;
 
   i {
-    color: #00fbff96;
-    border: 1px solid #00fbff96;
+    color: ${({ theme }) => theme.blueHighlight};;
+    border: 1px solid ${({ theme }) => theme.blueHighlight};
     border-radius: 50px;
     padding: 5px 9px;
     font-size: 17px;
   }
 
   h4 {
-    color: #00fbff96;
+    color: ${({ theme }) => theme.blueHighlight};;
     margin: 0;
     font-family: "Jersey 10", sans-serif;
   }

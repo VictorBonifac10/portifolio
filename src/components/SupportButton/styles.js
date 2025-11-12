@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled.a`
   background-color: #000;
-  border: 1px solid #00fbff96;
+  border: 1px solid ${({ theme }) => theme.blueHighlight};;
   border-radius: 8px;
   padding: 12px;
   width: clamp(200px, 80vw, 320px); 
@@ -22,22 +22,28 @@ export const Button = styled.button`
   cursor: pointer;
   overflow: hidden;
   transition: color 0.3s ease;
-
-  background-image: linear-gradient(to right, #00fbff96 0%, #0095ff8b 0%, #000 100%);
+  background-image: ${({ theme }) => `
+    linear-gradient(
+      to right,
+      ${theme.blueHighlightTranslucent} 0%,
+      ${theme.blueHighlightTranslucent} 0%,
+      #000 100%
+    )
+  `};
   background-size: 200% 150%;
   background-position: right bottom;
   transition: background-position 0.4s ease-out, color 0.3s ease;
 
   h2 {
     font-size: 30px;
-    color: #00fbff96;
+    color: ${({ theme }) => theme.blueHighlight};
     transition: color 0.3s ease;
     font-family: "Jersey 10", sans-serif;
   }
 
   i {
     font-size: 30px;
-    color: #00fbff96;
+    color: ${({ theme }) => theme.blueHighlight};
     transition: color 0.3s ease;
   }
 

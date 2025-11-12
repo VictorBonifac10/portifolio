@@ -1,20 +1,28 @@
-import { projects } from '../../data/projects'
-
+//React
 import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Thumbs } from "swiper/modules";
 
+//Swiper Library
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Thumbs } from "swiper/modules";
 
-import { Button } from "../../components";
+//Datas
+import { projects } from '../../data/projects'
+
+//Components
+import { Button } from "../index";
+
+//Tags from Styles
 import { PortfolioContainer, ProjectCard, Description, Text, StacksField, Stack, ButtonContainer, ActionButton, Mask } from './styles'
 
+//Medias
 import videoPortfolio from '../../assets/video/PortfolioPage.mp4'
 
 export function Portfolio() {
 
+    //Swiper Library Config
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     const [filteredProjects, setFilteredProjects] = useState(
@@ -33,17 +41,17 @@ export function Portfolio() {
         <PortfolioContainer>
             <ButtonContainer>
                 <ActionButton onClick={() => handleFilter("Front-End")}>
-                    <i className="ri-pages-line"></i>
+                    <i className="ri-square-line"></i>
                     Front-End
                 </ActionButton>
 
                 <ActionButton onClick={() => handleFilter("Back-End")}>
-                    <i className="bi bi-database-gear"></i>
+                    <i className="ri-triangle-line"></i>
                     Back-End
                 </ActionButton>
 
                 <ActionButton onClick={() => handleFilter("Full-Stack")}>
-                    <i class="bi bi-layout-wtf"></i>
+                    <i className="ri-checkbox-blank-circle-line"></i>
                     Full-Stack
                 </ActionButton>
             </ButtonContainer>
@@ -60,7 +68,7 @@ export function Portfolio() {
                             <ProjectCard>
                                 <video src={videoPortfolio} preload="none" autoPlay muted loop></video>
                                 <Mask />
-                                <div className="content">
+                                <section className="content">
                                     <Description>
                                         <h2>{data.name}</h2>
                                         <Text>
@@ -75,22 +83,22 @@ export function Portfolio() {
                                             ))}
                                         </StacksField>
                                         <ButtonContainer>
-                                            <Button>
-                                                <i class="ri-link"></i>
+                                            <Button href={data.site} target='_blank'>
+                                                <i className="ri-link" target='_blank'></i>
                                                 Deploy
                                             </Button>
-                                            <Button variant="secondary">
-                                                <i class="ri-github-fill"></i>
-                                                GitHub
+                                            <Button variant="secondary" href={data.repository} target='_blank'>
+                                                <i className="ri-github-fill"></i>
+                                                Github
                                             </Button>
                                         </ButtonContainer>
                                     </Description>
-                                </div>
+                                </section>
                                 <img src={data.img}></img>
                             </ProjectCard>
                         </SwiperSlide>
                     ))
-                };
+                }
             </Swiper>
             <Swiper
                 modules={[Thumbs]}
@@ -107,4 +115,4 @@ export function Portfolio() {
             </Swiper>
         </PortfolioContainer>
     )
-}
+};

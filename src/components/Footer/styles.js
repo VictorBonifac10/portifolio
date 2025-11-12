@@ -28,34 +28,35 @@ export const ContainerFooter = styled.footer`
   li{
     a{
       text-decoration: none;
-      color: #fff;
+      color: ${({ theme }) => theme.text};
 
       &:hover{
-        color: #00fbff96;
-        border-bottom: 2px solid #00fbff96;
+        color: ${({ theme }) => theme.blueHighlight};;
+        border-bottom: 2px solid ${({ theme }) => theme.blueHighlight};;
       }
      }
     }
   }
 
-  div{
+  section{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 
     i{
-      color: #fff;
+      color: ${({ theme }) => theme.text};
       font-size: 20px;
       transition: 0.5s;
       cursor: pointer;
 
       &:hover{
-        transform: scale(1.5);
-        color: #00fbff96;
+        color: ${({ theme }) => theme.blueHighlight};;
       }
     }
   }
+
+  //Animated Waves
 
   .waves {
     position: absolute;
@@ -67,63 +68,65 @@ export const ContainerFooter = styled.footer`
     margin-bottom: -7px;
     min-height: 100px;
     max-height: 150px;
-}
 
-.content {
-    position: relative;
-    height: 20vh;
-    text-align: center;
-    background-color: white;
-}
-
-/* Animation */
-
-.parallax>use {
-    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-
-.parallax>use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
-}
-
-.parallax>use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-}
-
-.parallax>use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-}
-
-@keyframes move-forever {
-    0% {
-        transform: translate3d(-90px, 0, 0);
-    }
-
-    100% {
-        transform: translate3d(85px, 0, 0);
+    use{
+      fill: ${({ theme }) => theme.blueHighlightTranslucent};  
     }
 }
 
-@media (max-width: 768px) {
-    .waves {
-        height: 40px;
-        min-height: 40px;
-    }
+  .content {
+      position: relative;
+      height: 20vh;
+      text-align: center;
+      background-color: white;
+  }
 
-    .content {
-        height: 30vh;
-    }
+  .parallax>use {
+      animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
 
-    h1 {
-        font-size: 24px;
-    }
-}
+  .parallax>use:nth-child(1) {
+      animation-delay: -2s;
+      animation-duration: 7s;
+  }
+
+  .parallax>use:nth-child(2) {
+      animation-delay: -3s;
+      animation-duration: 10s;
+  }
+
+  .parallax>use:nth-child(3) {
+      animation-delay: -4s;
+      animation-duration: 13s;
+  }
+
+  @keyframes move-forever {
+      0% {
+          transform: translate3d(-90px, 0, 0);
+      }
+
+      100% {
+          transform: translate3d(85px, 0, 0);
+      }
+  }
+
+  @media (max-width: 768px) {
+      .waves {
+          height: 40px;
+          min-height: 40px;
+      }
+
+      .content {
+          height: 30vh;
+      }
+
+      h1 {
+          font-size: 24px;
+      }
+  }
 `;
 
 export const Text = styled.div`
-    color: #fff;
+    color: ${({ theme }) => theme.text};
     max-width: 500px;
 `;
