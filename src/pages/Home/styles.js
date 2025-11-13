@@ -13,7 +13,7 @@ export const TopContainer = styled.div`
       z-index: 2;
       margin-bottom: 25px;
 
-      @media (max-width: 1085px) {
+      @media (max-width: 850px) {
         max-width: 200px;
         margin-bottom: 20px;
       }
@@ -26,7 +26,7 @@ export const TopContainer = styled.div`
       align-items: center;
       padding: 120px 40px 0px 40px;
         
-      @media (max-width: 1085px) {
+      @media (max-width: 850px) {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -56,7 +56,7 @@ export const LeftContent = styled.div`
     position: relative;
     z-index: 2;
 
-    @media (max-width: 1085px) {
+    @media (max-width: 850px) {
       align-items: center;
     };
 
@@ -69,7 +69,7 @@ export const LeftContent = styled.div`
     .custom-button{
       width: 20%;
 
-      @media (max-width: 1085px) {
+      @media (max-width: 850px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -88,7 +88,7 @@ export const FirstDescription = styled.p`
     margin-bottom: 20px;
     line-height: 50px;
 
-    @media (max-width: 1085px) {
+    @media (max-width: 850px) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -105,7 +105,7 @@ export const SecondDescription = styled.p`
     z-index: 2;
     margin-bottom: 20px;
 
-    @media (max-width: 1085px) {
+    @media (max-width: 850px) {
       font-size: 15px;
       max-width: 70%;
     };
@@ -130,7 +130,7 @@ export const RightContent = styled.div`
       };
    };
 
-    @media (max-width: 1085px) {
+    @media (max-width: 850px) {
         flex-direction: row;
         justify-content: center;
         margin-bottom: 30px;
@@ -190,7 +190,7 @@ export const AboutContainer = styled.div`
   gap: 120px;
   padding: 0px 170px;
 
-  @media (max-width: 1300px) {
+  @media (max-width: 850px) {
     flex-direction: column;
     gap: 90px;
     padding: 0px 40px;
@@ -198,7 +198,7 @@ export const AboutContainer = styled.div`
 };
 
   .aboutText {
-      @media (max-width: 1300px) {
+      @media (max-width: 850px) {
         text-align: center;
         padding: 30px;
       };
@@ -312,7 +312,7 @@ export const ContactContainer = styled.div`
   gap: 220px;
   padding: 0px 170px;
 
-  @media(max-width: 1200px){
+  @media(max-width: 850px){
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -331,7 +331,7 @@ export const ContactContainer = styled.div`
       margin-top: 50px;
       margin-right: 110px;
 
-      @media(max-width: 1200px){
+      @media(max-width: 850px){
         margin-bottom: 30px;
         margin-right: 0px;
       };
@@ -452,7 +452,7 @@ export const ContactCard = styled.div`
       font-size: 20px;
     };
 
-    @media(max-width: 1200px){
+    @media(max-width: 850px){
       justify-content: center;
       text-align: center;
     };
@@ -463,7 +463,7 @@ export const ContactCard = styled.div`
     margin: 0;
   };
 
-  @media(max-width: 1200px){
+  @media(max-width: 850px){
     padding: 10px 50px 10px 50px;
   };
 
@@ -478,7 +478,7 @@ export const TechnologiesContainer = styled.div`
   .titleContainer{
     padding: 20px 170px 0px 170px;
 
-    @media(max-width: 1220px){
+    @media(max-width: 850px){
       padding: 20px 40px;
     };
   };
