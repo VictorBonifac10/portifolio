@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const ContainerButton = styled.a`
     background-color: ${({ theme, variant }) =>
-    variant === "secondary" ? "transparent" : theme.bgButtonStandard};
+    variant === "secondary" ? "transparent" : theme.primaryColor};
 
     border: ${({ theme, variant }) =>
     variant === "secondary"
-      ? `1px solid ${theme.blueHighlight}`
+      ? `1px solid ${theme.primaryColor}`
       : "none"};
 
     color: ${({ theme, variant }) =>
-    variant === "secondary" ? theme.blueHighlight : theme.colorButtonStandard};
+    variant === "secondary" ? theme.primaryColor : theme.white};
 
     text-decoration: none;
     font-style: none;
@@ -35,13 +35,13 @@ export const ContainerButton = styled.a`
   &:hover {
     background-color: ${({ theme, variant }) =>
     variant === "secondary"
-      ? theme.blueHighlight
-      : theme.bgButtonStandard};
+      ? theme.primaryColor
+      : theme.primaryColorTranslucent};
 
     color: ${({ theme, variant }) =>
     variant === "secondary"
-      ? theme.bgButtonStandard
-      : theme.colorButtonStandard};
+      ? theme.white
+      : theme.white};
   }
 
   @media (max-width: 850px) {

@@ -34,7 +34,7 @@ export const Item = styled(CNavItem)`
 
     &:hover{
       background-color: #fff;
-      color: ${({ theme }) => theme.blueHighlight};;
+      color: ${({ theme }) => theme.primaryColor};
     } 
   }
 `;
@@ -90,8 +90,8 @@ export const StyledNavLink = styled(CNavLink)`
   color: ${({ theme }) => theme.text};
 
   &:hover{
-    color: ${({ theme }) => theme.blueHighlight};
-    border-bottom: 2px solid ${({ theme }) => theme.blueHighlight};;
+    color: ${({ theme }) => theme.primaryColor};
+    border-bottom: 2px solid ${({ theme }) => theme.primaryColor};
   }
 `;
 

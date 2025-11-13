@@ -9,6 +9,9 @@ import { typeWriterFunction } from "../../utils/typeWriterFunction";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
+//Next-Theme Library
+import { useTheme } from "next-themes";
+
 //Aos Library
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -26,15 +29,22 @@ import { Body, Banner, TopContainer, LeftContent, RightContent, FirstDescription
 //Medias
 import videoHomePage from '../../assets/video/HomePage.mp4'
 import ImgAboutSection from '../../assets/img/my-photo.jpg'
-import Logo from '../../assets/img/logo.svg'
+import originalLogo from '../../assets/img/originalLogo.svg'
+import variantLogo from '../../assets/img/variantLogo.svg'
+
 
 export function Home() {
+
+    //Theme Config
+    const { theme } = useTheme();
+
     useEffect(() => {
         //Aos Init
         Aos.init({ once: true });
         //Utils Init
         carouselFunction();
         typeWriterFunction();
+
     }, []);
 
     //CountUp Library Config
@@ -50,7 +60,7 @@ export function Home() {
                     <Mask />
                     <section className="containerBanner">
                         <LeftContent>
-                            <img src={Logo} alt="Logo do Portfólio" />
+                            <img src={theme === "dark" ? originalLogo : variantLogo} alt="Logo do Portfólio" />
                             <span id="typewriter">...</span>
                             <FirstDescription>
                                 Desenvolvedor Web Full-Stack
@@ -99,13 +109,13 @@ export function Home() {
                 </section>
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <AboutContainer id='about'>
-                        <Title subtitle="Conheça mais sobre mim">Sobre</Title>
+                        <Title subtitle="Conheça-me melhor">Sobre</Title>
                         <section className="aboutSection">
                             <section className="aboutText">
                                 <Text>
                                     Olá! Meu nome é Victor Alves Bonifácio e atuo como Desenvolvedor Web Full-Stack. Ao longo da minha carreira desenvolvi diversos projetos profissionais e acadêmicos em diferentes setores, o que me permitiu dominar ferramentas e metodologias voltadas à criação e ao gerenciamento de software, sempre com foco na entrega de valor.
                                     <br /><br />
-                                    Com formação em Sistemas para Internet, venho me dedicando ao desenvolvimento aplicações, focando em criar interfaces acessíveis, organizadas e alinhadas ao que o projeto realmente precisa.
+                                    Com formação em Sistemas para Internet, venho me dedicando ao desenvolvimento de aplicações, focando em criar interfaces acessíveis, organizadas e alinhadas ao que o projeto realmente precisa.
                                 </Text>
                                 <AttributeContainer>
                                     <AttributeCard>
@@ -125,7 +135,7 @@ export function Home() {
                                 </AttributeContainer>
                             </section>
                             <section className="aboutImage">
-                                <img src={ImgAboutSection} alt='Desenvolvedor-de-sites' />
+                                <img src={ImgAboutSection} alt="Foto de Perfil" />
                                 <div className="rotating-container">
                                     <svg viewBox="0 0 300 300" width="200" height="200">
                                         <path id="circle-path" d="M 150, 150
@@ -146,7 +156,7 @@ export function Home() {
                 </div>
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <ServicesContainer id="services">
-                        <Title subtitle="Porque escolher nossa equipe?">Serviços</Title>
+                        <Title subtitle="Áreas de atuação">Habilidades</Title>
                         <ServiceCards />
                     </ServicesContainer>
                 </div>

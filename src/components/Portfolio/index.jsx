@@ -94,7 +94,7 @@ export function Portfolio() {
                                         </ButtonContainer>
                                     </Description>
                                 </section>
-                                <img src={data.img}></img>
+                                <img src={data.img} alt="Preview do Projeto"></img>
                             </ProjectCard>
                         </SwiperSlide>
                     ))
@@ -109,7 +109,7 @@ export function Portfolio() {
             >
                 {filteredProjects.map(data => (
                     <SwiperSlide key={data.name}>
-                        <img src={data.img} />
+                        <img src={data.img} alt="Preview do Projeto"/>
                     </SwiperSlide>
                 ))}
             </Swiper>

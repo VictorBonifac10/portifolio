@@ -57,14 +57,25 @@ export const LeftContent = styled.div`
     z-index: 2;
 
     @media (max-width: 1085px) {
-        align-items: center;
+      align-items: center;
     };
 
     span {
-      color: ${({ theme }) => theme.blueHighlight};
+      color: ${({ theme }) => theme.primaryColor};
       font-size: 50px;
       font-family: "Jersey 10", sans-serif;
     };
+
+    .custom-button{
+      width: 20%;
+
+      @media (max-width: 1085px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      };
+    }
 `;
 
 export const FirstDescription = styled.p`
@@ -115,7 +126,7 @@ export const RightContent = styled.div`
         cursor: pointer;
 
       &:hover{
-        color: ${({ theme }) => theme.blueHighlight};
+        color: ${({ theme }) => theme.primaryColor};
       };
    };
 
@@ -137,7 +148,7 @@ export const Main = styled.main`
     margin-right: 0;
     border-right: 0;
     border-left: 0;
-    background-color: ${({ theme }) => theme.blueHighlightTranslucent};  
+    background-color: ${({ theme }) => theme.primaryColorTranslucent};  
   };
 
   #animated-text {
@@ -157,7 +168,7 @@ export const Main = styled.main`
   .text-custom {
     padding: 0;
     margin: 0;
-    color: ${({ theme }) => theme.blueHighlight};
+    color: ${({ theme }) => theme.primaryColor};
     font-size: 98px;
     font-family: "Jersey 10", sans-serif;
   };
@@ -220,14 +231,14 @@ export const AboutContainer = styled.div`
   };
 
   .inner-circle {
-    fill: ${({ theme }) => theme.blueHighlight};
+    fill: ${({ theme }) => theme.primaryColor};
   };
 
   #text-on-path {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    fill: ${({ theme }) => theme.blueHighlight};
+    fill: ${({ theme }) => theme.primaryColor};
     font-family: "Jersey 10", sans-serif;
   };
 
@@ -336,22 +347,22 @@ export const ContactContainer = styled.div`
   };
 
   .arrow:nth-child(1) {
-      border-color:  ${({ theme }) => theme.blueHighlight};
+      border-color:  ${({ theme }) => theme.primaryColor};
       animation-delay: 0s;
   };
 
   .arrow:nth-child(2) {
-      border-color: ${({ theme }) => theme.blueHighlight};
+      border-color: ${({ theme }) => theme.primaryColor};
       animation-delay: 0.2s;
   };
 
   .arrow:nth-child(3) {
-      border-color: ${({ theme }) => theme.blueHighlight};
+      border-color: ${({ theme }) => theme.primaryColor};
       animation-delay: 0.4s;
   };
 
   .arrow:nth-child(4) {
-      border-color:  ${({ theme }) => theme.blueHighlight};
+      border-color:  ${({ theme }) => theme.primaryColor};
       animation-delay: 0.4s;
   };
 
@@ -460,7 +471,7 @@ export const ContactCard = styled.div`
 
 export const TechnologiesContainer = styled.div`
 
-  background-color: ${({ theme }) => theme.blueHighlightTranslucent};  
+  background-color: ${({ theme }) => theme.primaryColorTranslucent};  
   width: 100%;
   margin: 60px 0px;
 
@@ -586,7 +597,7 @@ export const AttributeCard = styled.div`
     font-family: "Jersey 10", sans-serif;
 
   span{
-    color: ${({ theme }) => theme.blueHighlight};
+    color: ${({ theme }) => theme.primaryColor};
     font-size: 42px;
   };
 

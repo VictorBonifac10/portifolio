@@ -31,13 +31,13 @@ export const PortfolioContainer = styled.div`
   }
 
   .swiper-button-next {
-      color: ${({ theme }) => theme.blueHighlight};;
+      color: ${({ theme }) => theme.primaryColor};
       width: 15px;
       right: 30px;
   }
 
   .swiper-button-prev {
-      color: ${({ theme }) => theme.blueHighlight};;
+      color: ${({ theme }) => theme.primaryColor};
       width: 15px;
       left: 35px;
   }
@@ -130,7 +130,7 @@ export const Description = styled.div`
   justify-content: center;
 
   h2{
-    color: ${({ theme }) => theme.blueHighlight};;
+    color: ${({ theme }) => theme.primaryColor};
     margin-bottom: 30px;
     font-size: 40px;
     font-family: "Jersey 10", sans-serif;
@@ -193,8 +193,8 @@ export const ActionButton = styled.button`
   gap: 8px;
   text-align: center;
   background-color: transparent;
-  color: ${({ theme }) => theme.blueHighlight};
-  border: 1px solid ${({ theme }) => theme.blueHighlight};;
+  color: ${({ theme }) => theme.primaryColor};
+  border: 1px solid ${({ theme }) => theme.primaryColor};
   border-radius: 6px;
   padding: 10px;
   transition: 0.5s all;
@@ -205,7 +205,7 @@ export const ActionButton = styled.button`
   }
 
   &:hover{
-    background-color: ${({ theme }) => theme.blueHighlight};;
+    background-color: ${({ theme }) => theme.primaryColor};
     color: #fff;
   }
 `

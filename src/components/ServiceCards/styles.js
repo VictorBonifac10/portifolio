@@ -77,15 +77,15 @@ export const CardTitle = styled.div`
   padding-top: 1.5rem;
 
   i {
-    color: ${({ theme }) => theme.blueHighlight};;
-    border: 1px solid ${({ theme }) => theme.blueHighlight};
+    color: ${({ theme }) => theme.primaryColor};
+    border: 1px solid ${({ theme }) => theme.primaryColor};
     border-radius: 50px;
     padding: 5px 9px;
     font-size: 17px;
   }
 
   h4 {
-    color: ${({ theme }) => theme.blueHighlight};;
+    color: ${({ theme }) => theme.primaryColor};
     margin: 0;
     font-family: "Jersey 10", sans-serif;
   }

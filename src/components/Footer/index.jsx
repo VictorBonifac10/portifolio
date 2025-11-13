@@ -1,16 +1,25 @@
 //Tags from Styles
 import { ContainerFooter, Text } from "./styles";
 
+//Next-Theme Library
+import { useTheme } from "next-themes";
+
 //Datas
 import { links } from "../../data/links";
 
 //Medias
-import Logo from '../../assets/img/logo.svg'
+import originalLogo from '../../assets/img/originalLogo.svg'
+import variantLogo from '../../assets/img/variantLogo.svg'
+
 
 export function Footer() {
+
+    //Theme Config
+    const { theme } = useTheme();
+
     return (
         <ContainerFooter>
-            <img src={Logo} alt="Logo do Portfólio" />
+            <img src={theme === "dark" ? originalLogo : variantLogo} alt="Logo do Portfólio" />
             <Text>
                 Construindo aplicações modernas, performáticas e funcionais.
             </Text>
@@ -22,7 +31,7 @@ export function Footer() {
                     <a href="#about">Sobre</a>
                 </li>
                 <li>
-                    <a href="#services">Serviços</a>
+                    <a href="#services">Habilidades</a>
                 </li>
                 <li>
                     <a href="#technologies">Tecnologias</a>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.a`
   background-color: #000;
-  border: 1px solid ${({ theme }) => theme.blueHighlight};;
+  border: 1px solid ${({ theme }) => theme.primaryColor};
   border-radius: 8px;
   padding: 12px;
   width: clamp(200px, 80vw, 320px); 
@@ -25,8 +25,8 @@ export const Button = styled.a`
   background-image: ${({ theme }) => `
     linear-gradient(
       to right,
-      ${theme.blueHighlightTranslucent} 0%,
-      ${theme.blueHighlightTranslucent} 0%,
+      ${theme.primaryColorTranslucent} 0%,
+      ${theme.primaryColorTranslucent} 0%,
       #000 100%
     )
   `};
@@ -36,14 +36,14 @@ export const Button = styled.a`
 
   h2 {
     font-size: 30px;
-    color: ${({ theme }) => theme.blueHighlight};
+    color: ${({ theme }) => theme.primaryColor};
     transition: color 0.3s ease;
     font-family: "Jersey 10", sans-serif;
   }
 
   i {
     font-size: 30px;
-    color: ${({ theme }) => theme.blueHighlight};
+    color: ${({ theme }) => theme.primaryColor};
     transition: color 0.3s ease;
   }
 

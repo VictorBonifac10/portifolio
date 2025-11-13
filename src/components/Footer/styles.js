@@ -31,8 +31,8 @@ export const ContainerFooter = styled.footer`
       color: ${({ theme }) => theme.text};
 
       &:hover{
-        color: ${({ theme }) => theme.blueHighlight};;
-        border-bottom: 2px solid ${({ theme }) => theme.blueHighlight};;
+        color: ${({ theme }) => theme.primaryColor};;
+        border-bottom: 2px solid ${({ theme }) => theme.primaryColor};
       }
      }
     }
@@ -51,7 +51,7 @@ export const ContainerFooter = styled.footer`
       cursor: pointer;
 
       &:hover{
-        color: ${({ theme }) => theme.blueHighlight};;
+        color: ${({ theme }) => theme.primaryColor};
       }
     }
   }
@@ -70,7 +70,7 @@ export const ContainerFooter = styled.footer`
     max-height: 150px;
 
     use{
-      fill: ${({ theme }) => theme.blueHighlightTranslucent};  
+      fill: ${({ theme }) => theme.primaryColorTranslucent};  
     }
 }
 

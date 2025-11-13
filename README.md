@@ -1,16 +1,17 @@
 # Portfólio
-Meu portfólio apresenta uma landing page responsiva desenvolvida com React, Styled-Components e bibliotecas, com foco em semântica, design adaptável e código limpo.
+Desenvolviemento de uma landing page responsiva construída em React com Styled-Components e bibliotecas auxiliares, priorizando semântica, performance e arquitetura de código limpa.
 
 ## 💻 Demonstração
 
-<img src="./assets/readme/readme.png" alt="preview" width="500" />
+<img src="./src/assets/readme/readme.png" alt="preview" width="500" />
 
 🔗 [Acesse aqui a versão online](https://victorbonifacio.netlify.app/)
 
 ## ✨ Recursos
 
-- React.js
-- Styled-Components
+- React + Vite (Front-End)
+- Yarn (Gerenciador de Pacotes)
+- Styled-Components (Estilos)
 - Bibliotecas
 - Design responsivo
 - Código limpo e organizado
