@@ -37,7 +37,7 @@ export function Footer() {
                     <a href="#technologies">Tecnologias</a>
                 </li>
                 <li>
-                    <a href="#portfolio">Portfólio</a>
+                    <a href="#portfolio">Projetos</a>
                 </li>
                 <li>
                     <a href="#contato">Contato</a>

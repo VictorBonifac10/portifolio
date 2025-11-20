@@ -83,10 +83,12 @@ export function Portfolio() {
                                             ))}
                                         </StacksField>
                                         <ButtonContainer>
-                                            <Button href={data.site} target='_blank'>
-                                                <i className="ri-link" target='_blank'></i>
-                                                Deploy
-                                            </Button>
+                                            {data.site && (
+                                                <Button href={data.site} target="_blank">
+                                                    <i className="ri-link"></i>
+                                                    Deploy
+                                                </Button>
+                                            )}
                                             <Button variant="secondary" href={data.repository} target='_blank'>
                                                 <i className="ri-github-fill"></i>
                                                 Github
@@ -109,7 +111,7 @@ export function Portfolio() {
             >
                 {filteredProjects.map(data => (
                     <SwiperSlide key={data.name}>
-                        <img src={data.img} alt="Preview do Projeto"/>
+                        <img src={data.img} alt="Preview do Projeto" />
                     </SwiperSlide>
                 ))}
             </Swiper>
