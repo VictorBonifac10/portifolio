@@ -28,7 +28,7 @@ import { Body, Banner, TopContainer, LeftContent, RightContent, FirstDescription
 
 //Medias
 import videoHomePage from '../../assets/video/HomePage.mp4'
-import ImgAboutSection from '../../assets/img/my-photo.jpg'
+import ImgAboutSection from '../../assets/img/perfil.png'
 import originalLogo from '../../assets/img/originalLogo.svg'
 import variantLogo from '../../assets/img/variantLogo.svg'
 
