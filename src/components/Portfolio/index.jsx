@@ -41,17 +41,17 @@ export function Portfolio() {
         <PortfolioContainer>
             <ButtonContainer>
                 <ActionButton onClick={() => handleFilter("Front-End")}>
-                    <i className="ri-square-line"></i>
+                    <i class="ri-brush-fill"></i>
                     Front-End
                 </ActionButton>
 
                 <ActionButton onClick={() => handleFilter("Back-End")}>
-                    <i className="ri-triangle-line"></i>
+                    <i class="ri-server-fill"></i>
                     Back-End
                 </ActionButton>
 
                 <ActionButton onClick={() => handleFilter("Full-Stack")}>
-                    <i className="ri-checkbox-blank-circle-line"></i>
+                    <i class="ri-layout-2-fill"></i>
                     Full-Stack
                 </ActionButton>
             </ButtonContainer>

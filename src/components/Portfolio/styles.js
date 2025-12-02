@@ -75,7 +75,7 @@ export const ProjectCard = styled.div`
     overflow: hidden;
     gap: 20px;
     border: 1px solid ${({ theme }) => theme.border};;
-    border-radius: 40px;
+    border-radius: 15px;
 
     padding: 40px 60px;
     color: #fff;
@@ -104,7 +104,7 @@ export const ProjectCard = styled.div`
     &:hover{
       transform: scale(1.02);
       border: 1px solid ${({ theme }) => theme.border};;
-      border-radius: 10px;
+      border-radius: 5px;
     }
 `;
 
