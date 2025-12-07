@@ -277,7 +277,7 @@ export const ServicesContainer = styled.div`
 
   .customTitle{
     @media (max-width: 850px) {
-      margin: 20px 0px;
+      margin-top: 40px;
     };
   }
 
