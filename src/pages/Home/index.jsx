@@ -156,7 +156,7 @@ export function Home() {
                 </div>
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <ServicesContainer id="services">
-                        <Title subtitle="Áreas de atuação">Habilidades</Title>
+                        <Title subtitle="Áreas de atuação" className="customTitle">Habilidades</Title>
                         <ServiceCards />
                     </ServicesContainer>
                 </div>

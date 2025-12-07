@@ -194,16 +194,16 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     gap: 90px;
     padding: 0px 20px;
+    margin-top: 50px;
   };
 };
 
   .aboutText {
-      width: 100%;
-
       @media (max-width: 850px) {
         text-align: center;
         padding: 10px;
         margin-top: 90px;
+        width: 100%;
       };
   };
 
@@ -274,6 +274,12 @@ export const ServicesContainer = styled.div`
   margin:  40px 0px;
   width: 100%;
   color: ${({ theme }) => theme.text};
+
+  .customTitle{
+    @media (max-width: 850px) {
+      margin: 20px 0px;
+    };
+  }
 
   @media (max-width: 850px) {
     margin-top: 80px;

@@ -82,7 +82,7 @@ export function Portfolio() {
                                                 </Stack>
                                             ))}
                                         </StacksField>
-                                        <ButtonContainer>
+                                        <ButtonContainer className="externalLinks">
                                             {data.site && (
                                                 <Button href={data.site} target="_blank">
                                                     <i className="ri-link"></i>
