@@ -25,8 +25,10 @@ export const PortfolioContainer = styled.div`
     z-index: 2;
 
     @media(max-width: 900px){
+      background-color: yellow;
       width: 100%;
-      padding: 10px;
+      height: 115px;
+      padding: 0;
     }
   }
 
@@ -184,6 +186,10 @@ export const ButtonContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media(max-width: 850px){
+    flex-direction: column;
+  }
 `;
 
 export const ActionButton = styled.button`

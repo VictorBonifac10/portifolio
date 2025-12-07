@@ -193,14 +193,17 @@ export const AboutContainer = styled.div`
   @media (max-width: 850px) {
     flex-direction: column;
     gap: 90px;
-    padding: 0px 40px;
+    padding: 0px 20px;
   };
 };
 
   .aboutText {
+      width: 100%;
+
       @media (max-width: 850px) {
         text-align: center;
-        padding: 30px;
+        padding: 10px;
+        margin-top: 90px;
       };
   };
 
@@ -255,7 +258,7 @@ export const AboutContainer = styled.div`
     };
     
     .rotating-container{
-      right: 280px;
+      right: 250px;
     };
 };
 `;
