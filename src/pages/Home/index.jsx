@@ -109,7 +109,7 @@ export function Home() {
                 </section>
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <AboutContainer id='about'>
-                        <Title subtitle="Conheça-me melhor">Sobre</Title>
+                        <Title subtitle="Conheça-me melhor" className="titleAboutCustom">Sobre</Title>
                         <section className="aboutSection">
                             <section className="aboutText">
                                 <Text>

@@ -20,7 +20,6 @@ export const TopContainer = styled.div`
     };
 
     .containerBanner {
-
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -64,6 +63,19 @@ export const LeftContent = styled.div`
       color: ${({ theme }) => theme.primaryColor};
       font-size: 50px;
       font-family: "Jersey 10", sans-serif;
+      line-height: 30px;
+
+    @media (max-width: 768px) {
+      font-size: 45px;
+    };
+
+    @media (max-width: 667px) {
+      font-size: 40px;
+    };
+
+    @media (max-width: 570px) {
+      font-size: 35px;
+    };      
     };
 
     .custom-button{
@@ -93,7 +105,23 @@ export const FirstDescription = styled.p`
       justify-content: center;
       align-items: center;
       text-align: center;
+      line-height: 45px;
       font-size: 28px;
+    };
+
+    @media (max-width: 768px) {
+      line-height: 40px;
+      font-size: 26px;
+    };
+
+    @media (max-width: 667px) {
+      line-height: 35px;
+      font-size: 24px;
+    };
+
+    @media (max-width: 570px) {
+      line-height: 30px;
+      font-size: 22px;
     };
 `;
 
@@ -108,6 +136,14 @@ export const SecondDescription = styled.p`
     @media (max-width: 850px) {
       font-size: 15px;
       max-width: 70%;
+    };
+    
+    @media (max-width: 768px) {
+      font-size: 13px;
+    };
+
+    @media (max-width: 667px) {
+      font-size: 11px;
     };
 `;
 
@@ -128,6 +164,22 @@ export const RightContent = styled.div`
       &:hover{
         color: ${({ theme }) => theme.primaryColor};
       };
+
+    @media (max-width: 850px) {
+       font-size: 23px;
+    };
+
+    @media (max-width: 768px) {
+       font-size: 22px;
+    };
+
+    @media (max-width: 667px) {
+       font-size: 21px;
+    };
+
+    @media (max-width: 570px) {
+       font-size: 20px;
+    };
    };
 
     @media (max-width: 850px) {
@@ -198,19 +250,39 @@ export const AboutContainer = styled.div`
   };
 };
 
-  .aboutText {
-      @media (max-width: 850px) {
-        text-align: center;
-        padding: 10px;
-        margin-top: 90px;
-        width: 100%;
-      };
+.titleAboutCustom{
+
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
   };
 
-  .aboutImage {
-    position: relative;
-    width: 450px;
-    height: 450px;
+  @media (max-width: 667px) {
+    margin-bottom: 20px;
+  };
+
+  @media (max-width: 568px) {
+    margin-bottom: 45px;
+  };
+
+  @media (max-width: 400px) {
+    margin-bottom: 130px;
+  };
+
+}
+
+.aboutText {
+  @media (max-width: 850px) {
+    text-align: center;
+    padding: 10px;
+    margin-top: 90px;
+    width: 100%;
+  };
+};
+
+.aboutImage {
+  position: relative;
+  width: 450px;
+  height: 450px;
 };
 
   img {
@@ -278,6 +350,14 @@ export const ServicesContainer = styled.div`
   .customTitle{
     @media (max-width: 850px) {
       margin-top: 40px;
+    };
+
+    @media (max-width: 768px) {
+      margin-top: 100px;
+    };
+
+    @media (max-width: 667px) {
+      margin-top: 180px;
     };
   }
 
@@ -476,6 +556,18 @@ export const ContactCard = styled.div`
     padding: 10px 50px 10px 50px;
   };
 
+  @media (max-width: 768px) {
+  };
+
+  @media (max-width: 667px) {
+  };
+  
+  @media (max-width: 568px) {
+  };
+
+  @media (max-width: 400px) {
+  };
+
 `;
 
 export const TechnologiesContainer = styled.div`
@@ -550,6 +642,10 @@ export const AttributeContainer = styled.div`
   margin-top: 40px;
   padding: 10px 10px 10px 0px;
   gap: 10px;
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+  };
 `;
 
 export const AttributeCard = styled.div`

@@ -19,6 +19,26 @@ export const ScrollContainer = styled.div`
       border: 2px solid #fff;
       border-radius: 15px;
       position: relative;
+
+    @media (max-width: 850px) {
+      width: 23px;
+      height: 40px;
+    };
+
+    @media (max-width: 768px) {
+      width: 22px;
+      height: 39px;
+    };
+
+    @media (max-width: 667px) {
+      width: 21px;
+      height: 38px;
+    };
+
+    @media (max-width: 570px) {
+      width: 20px;
+      height: 37px;
+    };
     }
 
     .wheel {
