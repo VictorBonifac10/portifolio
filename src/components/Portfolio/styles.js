@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const PortfolioContainer = styled.div`
 
-  margin: 0px 40px 40px 40px;
+  margin: 0px 40px;
   padding: 20px 40px 40px 40px;
 
   @media(max-width: 900px){

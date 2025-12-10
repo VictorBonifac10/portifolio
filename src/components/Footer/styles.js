@@ -10,6 +10,7 @@ export const ContainerFooter = styled.footer`
   text-align: center;
   width: 100%;
   padding-bottom: 40px;
+  margin-top: 40px;
 
   img{
     width: 250px;

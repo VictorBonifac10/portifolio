@@ -2,7 +2,7 @@ import Typewriter from 'typewriter-effect/dist/core';
 
 export function typeWriterFunction() {
 
-  new Typewriter('#typewriter', {
+  new Typewriter('#typeWriter', {
 
     strings: ['Bem-vindo ao meu portfólio'],
     autoStart: true,

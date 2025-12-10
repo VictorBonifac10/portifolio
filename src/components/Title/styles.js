@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const ContainerTitle = styled.h2`
+export const ContainerTitle = styled.div`
     display: flex;
+    //background-color: yellow;
     flex-direction: column;
     justify-content: center;
     align-items: center;

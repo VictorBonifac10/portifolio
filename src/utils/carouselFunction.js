@@ -1,7 +1,7 @@
 export function carouselFunction() {
 
-    const container = document.getElementById('animated-text');
-    const containerTechIcons = document.getElementById('animated-tech-icons');
+    const container = document.getElementById('animatedText');
+    const containerTechIcons = document.getElementById('animatedTechIcons');
 
     const originalContent = container.innerHTML;
     const techIconsContent = containerTechIcons.innerHTML;
