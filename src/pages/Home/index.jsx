@@ -171,7 +171,7 @@ export function Home() {
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <Title subtitle="Envie-me uma mensagem">Contato</Title>
                     <ContactContainer id="contact">
-                        <section className="leftContent">
+                        <section id="leftContent">
                             <p id="textContainer">
                                 Seja para discutir uma ideia, colaborar em um projeto ou esclarecer dúvidas técnicas, estou sempre aberto a novas conexões e desafios no universo do desenvolvimento.
                                 <br /><br />Envie uma mensagem e vamos explorar juntos soluções criativas e eficientes para transformar conceitos em produtos digitais reais e impactantes.

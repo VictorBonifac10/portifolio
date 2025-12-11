@@ -12,16 +12,23 @@ export const Banner = styled.div` //Video container
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 120px 40px 0px 40px;
+    padding: 7rem 4rem;
+
+    @media (max-width: 700px) { //Responsive  container
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    };
 
     video { //Video
     position: absolute;
+    object-fit: cover;
+    z-index: 0;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    object-fit: cover;
-    z-index: 0;
     };
 
     #mask{
@@ -36,26 +43,13 @@ export const Banner = styled.div` //Video container
     left: 0;
     width: 100%;
     height: 100%;
-    }
+    };
 
     img { //Logo
-    width: 350px;
     position: relative;
     z-index: 2;
-    margin-bottom: 25px;
-
-    @media (max-width: 850px) { //Responsive Logo
-    max-width: 200px;
-    margin-bottom: 20px;
-    }
-  };
-
-    @media (max-width: 850px) { //Responsive  container
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 25px;
+    width: 20rem;
+    margin-bottom: 2rem;
     };
 `;
 
@@ -65,68 +59,58 @@ export const LeftContent = styled.div` //Left written content
     align-items: flex-start;
     position: relative;
     z-index: 2;
+    max-width: 50%;
+
+    @media(max-width: 700px){
+    width: 100%;
+    };
 
     #typeWriter{
     color: ${({ theme }) => theme.primaryColor};
-    font-size: 50px;
     font-family: "Jersey 10", sans-serif;
-    line-height: 30px;
+    font-size: 3.5rem;
+    line-height: 2rem;
     }
 
     #firstDescription{
-    max-width: 90%;
     color: #fff;
     font-weight: bold;
-    font-size: 40px;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 20px;
-    line-height: 50px;
+    font-size: 2.5rem;
     }
 
     #secondDescription{
-    max-width: 70%;
     color: #fff;
-    font-size: 20px;
-    position: relative;
-    z-index: 2;
-    margin-bottom: 20px;
+    font-size: 1.3rem;
     }
 
     #customButton{ //Introduction button "Veja Mais"
-    width: 20%;
-
-    @media (max-width: 850px) { //Responsive introduction button "Veja Mais"
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    };
-  }
+    width: 30%;
+    }
 `;
 
 export const RightContent = styled.div` //RightContent from containerBanner
-    position: relative;
-    z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1rem;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 700px) {  //Responsive rightContent from containerBanner
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    };
 
     i{ //Icons (RightContent) from containerBanner
     color: #fff;
-    font-size: 25px;
+    font-size: 1.6rem;
     transition: 0.5s;
     cursor: pointer;
 
     &:hover{ //Hover Icons (RightContent) from containerBanner
     color: ${({ theme }) => theme.primaryColor};
     };
-  };
-
-    @media (max-width: 850px) {  //Responsive rightContent from containerBanner
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 30px;
     };
 `;
 
@@ -135,12 +119,10 @@ export const Main = styled.main` //Main
     #animatedSection { //Animeted Section
     display: flex;
     justify-content: center;
-    padding: 10px;
-    margin-left: 0;
-    margin-right: 0;
-    border-right: 0;
-    border-left: 0;
-    background-color: ${({ theme }) => theme.primaryColorTranslucent};  
+    background-color: ${({ theme }) => theme.primaryColorTranslucent}; 
+    padding: 1.2rem; 
+    margin: 0;
+    border: 0;
     };
 
     #animatedText { //Animeted Section
@@ -149,8 +131,8 @@ export const Main = styled.main` //Main
     overflow-x: scroll;
     white-space: nowrap;
     scroll-behavior: auto;
-    gap: 50px;
-    max-width: 2000px;
+    gap: 2rem;
+    max-width: 100%;
     };
 
     #animatedText::-webkit-scrollbar { //Animeted Section
@@ -160,7 +142,7 @@ export const Main = styled.main` //Main
     .textCustom { //Animeted Section
     padding: 0;
     margin: 0;
-    font-size: 98px;
+    font-size: 6rem;
     font-family: "Jersey 10", sans-serif;
     color: ${({ theme }) => theme.primaryColor};
     };
@@ -172,46 +154,33 @@ export const AboutContainer = styled.div` //About Container
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 120px;
-    padding: 0px 170px;
-    //background-color: green;
+    gap: 5rem;
 
-    @media (max-width: 850px) { //Responsive aboutSection
+    @media (max-width: 700px) { //Responsive aboutSection
     flex-direction: column;
-    margin-bottom: 70px;
-    padding: 0px 20px;
-    gap: 90px;
-    };
-
-    @media (max-width: 420px) { //Responsive aboutSection
-    margin-bottom: 150px;
+    text-align: center;
     };
 
     #sectionAboutText { //Container that holds the written content and others cards of aboutSection
+    max-width: 40%;
+
+    @media (max-width: 700px) { //Responsive aboutSection
+    width: 100%;
+    };
 
     .textContainer {
     color: #fff;
-    max-width: 500px;
     color: ${({ theme }) => theme.text};
     };
-
-    @media (max-width: 850px){
-    text-align: center;
-    padding: 10px;
-    margin-top: 90px;
-    width: 100%;
-    font-size: 15px;
-    };
-
-    @media(max-width: 400px){ //Responsive aboutText
-    margin-top: 120px;
-    }
   };
 
     #sectionAboutImage { //Container About Image
     position: relative;
-    width: 450px;
-    height: 450px;
+    width: 30%;
+
+    @media (max-width: 700px) { //Responsive aboutSection
+    width: 100%;
+    };
 
     img { //Image
     width: 100%;
@@ -236,9 +205,9 @@ export const AboutContainer = styled.div` //About Container
     };
 
     #text-on-path { //Animated Circle
-    font-size: 24px;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 0.3rem;
     fill: ${({ theme }) => theme.primaryColor};
     font-family: "Jersey 10", sans-serif;
     };
@@ -248,7 +217,6 @@ export const AboutContainer = styled.div` //About Container
     };
 
     @media (max-width: 600px) { //Animated Circle
-
     #sectionAboutImage {
     width: auto;
     height: 400px;
@@ -263,12 +231,12 @@ export const AboutContainer = styled.div` //About Container
 
 export const AttributeContainer = styled.div`
     display: flex;
-    margin-top: 40px;
-    padding: 10px 10px 10px 0px;
+    margin: 3.5rem 0rem;
     gap: 10px;
 
     @media (max-width: 400px) {
     flex-direction: column;
+    margin: 0;
     };
 `;
 
@@ -276,10 +244,9 @@ export const AttributeCard = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
-    padding: 15px;
+    padding: 2rem;
     width: 100%;
-    gap: 15px;
+    gap: 1rem;
     font-family: "Jersey 10", sans-serif;
 
     border-radius: 20px;
@@ -326,25 +293,24 @@ export const AttributeCard = styled.div`
 
     span{ //Span from AtributteCard
     color: ${({ theme }) => theme.primaryColor};
-    font-size: 42px;
+    font-size: 2rem;
     };
 
     p{ //P from AtributteCard
     margin: 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.2rem;
     };
 `;
 
 export const ServicesContainer = styled.div`
     width: 100%;
-    padding: 0px 170px;
+    padding: 0rem 8rem;
     color: ${({ theme }) => theme.text};
-    //background-color: green;
 
-    @media (max-width: 850px) { 
-    padding: 50px 0px;
+    @media (max-width: 700px) { 
     text-align: center;
+    padding: 0.5rem;
     };
 `;
 
@@ -356,8 +322,8 @@ export const TechnologiesContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    padding: 30px 0px 50px 0px;
+    gap: 5rem;
+    padding: 3rem 6rem;
     overflow-x: auto;
     scroll-behavior: auto;
 
@@ -374,9 +340,9 @@ export const TechBox = styled.div`
     justify-content: center;
     flex: 0 0 auto;
     text-align: center;
-    gap: 10px;
-    width: 110px;
-    height: 150px;
+    gap: 1rem;
+    width: 7rem;
+    height: 10rem;
     background-color: rgba(255, 255, 255, 0.697);
     border-radius: 5px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
@@ -384,12 +350,12 @@ export const TechBox = styled.div`
     color: #4b4b4bff;
 
     i{ //I from TechBox
-    font-size: 42px;
+    font-size: 3rem;
     flex-shrink: 0;
     };
 
     p{ //P from TechBox
-    font-size: 13px;
+    font-size: 0.7rem;
     };
 
     &:hover {
@@ -410,172 +376,157 @@ export const ContactContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    gap: 220px;
-    padding: 0px 170px;
+    height: 100vh;
+    gap: 5rem;
     color: ${({ theme }) => theme.text};
-    //background-color: green;
 
-    .textContainer {
-    max-width: 500px;
-    };
-
-    @media(max-width: 850px){
+    @media(max-width: 700px){
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0px 40px;
-    gap: 20px;
+    padding: 2rem;
+    gap: 2rem;
     }
 
     #leftContent{
+    max-width: 40%;
+
+    @media(max-width: 700px){
+    max-width: 100%;
+    };
+
     .arrowContainer {
     display: flex;
     justify-content: center;
-    gap: 3px;
-    margin-top: 50px;
-    margin-right: 110px;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-right: 7rem;
 
-    @media(max-width: 850px){
-    margin-bottom: 30px;
-    margin-right: 0px;
+    @media(max-width: 700px){
+    margin-bottom: 2rem;
+    margin-right: 0rem;
     };
     };
 
-  .arrow {
+    .arrow {
     width: 40px;
     height: 40px;
     border-right: 10px solid;
     border-top: 10px solid;
     transform: rotate(45deg);
     animation: move 1s infinite;
-  };
-
-  .arrow:nth-child(1) {
-      border-color:  ${({ theme }) => theme.primaryColor};
-      animation-delay: 0s;
-  };
-
-  .arrow:nth-child(2) {
-      border-color: ${({ theme }) => theme.primaryColor};
-      animation-delay: 0.2s;
-  };
-
-  .arrow:nth-child(3) {
-      border-color: ${({ theme }) => theme.primaryColor};
-      animation-delay: 0.4s;
-  };
-
-  .arrow:nth-child(4) {
-      border-color:  ${({ theme }) => theme.primaryColor};
-      animation-delay: 0.4s;
-  };
-
-  @keyframes move {
-
-      0%,
-      20% {
-          transform: translateX(0) rotate(45deg);
-          opacity: 0.5;
-      };
-
-      50% {
-          transform: translateX(10px) rotate(45deg);
-          opacity: 1;
-      };
-
-      100% {
-          transform: translateX(0) rotate(45deg);
-          opacity: 0.5;
-      };
     };
-  };
 
-  #rightContent{
+    .arrow:nth-child(1) {
+    border-color:  ${({ theme }) => theme.primaryColor};
+    animation-delay: 0s;
+    };
+
+    .arrow:nth-child(2) {
+    border-color: ${({ theme }) => theme.primaryColor};
+    animation-delay: 0.2s;
+    };
+
+    .arrow:nth-child(3) {
+    border-color: ${({ theme }) => theme.primaryColor};
+    animation-delay: 0.4s;
+    };
+
+    .arrow:nth-child(4) {
+    border-color:  ${({ theme }) => theme.primaryColor};
+    animation-delay: 0.4s;
+    };
+
+    @keyframes move {
+    0%, 20% { transform: translateX(0) rotate(45deg); opacity: 0.5; };
+    50% { transform: translateX(10px) rotate(45deg); opacity: 1; };
+    100% { transform: translateX(0) rotate(45deg); opacity: 0.5; };
+    };
+    };
+
+    #rightContent{
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 1rem;
 
-    @media(max-width: 400px){
-    }
-  };
+    @media(max-width: 700px){
+    max-width: 100%;
+    };
+
+    };
 `;
 
 export const ContactCard = styled.div`
-  border: 1px solid ${({ theme }) => theme.borderStandard};
-  border-radius: 8px;
-  width: 100%;
-  padding: 10px 150px 10px 10px;
-  color: #fff;
-  transition: 1s;
-  background: linear-gradient(318deg, #2814da2b, #c012a627, #00aaff34, #1b1b1b3e, #0000002b);
-  background-size: 1000% 1000%;
-  
-  -webkit-animation: Coolgradient 41s linear infinite;
-  -moz-animation: Coolgradient 41s linear infinite;
-  -o-animation: Coolgradient 41s linear infinite;
-  animation: Coolgradient 41s linear infinite;
+    border: 1px solid ${({ theme }) => theme.borderStandard};
+    border-radius: 8px;
+    width: 100%;
+    padding: 1rem 8rem 1rem 0.5rem;
+    color: #fff;
+    transition: 1s;
+    background: linear-gradient(318deg, #2814da2b, #c012a627, #00aaff34, #1b1b1b3e, #0000002b);
+    background-size: 1000% 1000%;
+    -webkit-animation: Coolgradient 41s linear infinite;
+    -moz-animation: Coolgradient 41s linear infinite;
+    -o-animation: Coolgradient 41s linear infinite;
+    animation: Coolgradient 41s linear infinite;
 
-  @-webkit-keyframes Coolgradient {
-      0%{background-position:5% 0%}
-      50%{background-position:96% 100%}
-      100%{background-position:5% 0%}
-  };
+    @-webkit-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+    };
 
-  @-moz-keyframes Coolgradient {
-      0%{background-position:5% 0%}
-      50%{background-position:96% 100%}
-      100%{background-position:5% 0%}
-  };
+    @-moz-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+    };
 
-  @-o-keyframes Coolgradient {
-      0%{background-position:5% 0%}
-      50%{background-position:96% 100%}
-      100%{background-position:5% 0%}
-  };
+    @-o-keyframes Coolgradient {
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+    };
 
-  @keyframes Coolgradient { 
-      0%{background-position:5% 0%}
-      50%{background-position:96% 100%}
-      100%{background-position:5% 0%}
-  };
+    @keyframes Coolgradient { 
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+    };
 
-  &:hover{
-      transform: scale(1.05);
-      border: 1px solid ${({ theme }) => theme.borderHoverEffect};
-  };
+    &:hover{
+    transform: scale(1.05);
+    border: 1px solid ${({ theme }) => theme.borderHoverEffect};
+    };
 
-  article{
+    article{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.5rem;
 
     i{
-      font-size: 30px;
+    font-size: 2rem;
     };
 
     h3{
-      margin: 0;
-      font-size: 20px;
+    margin: 0;
+    font-size: 1rem;
     };
 
-    @media(max-width: 850px){
-      justify-content: center;
-      text-align: center;
+    @media(max-width: 700px){
+    justify-content: center;
+    text-align: center;
     };
-  };
+    };
 
-  p{
+    p{
     color: #808080ff;
     margin: 0;
-  };
+    };
 
-  @media(max-width: 850px){
-    padding: 10px 50px;
-  };
+    @media(max-width: 700px){
+    padding: 1rem;
+    };
 
-  @media (max-width: 420px) { //Responsive aboutSection
-    font-size: 15px;
-    padding: 8px 0px;
-  };
 `;
 
