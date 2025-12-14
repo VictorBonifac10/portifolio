@@ -5,7 +5,7 @@ export const Body = styled.div``;
 
 export const TopContainer = styled.div` //Introduction Container
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* deixa ocupar mais espaço se precisar */
 `;
 
 export const Banner = styled.div` //Video container
@@ -19,6 +19,7 @@ export const Banner = styled.div` //Video container
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 4rem 0.5rem;
     };
 
     video { //Video
@@ -28,7 +29,7 @@ export const Banner = styled.div` //Video container
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* deixa ocupar mais espaço se precisar */
     };
 
     #mask{
@@ -50,6 +51,11 @@ export const Banner = styled.div` //Video container
     z-index: 2;
     width: 20rem;
     margin-bottom: 2rem;
+    
+    @media(max-width: 700px){
+    width: 13rem;
+    margin: 0.5rem;
+    }
     };
 `;
 
@@ -63,6 +69,9 @@ export const LeftContent = styled.div` //Left written content
 
     @media(max-width: 700px){
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     };
 
     #typeWriter{
@@ -70,21 +79,39 @@ export const LeftContent = styled.div` //Left written content
     font-family: "Jersey 10", sans-serif;
     font-size: 3.5rem;
     line-height: 2rem;
+    
+    @media(max-width: 700px){
+    font-size: 1.5rem;
+    }
     }
 
     #firstDescription{
     color: #fff;
     font-weight: bold;
     font-size: 2.5rem;
-    }
 
+    @media(max-width: 700px){
+    font-size: 1.2rem;
+    }
+    }
     #secondDescription{
     color: #fff;
     font-size: 1.3rem;
+
+    @media (max-width: 700px) { //Responsive  container
+    font-size: 0.7rem;
+    };
     }
 
     #customButton{ //Introduction button "Veja Mais"
     width: 30%;
+
+    @media(max-width: 700px){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
     }
 `;
 
@@ -100,6 +127,7 @@ export const RightContent = styled.div` //RightContent from containerBanner
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-top: 0.9rem;
     };
 
     i{ //Icons (RightContent) from containerBanner
@@ -107,6 +135,10 @@ export const RightContent = styled.div` //RightContent from containerBanner
     font-size: 1.6rem;
     transition: 0.5s;
     cursor: pointer;
+
+    @media (max-width: 700px) { //Responsive  container
+    font-size: 1.2rem;
+    };
 
     &:hover{ //Hover Icons (RightContent) from containerBanner
     color: ${({ theme }) => theme.primaryColor};
@@ -133,10 +165,10 @@ export const Main = styled.main` //Main
     scroll-behavior: auto;
     gap: 2rem;
     max-width: 100%;
-    };
 
-    #animatedText::-webkit-scrollbar { //Animeted Section
+    &::-webkit-scrollbar {
     display: none;
+    };
     };
 
     .textCustom { //Animeted Section
@@ -150,10 +182,11 @@ export const Main = styled.main` //Main
 
 export const AboutContainer = styled.div` //About Container
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; /* deixa ocupar mais espaço se precisar */
+    height: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
 
     @media (max-width: 700px) { //Responsive aboutSection
@@ -161,16 +194,22 @@ export const AboutContainer = styled.div` //About Container
     text-align: center;
     };
 
-    #sectionAboutText { //Container that holds the written content and others cards of aboutSection
+    #sectionAboutText {
     max-width: 40%;
+    min-width: 0; /* evita vazamento no flexbox */
 
     @media (max-width: 700px) { //Responsive aboutSection
-    width: 100%;
+    max-width: 100%;
     };
 
     .textContainer {
     color: #fff;
     color: ${({ theme }) => theme.text};
+
+    @media (max-width: 700px) { //Responsive aboutSection
+    font-size: 0.9rem;
+    padding: 2rem;
+    };
     };
   };
 
@@ -178,7 +217,8 @@ export const AboutContainer = styled.div` //About Container
     position: relative;
     width: 30%;
 
-    @media (max-width: 700px) { //Responsive aboutSection
+    @media (max-width: 700px) { //Animated Circle  
+    padding: 1rem;
     width: 100%;
     };
 
@@ -189,15 +229,19 @@ export const AboutContainer = styled.div` //About Container
     border-radius: 10px;
     display: block;
     };
-
+ 
     .rotating-container { //Animated Circle
     position: absolute;
     top: -85px;   
-    right: -75px;
+    right: -65px;
     z-index: 2;
     width: 200px;
     height: 200px;
     animation: rotate-text 10s linear infinite;
+
+    @media (max-width: 700px) { //Animated Circle  
+    right: 200px;
+    };
     };
 
     .inner-circle { //Animated Circle
@@ -215,17 +259,6 @@ export const AboutContainer = styled.div` //About Container
     @keyframes rotate-text { //Animated Circle
     to{ transform: rotate(360deg);};
     };
-
-    @media (max-width: 600px) { //Animated Circle
-    #sectionAboutImage {
-    width: auto;
-    height: 400px;
-    };
-    
-    .rotating-container{ //Animated Circle
-    right: 250px;
-    };
-    };
   };
 `;
 
@@ -234,9 +267,13 @@ export const AttributeContainer = styled.div`
     margin: 3.5rem 0rem;
     gap: 10px;
 
+    @media (max-width: 700px) {
+    margin: 2rem;
+    };
+
     @media (max-width: 400px) {
     flex-direction: column;
-    margin: 0;
+    margin: 1rem;
     };
 `;
 
@@ -244,13 +281,11 @@ export const AttributeCard = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
     width: 100%;
     gap: 1rem;
     font-family: "Jersey 10", sans-serif;
-
     border-radius: 20px;
-    padding: 2rem;
+    padding: 1.5rem;
     border: 1px solid ${({ theme }) => theme.borderStandard};
     position: relative;
     overflow: hidden;
@@ -293,7 +328,7 @@ export const AttributeCard = styled.div`
 
     span{ //Span from AtributteCard
     color: ${({ theme }) => theme.primaryColor};
-    font-size: 2rem;
+    font-size: 2.5rem;
     };
 
     p{ //P from AtributteCard
@@ -309,16 +344,16 @@ export const ServicesContainer = styled.div`
     color: ${({ theme }) => theme.text};
 
     @media (max-width: 700px) { 
-    text-align: center;
     padding: 0.5rem;
     };
 `;
 
 export const TechnologiesContainer = styled.div`
-  background-color: ${({ theme }) => theme.primaryColorTranslucent};  
-  width: 100%;
+    padding: 1rem 0rem;
+    background-color: ${({ theme }) => theme.primaryColorTranslucent};  
+    width: 100%;
 
-  .techContainer{
+    .techContainer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -330,7 +365,7 @@ export const TechnologiesContainer = styled.div`
     &::-webkit-scrollbar {
     display: none;
     };
-};
+    };
 `;
 
 export const TechBox = styled.div`
@@ -368,7 +403,6 @@ export const TechBox = styled.div`
 `;
 
 export const PortfolioContainer = styled.div`  
-    //background-color: green;
 `;
 
 export const ContactContainer = styled.div`
@@ -376,7 +410,8 @@ export const ContactContainer = styled.div`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh; /* deixa ocupar mais espaço se precisar */
+    height: auto;
     gap: 5rem;
     color: ${({ theme }) => theme.text};
 
@@ -463,6 +498,8 @@ export const ContactCard = styled.div`
     padding: 1rem 8rem 1rem 0.5rem;
     color: #fff;
     transition: 1s;
+    word-wrap: break-word; /* quebra palavras longas */
+    overflow-wrap: break-word; 
     background: linear-gradient(318deg, #2814da2b, #c012a627, #00aaff34, #1b1b1b3e, #0000002b);
     background-size: 1000% 1000%;
     -webkit-animation: Coolgradient 41s linear infinite;
@@ -529,4 +566,3 @@ export const ContactCard = styled.div`
     };
 
 `;
-
