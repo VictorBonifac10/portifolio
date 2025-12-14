@@ -3,9 +3,9 @@ import { hexToRgba } from "../../utils/colorsFunction";
 
 export const Body = styled.div``;
 
-export const TopContainer = styled.div` //Introduction Container
+export const TopContainer = styled.div` //Introduction container
     width: 100%;
-    height: 100vh; /* deixa ocupar mais espaço se precisar */
+    height: 100vh;
 `;
 
 export const Banner = styled.div` //Video container
@@ -14,7 +14,7 @@ export const Banner = styled.div` //Video container
     align-items: center;
     padding: 7rem 4rem;
 
-    @media (max-width: 700px) { //Responsive  container
+    @media (max-width: 700px) { //Responsive
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -29,10 +29,10 @@ export const Banner = styled.div` //Video container
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* deixa ocupar mais espaço se precisar */
+    height: 100vh;
     };
 
-    #mask{
+    #mask{ //Mask
     background: linear-gradient(
     109deg,
     rgba(10, 12, 16, 0.9) 15%,
@@ -52,7 +52,7 @@ export const Banner = styled.div` //Video container
     width: 20rem;
     margin-bottom: 2rem;
     
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     width: 13rem;
     margin: 0.5rem;
     }
@@ -67,38 +67,38 @@ export const LeftContent = styled.div` //Left written content
     z-index: 2;
     max-width: 50%;
 
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
     };
 
-    #typeWriter{
+    #typeWriter{ //Effect
     color: ${({ theme }) => theme.primaryColor};
     font-family: "Jersey 10", sans-serif;
     font-size: 3.5rem;
     line-height: 2rem;
     
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     font-size: 1.5rem;
     }
     }
 
-    #firstDescription{
+    #firstDescription{ //Description
     color: #fff;
     font-weight: bold;
     font-size: 2.5rem;
 
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     font-size: 1.2rem;
     }
     }
-    #secondDescription{
+    #secondDescription{ //Description
     color: #fff;
     font-size: 1.3rem;
 
-    @media (max-width: 700px) { //Responsive  container
+    @media (max-width: 700px) { //Responsive
     font-size: 0.7rem;
     };
     }
@@ -106,7 +106,7 @@ export const LeftContent = styled.div` //Left written content
     #customButton{ //Introduction button "Veja Mais"
     width: 30%;
 
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     width: 100%;
     display: flex;
     justify-content: center;
@@ -122,7 +122,7 @@ export const RightContent = styled.div` //RightContent from containerBanner
     position: relative;
     z-index: 2;
 
-    @media (max-width: 700px) {  //Responsive rightContent from containerBanner
+    @media (max-width: 700px) { //Responsive rightContent from containerBanner
     width: 100%;
     flex-direction: row;
     justify-content: center;
@@ -136,7 +136,7 @@ export const RightContent = styled.div` //RightContent from containerBanner
     transition: 0.5s;
     cursor: pointer;
 
-    @media (max-width: 700px) { //Responsive  container
+    @media (max-width: 700px) { //Responsive
     font-size: 1.2rem;
     };
 
@@ -166,7 +166,7 @@ export const Main = styled.main` //Main
     gap: 2rem;
     max-width: 100%;
 
-    &::-webkit-scrollbar {
+    &::-webkit-scrollbar { //Animeted Section
     display: none;
     };
     };
@@ -182,23 +182,23 @@ export const Main = styled.main` //Main
 
 export const AboutContainer = styled.div` //About Container
     width: 100%;
-    min-height: 100vh; /* deixa ocupar mais espaço se precisar */
+    min-height: 100vh;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
 
-    @media (max-width: 700px) { //Responsive aboutSection
+    @media (max-width: 700px) { //Responsive
     flex-direction: column;
     text-align: center;
     };
 
     #sectionAboutText {
     max-width: 40%;
-    min-width: 0; /* evita vazamento no flexbox */
+    min-width: 0;
 
-    @media (max-width: 700px) { //Responsive aboutSection
+    @media (max-width: 700px) { //Responsive
     max-width: 100%;
     };
 
@@ -206,7 +206,7 @@ export const AboutContainer = styled.div` //About Container
     color: #fff;
     color: ${({ theme }) => theme.text};
 
-    @media (max-width: 700px) { //Responsive aboutSection
+    @media (max-width: 700px) { //Responsive
     font-size: 0.9rem;
     padding: 2rem;
     };
@@ -262,22 +262,22 @@ export const AboutContainer = styled.div` //About Container
   };
 `;
 
-export const AttributeContainer = styled.div`
+export const AttributeContainer = styled.div` //Card container
     display: flex;
     margin: 3.5rem 0rem;
     gap: 10px;
 
-    @media (max-width: 700px) {
+    @media (max-width: 700px) { //Responsive
     margin: 2rem;
     };
 
-    @media (max-width: 400px) {
+    @media (max-width: 400px) { //Responsive
     flex-direction: column;
     margin: 1rem;
     };
 `;
 
-export const AttributeCard = styled.div`
+export const AttributeCard = styled.div` //Card
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,31 +297,31 @@ export const AttributeCard = styled.div`
     -o-animation: Coolgradient 41s linear infinite;
     animation: Coolgradient 41s linear infinite;
 
-    @-webkit-keyframes Coolgradient {
+    @-webkit-keyframes Coolgradient { //Card
     0%{background-position:5% 0%}
     50%{background-position:96% 100%}
     100%{background-position:5% 0%}
     };
 
-    @-moz-keyframes Coolgradient {
+    @-moz-keyframes Coolgradient { //Card
     0%{background-position:5% 0%}
     50%{background-position:96% 100%}
     100%{background-position:5% 0%}
     };
 
-    @-o-keyframes Coolgradient {
+    @-o-keyframes Coolgradient { //Card
     0%{background-position:5% 0%}
     50%{background-position:96% 100%}
     100%{background-position:5% 0%}
     };
 
-    @keyframes Coolgradient { 
+    @keyframes Coolgradient { //Card
     0%{background-position:5% 0%}
     50%{background-position:96% 100%}
     100%{background-position:5% 0%}
     };
 
-    &:hover{
+    &:hover{ //Effect
     transform: scale(1.05);
     border: 1px solid ${({ theme }) => theme.borderHoverEffect};
     };
@@ -338,22 +338,22 @@ export const AttributeCard = styled.div`
     };
 `;
 
-export const ServicesContainer = styled.div`
+export const ServicesContainer = styled.div`//Container
     width: 100%;
     padding: 0rem 8rem;
     color: ${({ theme }) => theme.text};
 
-    @media (max-width: 700px) { 
+    @media (max-width: 700px) { //Responsive
     padding: 0.5rem;
     };
 `;
 
-export const TechnologiesContainer = styled.div`
+export const TechnologiesContainer = styled.div` //Container
     padding: 1rem 0rem;
     background-color: ${({ theme }) => theme.primaryColorTranslucent};  
     width: 100%;
 
-    .techContainer{
+    .techContainer{ //Container
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,13 +362,13 @@ export const TechnologiesContainer = styled.div`
     overflow-x: auto;
     scroll-behavior: auto;
 
-    &::-webkit-scrollbar {
+    &::-webkit-scrollbar { //Container
     display: none;
     };
     };
 `;
 
-export const TechBox = styled.div`
+export const TechBox = styled.div` //Tech card
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -393,7 +393,7 @@ export const TechBox = styled.div`
     font-size: 0.7rem;
     };
 
-    &:hover {
+    &:hover { //Effect
     background-color: ${({ color }) => hexToRgba(color, 0.3)};
     border: 2px solid ${({ color }) => color};
     color: ${({ color }) => color};
@@ -402,20 +402,20 @@ export const TechBox = styled.div`
     };
 `;
 
-export const PortfolioContainer = styled.div`  
+export const PortfolioContainer = styled.div`   //Portfolio
 `;
 
-export const ContactContainer = styled.div`
+export const ContactContainer = styled.div` //Container
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 100vh; /* deixa ocupar mais espaço se precisar */
+    min-height: 100vh;
     height: auto;
     gap: 5rem;
     color: ${({ theme }) => theme.text};
 
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -423,27 +423,27 @@ export const ContactContainer = styled.div`
     gap: 2rem;
     }
 
-    #leftContent{
+    #leftContent{ //Text
     max-width: 40%;
 
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     max-width: 100%;
     };
 
-    .arrowContainer {
+    .arrowContainer { //Arrows
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 4rem;
     margin-right: 7rem;
 
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     margin-bottom: 2rem;
     margin-right: 0rem;
     };
     };
 
-    .arrow {
+    .arrow { //Arrows
     width: 40px;
     height: 40px;
     border-right: 10px solid;
@@ -452,53 +452,53 @@ export const ContactContainer = styled.div`
     animation: move 1s infinite;
     };
 
-    .arrow:nth-child(1) {
+    .arrow:nth-child(1) { //Arrows Effect
     border-color:  ${({ theme }) => theme.primaryColor};
     animation-delay: 0s;
     };
 
-    .arrow:nth-child(2) {
+    .arrow:nth-child(2) { //Arrows Effect
     border-color: ${({ theme }) => theme.primaryColor};
     animation-delay: 0.2s;
     };
 
-    .arrow:nth-child(3) {
+    .arrow:nth-child(3) { //Arrows Effect
     border-color: ${({ theme }) => theme.primaryColor};
     animation-delay: 0.4s;
     };
 
-    .arrow:nth-child(4) {
+    .arrow:nth-child(4) { //Arrows Effect
     border-color:  ${({ theme }) => theme.primaryColor};
     animation-delay: 0.4s;
     };
 
-    @keyframes move {
+    @keyframes move { //Arrows Effect
     0%, 20% { transform: translateX(0) rotate(45deg); opacity: 0.5; };
     50% { transform: translateX(10px) rotate(45deg); opacity: 1; };
     100% { transform: translateX(0) rotate(45deg); opacity: 0.5; };
     };
     };
 
-    #rightContent{
+    #rightContent{ //Text
     display: flex;
     flex-direction: column;
     gap: 1rem;
 
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     max-width: 100%;
     };
 
     };
 `;
 
-export const ContactCard = styled.div`
+export const ContactCard = styled.div` //Card
     border: 1px solid ${({ theme }) => theme.borderStandard};
     border-radius: 8px;
     width: 100%;
     padding: 1rem 8rem 1rem 0.5rem;
     color: #fff;
     transition: 1s;
-    word-wrap: break-word; /* quebra palavras longas */
+    word-wrap: break-word;
     overflow-wrap: break-word; 
     background: linear-gradient(318deg, #2814da2b, #c012a627, #00aaff34, #1b1b1b3e, #0000002b);
     background-size: 1000% 1000%;
@@ -507,61 +507,61 @@ export const ContactCard = styled.div`
     -o-animation: Coolgradient 41s linear infinite;
     animation: Coolgradient 41s linear infinite;
 
-    @-webkit-keyframes Coolgradient {
+    @-webkit-keyframes Coolgradient { //Card
     0%{background-position:5% 0%}
     50%{background-position:96% 100%}
     100%{background-position:5% 0%}
     };
 
-    @-moz-keyframes Coolgradient {
+    @-moz-keyframes Coolgradient { //Card
     0%{background-position:5% 0%}
     50%{background-position:96% 100%}
     100%{background-position:5% 0%}
     };
 
-    @-o-keyframes Coolgradient {
+    @-o-keyframes Coolgradient { //Card
     0%{background-position:5% 0%}
     50%{background-position:96% 100%}
     100%{background-position:5% 0%}
     };
 
-    @keyframes Coolgradient { 
+    @keyframes Coolgradient { //Card 
     0%{background-position:5% 0%}
     50%{background-position:96% 100%}
     100%{background-position:5% 0%}
     };
 
-    &:hover{
+    &:hover{ //Effect
     transform: scale(1.05);
     border: 1px solid ${({ theme }) => theme.borderHoverEffect};
     };
 
-    article{
+    article{ //Card
     display: flex;
     align-items: center;
     gap: 0.5rem;
 
-    i{
+    i{ //Icons
     font-size: 2rem;
     };
 
-    h3{
+    h3{ //Tiltle
     margin: 0;
     font-size: 1rem;
     };
 
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     justify-content: center;
     text-align: center;
     };
     };
 
-    p{
+    p{ //Text
     color: #808080ff;
     margin: 0;
     };
 
-    @media(max-width: 700px){
+    @media(max-width: 700px){ //Responsive
     padding: 1rem;
     };
 
