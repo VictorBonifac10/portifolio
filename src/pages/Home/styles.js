@@ -77,7 +77,7 @@ export const LeftContent = styled.div` //Left written content
     #typeWriter{ //Effect
     color: ${({ theme }) => theme.primaryColor};
     font-family: "Jersey 10", sans-serif;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     line-height: 2rem;
     
     @media(max-width: 700px){ //Responsive
@@ -88,7 +88,7 @@ export const LeftContent = styled.div` //Left written content
     #firstDescription{ //Description
     color: #fff;
     font-weight: bold;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
 
     @media(max-width: 700px){ //Responsive
     font-size: 1.2rem;
@@ -96,7 +96,7 @@ export const LeftContent = styled.div` //Left written content
     }
     #secondDescription{ //Description
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
 
     @media (max-width: 700px) { //Responsive
     font-size: 0.7rem;
