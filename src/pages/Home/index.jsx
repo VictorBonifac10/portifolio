@@ -74,7 +74,7 @@ export function Home() {
                             <a href={data.whatsapp} target="_blank">
                                 <i className="ri-whatsapp-line"></i>
                             </a>
-                            <a href={data.email} target="_blank">
+                            <a href={data.email} target="_blank"> 
                                 <i className="ri-google-line"></i>
                             </a>
                             <a href={data.linkedin} target="_blank">

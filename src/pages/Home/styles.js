@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+ import { styled } from 'styled-components'
 import { hexToRgba } from "../../utils/colorsFunction";
 
 export const Body = styled.div``;
@@ -7,7 +7,7 @@ export const TopContainer = styled.div` //Introduction container
     width: 100%;
     height: 100vh;
 `;
-
+ 
 export const Banner = styled.div` //Video container
     display: flex;
     justify-content: space-between;
@@ -88,7 +88,7 @@ export const LeftContent = styled.div` //Left written content
     #firstDescription{ //Description
     color: #fff;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 
     @media(max-width: 700px){ //Responsive
     font-size: 1.2rem;
@@ -96,7 +96,7 @@ export const LeftContent = styled.div` //Left written content
     }
     #secondDescription{ //Description
     color: #fff;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 
     @media (max-width: 700px) { //Responsive
     font-size: 0.7rem;
@@ -174,7 +174,7 @@ export const Main = styled.main` //Main
     .textCustom { //Animeted Section
     padding: 0;
     margin: 0;
-    font-size: 6rem;
+    font-size: 5rem;
     font-family: "Jersey 10", sans-serif;
     color: ${({ theme }) => theme.primaryColor};
     };
