@@ -49,8 +49,8 @@ export const Banner = styled.div` //Video container
     img { //Logo
     position: relative;
     z-index: 2;
-    width: 20rem;
-    margin-bottom: 2rem;
+    width: 19rem;
+    margin-bottom: 1.8rem;
     
     @media(max-width: 700px){ //Responsive
     width: 13rem;
@@ -77,8 +77,8 @@ export const LeftContent = styled.div` //Left written content
     #typeWriter{ //Effect
     color: ${({ theme }) => theme.primaryColor};
     font-family: "Jersey 10", sans-serif;
-    font-size: 3.3rem;
-    line-height: 2rem;
+    font-size: 3.1rem;
+    line-height: 1.9rem;
     
     @media(max-width: 700px){ //Responsive
     font-size: 1.5rem;
@@ -88,7 +88,7 @@ export const LeftContent = styled.div` //Left written content
     #firstDescription{ //Description
     color: #fff;
     font-weight: bold;
-    font-size: 2.1rem;
+    font-size: 2rem;
 
     @media(max-width: 700px){ //Responsive
     font-size: 1.2rem;
