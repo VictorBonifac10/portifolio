@@ -8,6 +8,8 @@ import Project06 from '../assets/img/dev_burger_api.png'
 import Project07 from '../assets/img/api-usuarios.png'
 import Project08 from '../assets/img/miniCrud.png'
 
+import Project09 from '../assets/img/project06.png'
+
 export const projects = [
     {
         img: Project01,
@@ -89,5 +91,14 @@ export const projects = [
         site: null,
         field: 'Back-End'
     },
-
+    {
+        img: Project09,
+        name: 'Portfólio Educadora Infantil',
+        description: 'Desenvolvimento de um portfólio responsivo para uma profissional da área de Educação Infantil.',
+        icons: ['devicon-react-original', 'devicon-styledcomponents-plain', 'devicon-materialui-plain'],
+        stacks: ['React', 'Styled-Components', 'Material UI'],
+        repository: 'https://github.com/VictorBonifac10/portfolio-educadora-infantil',
+        site: 'https://nubiacarraro.netlify.app/',
+        field: 'Front-End'
+    }
 ];
