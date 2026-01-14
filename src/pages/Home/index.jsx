@@ -21,10 +21,10 @@ import { technologies } from "../../data/technologies";
 import { links } from "../../data/links";
 
 //Components
-import { Button, Footer, Header, Portfolio, ScrollIndicator, ServiceCards, SupportButton, Title } from "../../components";
+import { Button, Creatives, Footer, Header, Portfolio, ScrollIndicator, ServiceCards, SupportButton, Title } from "../../components";
 
 //Tags from Styles
-import { Body, Banner, TopContainer, LeftContent, RightContent, Main, AboutContainer, ServicesContainer, PortfolioContainer, ContactContainer, ContactCard, TechnologiesContainer, TechBox, AttributeContainer, AttributeCard } from "./styles";
+import { Body, Banner, TopContainer, LeftContent, RightContent, Main, AboutContainer, ServicesContainer, PortfolioContainer, ContactContainer, ContactCard, TechnologiesContainer, TechBox, AttributeContainer, AttributeCard, CreativeContainer } from "./styles";
 
 //Medias
 import videoHomePage from '../../assets/video/HomePage.mp4'
@@ -74,7 +74,7 @@ export function Home() {
                             <a href={data.whatsapp} target="_blank">
                                 <i className="ri-whatsapp-line"></i>
                             </a>
-                            <a href={data.email} target="_blank"> 
+                            <a href={data.email} target="_blank">
                                 <i className="ri-google-line"></i>
                             </a>
                             <a href={data.linkedin} target="_blank">
@@ -167,6 +167,12 @@ export function Home() {
                     <PortfolioContainer id='portfolio'>
                         <Portfolio />
                     </PortfolioContainer>
+                </div>
+                <div data-aos="fade-up" data-aos-duration="3000">
+                    <Title subtitle="Conteúdo visual estratégico para mídias sociais">Design</Title>
+                    <CreativeContainer id='creatives'>
+                        <Creatives />
+                    </CreativeContainer>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="3000">
                     <Title subtitle="Envie-me uma mensagem">Contato</Title>

@@ -14,14 +14,6 @@ export function ServiceCards() {
 
       <Card>
         <CardTitle>
-          <i className="bi bi-palette"></i>
-          <h4>Noções de Design</h4>
-        </CardTitle>
-        <p>Aplicação de fundamentos visuais que elevam a estética do projeto e garantem uma comunicação clara e atraente.</p>
-      </Card>
-
-      <Card>
-        <CardTitle>
           <i className="bi bi-code-slash"></i>
           <h4>Engenharia de Software</h4>
         </CardTitle>
@@ -34,6 +26,14 @@ export function ServiceCards() {
           <h4>Desenvolvimento e consumo de API</h4>
         </CardTitle>
         <p>Integrações robustas entre sistemas, garantindo comunicação rápida, segura e confiável entre aplicações diversas.</p>
+      </Card>
+
+      <Card>
+        <CardTitle>
+          <i className="bi bi-palette"></i>
+          <h4>Design, marketing e mídias</h4>
+        </CardTitle>
+        <p>Integração entre design, marketing digital e tecnologia para fortalecer marcas, criar presença nas mídias digitais e comunicar valor de forma estratégica.</p>
       </Card>
 
       <Card>

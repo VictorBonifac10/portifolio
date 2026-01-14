@@ -564,5 +564,7 @@ export const ContactCard = styled.div` //Card
     @media(max-width: 700px){ //Responsive
     padding: 1rem;
     };
+`;
 
+export const CreativeContainer = styled.div` //Creative
 `;

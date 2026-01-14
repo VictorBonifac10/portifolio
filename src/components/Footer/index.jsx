@@ -11,7 +11,6 @@ import { links } from "../../data/links";
 import originalLogo from '../../assets/img/originalLogo.svg'
 import variantLogo from '../../assets/img/variantLogo.svg'
 
-
 export function Footer() {
 
     //Theme Config
