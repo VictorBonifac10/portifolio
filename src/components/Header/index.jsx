@@ -63,6 +63,11 @@ export function Header() {
                         </StyledNavLink>
                     </Item>
                     <Item>
+                        <StyledNavLink href="#creatives">
+                            Design
+                        </StyledNavLink>
+                    </Item>
+                    <Item>
                         <StyledNavLink href="#contact">
                             Contato
                         </StyledNavLink>
@@ -117,6 +122,11 @@ export function Header() {
                             <Item>
                                 <StyledNavLink href="#portfolio">
                                     Projetos
+                                </StyledNavLink>
+                            </Item>
+                            <Item>
+                                <StyledNavLink href="#creatives">
+                                    Design
                                 </StyledNavLink>
                             </Item>
                             <Item>

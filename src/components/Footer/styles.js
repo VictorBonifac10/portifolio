@@ -24,7 +24,7 @@ export const ContainerFooter = styled.footer` //Footer
     gap: 20px;
     list-style: none;
     padding: 0;
-    max-width: 300px;
+    max-width: 350px;
 
     li{ //Sections from Site 
     a{

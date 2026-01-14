@@ -52,11 +52,26 @@ export const technologies = [
     {
         icon: 'devicon-react-original',
         name: 'React.js',
-        color: '#61DAFB',
+        color: '#30d2ff',
     },
     {
         icon: 'devicon-nextjs-original-wordmark',
         name: 'Next.js',
         color: '#000000',
+    },
+    {
+        icon: 'devicon-canva-original',
+        name: 'Canva',
+        color: '#8fe7ff',
+    },
+    {
+        icon: 'devicon-photoshop-plain',
+        name: 'Photoshop',
+        color: '#296f98',
+    },
+    {
+        icon: 'bi bi-meta',
+        name: 'Meta Ads',
+        color: '#0080ff',
     },
 ];

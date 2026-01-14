@@ -39,6 +39,9 @@ export function Footer() {
                     <a href="#portfolio">Projetos</a>
                 </li>
                 <li>
+                    <a href="#creatives">Design</a>
+                </li>
+                <li>
                     <a href="#contato">Contato</a>
                 </li>
             </ul>
