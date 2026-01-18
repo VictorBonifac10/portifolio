@@ -11,6 +11,7 @@ export const ScrollContainer = styled.div`
     align-items: center;
     color: #fff;
     font-family: 'Poppins', sans-serif;
+    top: 30.5rem;
     }
 
     .mouse { //Mouse Indicator
