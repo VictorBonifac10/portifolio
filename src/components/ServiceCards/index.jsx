@@ -31,7 +31,7 @@ export function ServiceCards() {
       <Card>
         <CardTitle>
           <i className="bi bi-palette"></i>
-          <h4>Design, marketing e mídias</h4>
+          <h4>Design, marketing e comunicação</h4>
         </CardTitle>
         <p>Integração entre design, marketing digital e tecnologia para fortalecer marcas, criar presença nas mídias digitais e comunicar valor de forma estratégica.</p>
       </Card>
@@ -47,9 +47,9 @@ export function ServiceCards() {
       <Card>
         <CardTitle>
           <i className="ri-team-line"></i>
-          <h4>Trabalho em Equipe</h4>
+          <h4>Suporte Técnico</h4>
         </CardTitle>
-        <p>Colaboração ativa com profissionais diversos, mantendo comunicação efetiva e foco em resultados consistentes.</p>
+        <p>Suporte técnico ao usuário, com foco em microinformática, diagnóstico e resolução de incidentes, seguindo boas práticas de ITIL.</p>
       </Card>
     </CardGrid>
   )

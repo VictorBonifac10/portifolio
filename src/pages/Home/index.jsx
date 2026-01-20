@@ -106,11 +106,15 @@ export function Home() {
                     <AboutContainer id='about'>
                         <section id="sectionAboutText">
                             <p class="textContainer">
-
-                                Olá! Meu nome é Victor Alves Bonifácio e atuo como Desenvolvedor Web Full-Stack. Ao longo da minha carreira desenvolvi diversos projetos profissionais e acadêmicos em diferentes setores, o que me permitiu dominar ferramentas e metodologias voltadas à criação e ao gerenciamento de software, sempre com foco na entrega de valor.
+                                Profissional de TI com ampla experiência em suporte técnico e desenvolvimento de
+                                software. Ao longo da minha carreira, desenvolvi uma sólida habilidade na resolução de
+                                problemas e na compreensão de requisitos, tanto em projetos profissionais e
+                                acadêmicos quanto na gestão de mídias e no atendimento direto aos usuários.
                                 <br /><br />
-                                Com formação em Sistemas para Internet e experiência em design e marketing, atuo no desenvolvimento de aplicações e soluções digitais, criando interfaces acessíveis, organizadas e alinhadas não apenas às necessidades técnicas do projeto, mas também pensadas para apoiar estratégias de conteúdo, engajamento e performance no ambiente digital.
-
+                                Minha vivência em diferentes setores me permitiu dominar ferramentas, metodologias e
+                                práticas voltadas ao desenvolvimento de soluções tecnológicas que atendem às
+                                necessidades dos usuários e ao uso estratégico da tecnologia como apoio aos
+                                processos e objetivos do negócio.
                             </p>
                             <AttributeContainer>
                                 <AttributeCard>
