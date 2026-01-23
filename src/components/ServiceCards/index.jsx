@@ -46,7 +46,7 @@ export function ServiceCards() {
 
       <Card>
         <CardTitle>
-          <i className="ri-team-line"></i>
+          <i class="ri-customer-service-2-fill"></i>
           <h4>Suporte Técnico</h4>
         </CardTitle>
         <p>Suporte técnico ao usuário, com foco em microinformática, diagnóstico e resolução de incidentes, seguindo boas práticas de ITIL.</p>

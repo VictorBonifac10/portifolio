@@ -9,7 +9,7 @@ export function SupportButton() {
         <>
             {links.map(data => (
                 <Button key={data.whatsapp} href={data.whatsapp} target="_blank">
-                    <i className="ri-customer-service-2-fill"></i>
+                    <i class="ri-wechat-line"></i>
                     <div>
                         <h2>Precisa de ajuda?</h2>
                         <p>Entre em contato comigo e vamos conversar.</p>
