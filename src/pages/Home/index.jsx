@@ -61,7 +61,7 @@ export function Home() {
                     <LeftContent>
                         <img src={theme === "dark" ? originalLogo : variantLogo} alt="Logo do Portfólio" />
                         <span id="typeWriter">...</span>
-                        <p id="firstDescription">Desenvolvedor Web Full-Stack</p>
+                        <p id="firstDescription">Desenvolvedor e  Web Designer</p>
                         <p id="secondDescription">Sou apaixonado por tecnologia, inovação e por desenvolver soluções que gerem impacto real. Verifique abaixo</p>
                         <div id="customButton">
                             <Button href="#services">
