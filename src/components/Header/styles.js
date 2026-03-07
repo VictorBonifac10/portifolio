@@ -24,7 +24,7 @@ export const Item = styled(CNavItem)` //Navbar
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    border: 1px solid #fff;
+    border: 1px solid ${({ theme }) => theme.text};;
     border-radius: 50px;
     margin: 0;
     padding: 8px 12px;

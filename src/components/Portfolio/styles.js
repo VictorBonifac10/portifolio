@@ -9,116 +9,86 @@ export const PortfolioContainer = styled.div` //Portfolio
     margin: 7px;
     padding: 7px;
     }
-
-    .main-swiper{ //Styles from Swiper
-    padding: 20px;
-    }
-
-    .main-swiper img { //Styles from Swiper
-    width: 60%;
-    height: 350px;
-    object-fit: cover;
-    padding: 40px;
-    transform: perspective(800px) rotateY(-25deg);
-    position: relative;
-    z-index: 2;
-
-    @media(max-width: 900px){ //Styles from Swiper
-    width: 100%;
-    height: 115px;
-    padding: 0;
-    }
-    }
-
-    .swiper-button-next { //Styles from Swiper
-    color: ${({ theme }) => theme.primaryColor};
-    width: 15px;
-    right: 30px;
-    }
-
-    .swiper-button-prev { //Styles from Swiper
-    color: ${({ theme }) => theme.primaryColor};
-    width: 15px;
-    left: 35px;
-    }
-
-    .thumbs-swiper { //Styles from Swiper
-    display: flex;
-    width: 100%;
-    margin-top: 6px;
-    }
-
-    .thumbs-swiper .swiper-wrapper { //Styles from Swiper
-    justify-content: center !important;
-    }
-
-    .thumbs-swiper img { //Styles from Swiper
-    width: 100%;
-    height: 80px;
-    object-fit: cover;
-    opacity: 0.4;
-    cursor: pointer;
-    }
-
-    .thumbs-swiper .swiper-slide-thumb-active img { //Styles from Swiper
-    opacity: 1;
-    }
 `;
 
-export const ProjectCard = styled.div` //Card
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; 
-    overflow: hidden;
-    gap: 20px;
-    border: 1px solid ${({ theme }) => theme.border};;
-    border-radius: 15px;
-    padding: 40px 60px;
-    color: #fff;
-    transition: 1s;
+export const ContainerProjectCard = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 16px;
 
-    @media(max-width: 900px){ //Responsive
-    flex-direction: column;
-    text-align: center;
+    @media (max-width: 1200px) { //Responsive
+    grid-template-columns: repeat(2, 1fr);
     }
 
-    video { //Background video
-    position: absolute;
-    top: 0;
-    left: 0;
+    @media (max-width: 850px) { //Responsive
+    grid-template-columns: 1fr;
+    }
+
+`
+
+export const ProjectCard = styled.div` //Card
+    border-radius: 1rem;
+    color: ${({ theme }) => theme.text};
+    border: 1px solid ${({ theme }) => theme.borderStandard};
+    position: relative;
+    overflow: hidden;
+    transition: 1s;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+
+     background: linear-gradient(318deg, #2814da2b, #c012a627, #00aaff34, #1b1b1b3e, #0000002b);
+    background-size: 1000% 1000%;
+    -webkit-animation: Coolgradient 41s linear infinite;
+    -moz-animation: Coolgradient 41s linear infinite;
+    -o-animation: Coolgradient 41s linear infinite;
+    animation: Coolgradient 41s linear infinite;
+
+    @-webkit-keyframes Coolgradient { //Card
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+    }
+
+    @-moz-keyframes Coolgradient { //Card
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+    }
+
+    @-o-keyframes Coolgradient { //Card
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+    }
+
+    @keyframes Coolgradient { //Card
+    0%{background-position:5% 0%}
+    50%{background-position:96% 100%}
+    100%{background-position:5% 0%}
+    }
+
+    &:hover{ //Effect
+    transform: scale(1.05);
+    border: 1px solid ${({ theme }) => theme.borderHoverEffect};;
     }
     
     .content { //Card
     position: relative;
     z-index: 2;
+    padding: 10px 20px;
     }
 
     &:hover{ //Effect
     transform: scale(1.02);
-    border: 1px solid ${({ theme }) => theme.border};;
+    border: 1px solid ${({ theme }) => theme.border};
     border-radius: 5px;
     }
-`;
 
-export const Mask = styled.div` //Mask from background
-    background: linear-gradient(
-    109deg,
-    rgba(10, 12, 16, 0.9) 15%,
-    rgba(10, 12, 16, 0.21) 50%,
-    rgba(10, 12, 16, 0.9) 85%
-    );
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
+    img{
+        width: 100%;
+    }
 `;
 
 export const Description = styled.div` //Project description container
@@ -129,7 +99,7 @@ export const Description = styled.div` //Project description container
     h2{ //Project description
     color: ${({ theme }) => theme.primaryColor};
     margin-bottom: 30px;
-    font-size: 40px;
+    font-size: 30px;
     font-family: "Jersey 10", sans-serif;
     }
 `;
@@ -157,15 +127,15 @@ export const Stack = styled.div` //Stacks
     align-items: center;
     gap: 5px;
     padding: 6px;
-    color: #fff;
-    border: 1px solid #fff;
+    color: ${({ theme }) => theme.text};
+    border: 1px solid ${({ theme }) => theme.text};;
     border-radius: 5px;
 
     i{ //Icons
     font-size: 15px;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: ${({ theme }) => theme.text};;
     }
   
     p{ //Stack name

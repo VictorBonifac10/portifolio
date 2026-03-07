@@ -7,8 +7,8 @@ export const lightTheme = {
     primaryColor: "rgb(74, 104, 177)", //Primary Color
     primaryColorTranslucent: "rgba(74, 103, 177, 0.4)", //Translucent Primary Color
 
-    borderStandard: "rgba(255, 255, 255, 0.29);", //Standard Border Color
-    borderHoverEffect: "#424242ff", //Hover Effect Border Color
+    borderStandard: "rgba(255, 255, 255, 0.02);", //Standard Border Color
+    borderHoverEffect: "rgba(66, 66, 66, 0.68)", //Hover Effect Border Color
 
     white: "#fff", //Common Colors
     black: "#000", //Common Colors
@@ -23,8 +23,8 @@ export const darkTheme = {
     primaryColor: "#00fbff96", //Primary Color
     primaryColorTranslucent: "#00fbff4e", //Translucent Primary Color
 
-    borderStandard: "rgba(255, 255, 255, 0.29);", //Standard Border Color
-    borderHoverEffect: "#fff", //Hover Effect Border Color
+    borderStandard: "rgba(255, 255, 255, 0.02);", //Standard Border Color
+    borderHoverEffect: "#ffffff88", //Hover Effect Border Color
 
     white: "#fff", //Common Colors
     black: "#000", //Common Colors
