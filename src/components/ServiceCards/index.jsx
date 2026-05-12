@@ -30,26 +30,26 @@ export function ServiceCards() {
 
       <Card>
         <CardTitle>
-          <i className="bi bi-palette"></i>
-          <h4>Design, marketing e comunicação</h4>
+          <i className="bi bi-megaphone"></i>
+          <h4>Marketing e comunicação</h4>
         </CardTitle>
-        <p>Integração entre design, marketing digital e tecnologia para fortalecer marcas, criar presença nas mídias digitais e comunicar valor de forma estratégica.</p>
+        <p>Planejamento e desenvolvimento de estratégias de comunicação digital voltadas ao fortalecimento da marca, engajamento do público e posicionamento nas mídias sociais.</p>
       </Card>
 
       <Card>
         <CardTitle>
           <i className="bi bi-easel2"></i>
-          <h4>Gestão de Projetos</h4>
+          <h4>Gestão de<br></br>Projetos</h4>
         </CardTitle>
         <p>Planejamento organizado e acompanhamento contínuo para entregar soluções dentro do prazo, com qualidade e clareza.</p>
       </Card>
 
       <Card>
         <CardTitle>
-          <i class="ri-customer-service-2-fill"></i>
-          <h4>Suporte Técnico</h4>
+          <i className="bi bi-palette"></i>
+          <h4>Design<br></br>Gráfico</h4>
         </CardTitle>
-        <p>Suporte técnico ao usuário, com foco em microinformática, diagnóstico e resolução de incidentes, seguindo boas práticas de ITIL.</p>
+        <p>Desenvolvimento de materiais visuais criativos para redes sociais, campanhas e projetos institucionais, unindo estética, clareza e impacto na comunicação.</p>
       </Card>
     </CardGrid>
   )

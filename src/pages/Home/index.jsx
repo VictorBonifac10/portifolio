@@ -106,8 +106,7 @@ export function Home() {
                     <AboutContainer id='about'>
                         <section id="sectionAboutText">
                             <p class="textContainer">
-                                Profissional de TI com ampla experiência em suporte técnico e desenvolvimento de
-                                software. Ao longo da minha carreira, desenvolvi uma sólida habilidade na resolução de
+                                Profissional de TI com ampla experiência em marketing e design gráfico. Ao longo da minha carreira, desenvolvi uma sólida habilidade na resolução de
                                 problemas e na compreensão de requisitos, tanto em projetos profissionais e
                                 acadêmicos quanto na gestão de mídias e no atendimento direto aos usuários.
                                 <br /><br />
